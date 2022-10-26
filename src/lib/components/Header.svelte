@@ -1,3 +1,7 @@
+<script>
+	import NavItem from './NavItem.svelte';
+</script>
+
 <header>
 	<div class="page-container">
 		<nav>
@@ -8,15 +12,9 @@
 
 				<div class="nav-right">
 					<ul>
-						<li>
-							<a class="nav-item" href="/blog">Blog</a>
-						</li>
-						<li>
-							<a class="nav-item" href="/photos">Photos</a>
-						</li>
-						<li>
-							<a class="nav-item" href="/about">About</a>
-						</li>
+						<NavItem href="/blog">Blog</NavItem>
+						<NavItem href="/photos">Photos</NavItem>
+						<NavItem href="/about">About</NavItem>
 					</ul>
 				</div>
 			</div>

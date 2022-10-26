@@ -1,20 +1,28 @@
 <script>
 	export let data;
+	import FrontPageSection from '$lib/components/FrontPageSection.svelte';
 	import ArticleList from '$lib/components/ArticleList.svelte';
 	let numArticlesToShow = 3;
 	let recentArticles = data.articles.slice(0, numArticlesToShow);
 </script>
 
 <div class="front-page-items">
+	<!--
 	<section class="latest-articles container-md">
-		<h2 class="mb-6">Recent Blog Posts</h2>
+		<h2 class="mb-6">Recent Blog</h2>
 		<ArticleList articleList={recentArticles} />
 
 		<div>
 			<a class="nav-button" href="/blog/">See More</a>
 		</div>
 	</section>
+	-->
 
+	<FrontPageSection hrefViewAll="/blog/" title="Blog Posts">
+		<ArticleList articleList={recentArticles} />
+	</FrontPageSection>
+
+	<!--
 	<section class="recent-photos container-md">
 		<h2 class="mb-8">My Photography</h2>
 
@@ -22,4 +30,10 @@
 			<a class="nav-button" href="/photos/">See More</a>
 		</div>
 	</section>
+
+	-->
+
+	<FrontPageSection hrefViewAll="/blog/" title="Photography">
+		<ArticleList articleList={recentArticles} />
+	</FrontPageSection>
 </div>

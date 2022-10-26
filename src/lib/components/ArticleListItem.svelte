@@ -7,7 +7,11 @@
 	import { getReadableDate } from '$lib/utils';
 </script>
 
+<!-- 
 <li class="articlelist-item {!isLastArticle ? 'articlelist-item-divider' : ''}">
+
+-->
+<li class="articlelist-item">
 	<div class="articlelist-item-header">
 		<time class="articlelist-item-date">
 			{getReadableDate(date)}

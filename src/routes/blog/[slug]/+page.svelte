@@ -1,23 +1,19 @@
 <script>
 	export let data;
-	import { getReadableDate } from '$lib/utils';
+	import ArticleBodyText from '$lib/components/ArticleBodyText.svelte';
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
 
 	let title = data.articleInfo.title;
 	let description = data.articleInfo.description;
 	let content = data.articleContent;
 	let date = data.articleInfo.date;
+	let dateUpdated = data.articleInfo.date_updated;
 </script>
 
 <article>
-	<div class="container-md article-header">
-		<h1>{title}</h1>
-		<p class="article-description">
-			{description}
-		</p>
-		<p>{getReadableDate(date)}</p>
-	</div>
+	<ArticleHeader {title} {description} {date} {dateUpdated} />
 
-	<article class="article-body">
+	<ArticleBodyText>
 		<svelte:component this={content} />
-	</article>
+	</ArticleBodyText>
 </article>

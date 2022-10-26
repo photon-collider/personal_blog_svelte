@@ -3,7 +3,6 @@ title: Rethinking My Relationship with Instagram
 date: 2021-01-08
 tags: ['personal', 'social-media', 'site-update']
 description: Examining how I've used Instagram in the past and my newfound desire to start sharing my photography on my website.
-permalink: blog/{{title | slug}}/
 imagebucket: 'article_images/p4_rethinking_instagram'
 header_image: 'p4_rethinking_instagram'
 ---
@@ -20,11 +19,13 @@ imageName={headerImageName}
 imageCopyrightText=''
 altText="A neon sign in the dark that resembles an Instagram notification showing 0 likes."
 caption=''>
-<span slot="caption">Photo by <a href="https://unsplash.com/@prateekkatyal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Prateek Katyal</a> on <a href="https://unsplash.com/s/photos/instagram?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span slot="caption">
+
+Photo by <a href="https://unsplash.com/@prateekkatyal?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Prateek Katyal</a> on <a href="https://unsplash.com/s/photos/instagram?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+
+</span>
 
 </ArticlePhoto>
-
-<section class="container-md">
 
 For as long as I can remember, my relationship with Instagram has always obeyed a boom and bust cycle. There are days when I happily use the app. On such occasions, I enjoy scrolling through a bottomless feed of pictures posted by my friends and my favorite photographers, and sharing my photos. These moments become eclipsed by periods where I'd rather have nothing to do with Instagram.
 
@@ -43,5 +44,3 @@ The boom and bust cycle partly persists because I enjoy posting new photos. My p
 I recently decided to start sharing my photography on my website. Here, I don't have to worry about navigating through predatory cues designed to get me hooked on performing certain behaviors. But I don't plan to get rid of my Instagram page yet as it still possesses sentimental value. It's more likely in the future that I will be using Instagram less frequently.
 
 Surprisingly, I've found it refreshing to post photos on my website. The experience of sharing my images without expecting to receive likes feels more organic. It's almost as though a weight has been lifted off my shoulders. I expect that the photo gallery on my website will eventually overshadow my Instagram page. It's hard to pinpoint exactly why, but I strongly feel that the gallery on my website will also be more authentic.
-
-</section>

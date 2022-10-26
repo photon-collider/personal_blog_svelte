@@ -1,4 +1,6 @@
 <script>
+	import { fade } from 'svelte/transition';
+
 	//source URL for image file host
 	export let imageHostRoot = 'https://banthonio.nyc3.digitaloceanspaces.com';
 	//sub folder within stored images
@@ -20,6 +22,8 @@
 
 	//set to false if this is a portrait or vertical image
 	export let isLandscape = true;
+
+	const duration = 200;
 </script>
 
 <div class="photo-container">

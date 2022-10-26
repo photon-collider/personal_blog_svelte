@@ -9,14 +9,12 @@
 
 <ul class="articlelist">
 	{#each articleList as article, articleID}
-		<li class="articlelist-item">
-			<ArticleListItem
-				path={article.path}
-				title={article.meta.title}
-				description={article.meta.description}
-				date={article.meta.date}
-				isLastArticle={articleID === numArticles - 1}
-			/>
-		</li>
+		<ArticleListItem
+			path={article.path}
+			title={article.meta.title}
+			description={article.meta.description}
+			date={article.meta.date}
+			isLastArticle={articleID === numArticles - 1}
+		/>
 	{/each}
 </ul>

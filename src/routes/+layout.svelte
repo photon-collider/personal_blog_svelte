@@ -2,6 +2,8 @@
 	import { fade } from 'svelte/transition';
 	export let data;
 	import '$lib/styles/base.css';
+	import '$lib/styles/prism.css';
+	//import '$lib/styles/katex.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import ArticlePhoto from '$lib/components/ArticlePhoto.svelte';

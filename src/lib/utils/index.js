@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-//import { katex } from 'katex';
+import katex from 'katex';
 
 // TODO: add try-catch in case no posts match a given tag
 // An {#if posts.length} block with an {:else} should do the trick
@@ -43,7 +43,6 @@ export const getHTMLDateString = (dateObj) => {
 	return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
 };
 
-/*
 export const renderLatex = (content) => {
 	return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
 		const cleanEquation = equation.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
@@ -51,4 +50,3 @@ export const renderLatex = (content) => {
 		return katex.renderToString(cleanEquation, { throwOnError: false });
 	});
 };
-*/

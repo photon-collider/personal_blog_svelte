@@ -62,6 +62,13 @@ img {
 	@apply border-gray-300 border-b pt-4 pb-0;
 }
 
+.article-description {
+	@apply text-xl md:text-2xl text-gray-500 my-4 font-semibold;
+}
+
+.article-date {
+	@apply text-gray-500;
+}
 
 .article-body {
 	@apply text-gray-700 pb-12;
@@ -105,6 +112,13 @@ img {
 .nav-item {
 	@apply text-base md:text-lg;
 	@apply text-blue-800;
+	
+}
+
+.nav-item-active {
+	@apply font-bold;
+	@apply underline-offset-8;
+	@apply underline;
 }
 
 .nav-right ul {
@@ -118,9 +132,45 @@ img {
 }
 
 .nav-button {
-	@apply bg-blue-700 text-gray-50;
+	@apply bg-transparent text-blue-700;
 	@apply px-2.5 py-1 font-medium;
 	@apply rounded border-2 border-blue-700;
-	@apply hover:border-blue-900 hover:bg-blue-900;
-	@apply text-sm md:text-lg;
+	@apply hover:border-blue-700 hover:bg-blue-700 hover:text-gray-100;
+	@apply transition duration-150 ease-out hover:ease-in;
+	@apply text-sm md:text-lg my-8;
+}
+
+
+.articlelist-item-date {
+	@apply text-gray-500;
+	@apply text-sm;
+}
+
+.articlelist-item-link {
+	@apply text-blue-700 my-0.5;
+}
+
+.articlelist-item {
+	@apply flex flex-col pb-8;
+}
+
+.articlelist-item-description {
+	@apply md:text-lg text-slate-600 text-base my-0 font-normal;
+}
+
+.equation {
+	@apply text-center mb-5;
+	@apply text-base md:text-lg;
+}
+
+
+code.language-text,
+pre.language-text {
+ @apply bg-gray-100 !important;
+ color: #1b1d25 !important;
+}
+
+code.language-text {
+ border:none !important;
+ box-shadow:none !important;
 }

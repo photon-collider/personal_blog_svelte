@@ -5,8 +5,6 @@ date: 2020-11-20
 description: Reflecting on my life under quarantine and the steps I took to find equanimity.
 ---
 
-<section class="container-md">
-
 I did not know what to expect when I first learned that we now had an invisible enemy: COVID-19. It all happened so fast. In March, the constant downpour of news regarding the pandemic had prompted me to shelter in place. Anxiety now lingered in the fresh air every time I needed to venture outside as stores were facing shortages of food and supplies. My thoughts became bleak as I adjusted to feelings of isolation in this new world. Yet, my experiences taught me to make the most of my time in solitude.
 
 My life had been upended by the pandemic. Almost all forms of meaningful social interaction now took place online, making day-to-day interactions with my friends, family, and colleagues less tangible. For several weeks, I did not sleep very well. I also lost a sense of a daily routine as I started working from home. Finding ways to separate my work hours from my personal time proved to be challenging as these two facets of my life were now more closely intertwined, competing to occupy the same space in my apartment. What was I going to do to find balance?
@@ -20,5 +18,3 @@ First, I envisioned myself developing as a writer whilst honing my talents in ph
 Furthermore, I reorganized my daily schedule to focus more on self-care. I now went on long walks each morning to energize myself before work and catch some sunlight which I sorely lacked. Given that I was spending most of my time indoors, I devoted more effort towards keeping my apartment clean and free of clutter. In addition, I set aside time to read engaging long-form essays and write in my journal regularly. These changes helped me nurture my mental health, especially on the most difficult days.
 
 In solitude, I learned to become more intentional with my time. I examined my need for fulfillment and opted to invest time towards becoming a writer. This pursuit encouraged me to launch this website to write about my progress in photography and share my musings. I also learned to prioritize taking better care of myself. While it remains tough to maintain an active social life, I take solace in knowing that things will not remain this way forever as the pandemic will eventually come to pass.
-
-</section>

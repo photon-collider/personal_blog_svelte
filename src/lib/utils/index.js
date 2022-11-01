@@ -1,13 +1,14 @@
 import { DateTime } from 'luxon';
 import katex from 'katex';
+import slugify from 'slugify';
+import photoFeed from '$lib/data/photofeed';
 
 // TODO: add try-catch in case no posts match a given tag
 // An {#if posts.length} block with an {:else} should do the trick
 export const fetchMarkdownArticles = async (sorted = true) => {
 	const allArticleFiles = import.meta.glob('/src/routes/blog/*.md');
 	const iterableArticleFiles = Object.entries(allArticleFiles);
-	console.log('here');
-	console.log(allArticleFiles);
+
 	const allArticles = await Promise.all(
 		iterableArticleFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
@@ -29,6 +30,10 @@ export const fetchMarkdownArticles = async (sorted = true) => {
 	}
 
 	return allArticles;
+};
+
+export const fetchPhotoFeed = async () => {
+	return photoFeed.map((d) => ({ ...d, slug: slugify(d.title) }));
 };
 
 export const getReadableDate = (date) => {

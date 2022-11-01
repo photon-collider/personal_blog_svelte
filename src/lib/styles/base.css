@@ -111,12 +111,12 @@ img {
 
 .nav-item {
 	@apply text-base md:text-lg;
-	@apply text-blue-800;
+	@apply text-blue-800/50;
 	
 }
 
 .nav-item-active {
-	@apply font-bold;
+	@apply text-blue-800/100;
 	@apply underline-offset-8;
 	@apply underline;
 }
@@ -129,6 +129,7 @@ img {
 .nav-right .nav-item {
 	@apply my-4 ml-3;
 	@apply md:ml-5;
+	@apply hover:text-blue-700
 }
 
 .nav-button {
@@ -173,4 +174,24 @@ pre.language-text {
 code.language-text {
  border:none !important;
  box-shadow:none !important;
+}
+
+.photogrid {
+	@apply grid grid-cols-3 gap-2 md:gap-5 md:grid-cols-4;
+	@apply my-12;
+}
+
+.photogrid-item {
+	@apply hover:shadow-xl;
+	@apply hover:scale-[1.05];
+	@apply transition duration-150 ease-out hover:ease-in;
+
+}
+
+.photogrid-item img {
+	@apply rounded;
+}
+
+#home {
+	@apply text-blue-800;
 }

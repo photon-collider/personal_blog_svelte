@@ -2,9 +2,21 @@
 	export let data;
 	import FrontPageSection from '$lib/components/FrontPageSection.svelte';
 	import ArticleList from '$lib/components/ArticleList.svelte';
+	import photoFeed from '$lib/data/photofeed.json';
+	import PhotoGrid from '$lib/components/PhotoGrid.svelte';
 	let numArticlesToShow = 3;
+
+	let w = 0;
+	let numPhotosToShow = 6;
+
+	$: outerWidth = 0;
+	$: numPhotosToShow = outerWidth > 768 ? 8 : 6;
+
 	let recentArticles = data.articles.slice(0, numArticlesToShow);
+	$: recentPhotos = data.photoFeed.slice(0, numPhotosToShow);
 </script>
+
+<svelte:window bind:outerWidth />
 
 <div class="front-page-items">
 	<!--
@@ -33,7 +45,7 @@
 
 	-->
 
-	<FrontPageSection hrefViewAll="/blog/" title="Photography">
-		<ArticleList articleList={recentArticles} />
+	<FrontPageSection hrefViewAll="/photos/" title="Photography">
+		<PhotoGrid photoGridItems={recentPhotos} />
 	</FrontPageSection>
 </div>

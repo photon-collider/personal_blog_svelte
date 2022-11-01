@@ -3,7 +3,6 @@ title: Building a Simple Sentiment Classifier
 description: How to train a linear model to perform sentiment analysis.
 date: 2021-02-13
 tags: ['machine-learning', 'nlp']
-permalink: blog/{{title | slug}}/
 ---
 
 <script>
@@ -673,7 +672,6 @@ jg.fig.subplots_adjust(top=0.9)
 After creating the plot shown below, I noted that the two features were correlated. This finding suggested that many words in the frequency dictionaries occurred at equal frequencies in the positive and in the negative reviews. It was also clear that it would be challenging to discriminate between positive and negative reviews using these features.
 
 <img src="https://banthonio.nyc3.digitaloceanspaces.com/article_images/p6_building_simple_sentiment_classifier/joint_plot_train_data.svg" alt="plot of the training data in feature space" class="plot-figure">
-
 
 I also plotted the testing set. This plot bore some similarities with that of the training set. In particular, the same correlation between <code class="language-text">pos_freq</code> and <code class="language-text">neg_freq</code> was present.
 

@@ -3,7 +3,6 @@ title: Sentiment Analysis with Naive Bayes
 description: How to implement sentiment analysis using a naive Bayes classifier.
 date: 2021-07-24
 tags: ['machine-learning', 'nlp', 'statistics']
-permalink: blog/{{title | slug}}/
 imagebucket: 'article_images/p8_naive_bayes'
 header_image: 'copyright-bryan-anthonio_com-curiosity'
 ---

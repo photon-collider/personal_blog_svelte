@@ -13,9 +13,9 @@
 	<div>
 		<slot />
 		<div class="flex justify-center">
-			<button>
-				<a class="nav-button" href={hrefViewAll}>View All</a>
-			</button>
+			<a href={hrefViewAll} class="nav-button">
+				<button> View All </button>
+			</a>
 		</div>
 	</div>
 </section>

@@ -1,6 +1,8 @@
 <script>
 	import { DateTime } from 'luxon';
 	let currentYear = DateTime.now().year;
+
+	import { onDestroy } from 'svelte';
 </script>
 
 <footer class="bg-gray-100">

@@ -6,15 +6,19 @@
 	//import '$lib/styles/katex.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import ArticlePhoto from '$lib/components/ArticlePhoto.svelte';
+
+	const transitionIn = { delay: 150, duration: 150 };
+	const transitionOut = { duration: 100 };
 </script>
 
-<Header />
+<div>
+	<Header />
 
-{#key data.currentRoute}
-	<main in:fade={{ duration: 100, delay: 100 }} out:fade={{ duration: 100 }}>
-		<slot />
-	</main>
-{/key}
+	{#key data.currentRoute}
+		<main in:fade={transitionIn} out:fade={transitionOut}>
+			<slot />
+		</main>
+	{/key}
 
-<Footer />
+	<Footer />
+</div>

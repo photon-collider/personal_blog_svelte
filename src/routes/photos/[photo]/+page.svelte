@@ -9,4 +9,8 @@
 	imageBucket={requestedPhoto.imgBucket}
 	imageName={requestedPhoto.imgName}
 	caption={requestedPhoto.caption}
+	idx={data.idx}
+	endIdx={data.endIdx}
+	prevImgURL={data.prevImgURL}
+	nextImgURL={data.nextImgURL}
 />

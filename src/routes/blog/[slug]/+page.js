@@ -1,12 +1,13 @@
-export async function load({params}){
+import { error } from '@sveltejs/kit';
 
-    const article = await import(`../${params.slug}.md`)
+export async function load({ params }) {
+	const article = await import(`../${params.slug}.md`);
 
-    const articleInfo = article.metadata
-    const articleContent = article.default
+	const articleInfo = article.metadata;
+	const articleContent = article.default;
 
-    return {
-        articleInfo,
-        articleContent
-    }
+	return {
+		articleInfo,
+		articleContent
+	};
 }

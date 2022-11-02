@@ -1,5 +1,5 @@
 <script>
-	import { imageHostRoot } from '$lib/config';
+	import { imgHostRootURL } from '$lib/config';
 	export let imgNamePostfix = '-box';
 	export let imgBucket;
 	export let imgName;
@@ -12,7 +12,7 @@
 	<div class="photogrid-item">
 		<a href={imgHref}>
 			<img
-				src="{imageHostRoot}/{imgBucket}/{imgName}{imgNamePostfix}.{imgFormat}"
+				src="{imgHostRootURL}/{imgBucket}/{imgName}{imgNamePostfix}.{imgFormat}"
 				alt={imgCaption}
 				loading="lazy"
 			/>
@@ -21,7 +21,7 @@
 {:else}
 	<div class="photogrid-item">
 		<img
-			src="{imageHostRoot}/{imgBucket}/{imgName}{imgNamePostfix}.{imgFormat}"
+			src="{imgHostRootURL}/{imgBucket}/{imgName}{imgNamePostfix}.{imgFormat}"
 			alt={imgCaption}
 			loading="lazy"
 		/>

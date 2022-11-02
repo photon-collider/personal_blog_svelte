@@ -19,7 +19,10 @@
 
 	export let altText = '';
 	export let caption;
-
+	export let idx;
+	export let endIdx;
+	export let prevImgURL;
+	export let nextImgURL;
 	const duration = 200;
 </script>
 
@@ -35,6 +38,24 @@
 	<div class="photo-caption">
 		{caption}
 		<slot name="caption" />
+	</div>
+
+	<div class="photopage-nav">
+		<div>
+			{#if idx !== 0}
+				<a class="photogallery-nav" href={prevImgURL}>prev</a>
+			{/if}
+		</div>
+
+		{#if idx !== 0 && idx !== endIdx}
+			<div class="photopage-nav-divider">/</div>
+		{/if}
+
+		{#if idx !== endIdx}
+			<div>
+				<a class="photogallery-nav" href={nextImgURL}>next</a>
+			</div>
+		{/if}
 	</div>
 </div>
 

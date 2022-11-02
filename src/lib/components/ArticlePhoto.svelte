@@ -1,8 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-
-	//source URL for image file host
-	export let imageHostRoot = 'https://banthonio.nyc3.digitaloceanspaces.com';
+	import { imgHostRootURL } from '$lib/config';
 	//sub folder within stored images
 	export let imageBucket;
 
@@ -11,7 +9,7 @@
 
 	let fullImageName = `${imageCopyrightText}${imageName}`;
 
-	let imageBucketURL = `${imageHostRoot}/${imageBucket}`;
+	let imageBucketURL = `${imgHostRootURL}/${imageBucket}`;
 
 	let largeImageURL = `${imageBucketURL}/${fullImageName}-lg.jpeg`;
 	let mediumImageURL = `${imageBucketURL}/${fullImageName}-md.jpeg`;

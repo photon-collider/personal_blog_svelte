@@ -188,9 +188,37 @@ code.language-text {
 
 }
 
+.photo-caption {
+	@apply text-gray-500 pt-2 text-sm md:text-base font-medium;
+	@apply px-5 xl:px-0;
+}
+
 .photogrid-item img {
 	@apply rounded;
 }
+
+
+.photopage {
+	@apply flex flex-row justify-center;
+}
+
+.photopage-date {
+	@apply mb-6 text-center; 
+}
+
+.photopage-nav {
+	@apply w-1/12 mx-auto my-6;
+	@apply flex flex-row justify-center items-center;
+}
+
+.photopage-nav-divider {
+	@apply mx-2;
+}
+
+.photogallery-nav {
+	@apply text-blue-700 font-medium;
+}
+
 
 #home {
 	@apply text-blue-800;

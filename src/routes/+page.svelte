@@ -2,7 +2,6 @@
 	export let data;
 	import FrontPageSection from '$lib/components/FrontPageSection.svelte';
 	import ArticleList from '$lib/components/ArticleList.svelte';
-	import photoFeed from '$lib/data/photofeed.json';
 	import PhotoGrid from '$lib/components/PhotoGrid.svelte';
 	let numArticlesToShow = 3;
 

@@ -5,31 +5,31 @@ import photoFeed from '$lib/data/photofeed';
 
 // TODO: add try-catch in case no posts match a given tag
 // An {#if posts.length} block with an {:else} should do the trick
-export const fetchMarkdownArticles = async (sorted = true) => {
-	const allArticleFiles = import.meta.glob('/src/routes/blog/*.md');
+export const fetchArticles = async (tag = '') => {
+	const allArticleFiles = import.meta.glob('$lib/articles/*.md');
 	const iterableArticleFiles = Object.entries(allArticleFiles);
 
 	const allArticles = await Promise.all(
 		iterableArticleFiles.map(async ([path, resolver]) => {
 			const { metadata } = await resolver();
-			const articlePath = path.slice(11, -3);
+			const slug = path.split('/').pop().slice(0, -3);
 
 			return {
-				meta: metadata,
-				path: articlePath
+				...metadata,
+				slug
 			};
 		})
 	);
 
-	if (sorted) {
-		const sortedArticles = allArticles.sort((a, b) => {
-			return new Date(b.meta.date) - new Date(a.meta.date);
-		});
+	let sortedArticles = allArticles.sort((a, b) => {
+		return new Date(b.date) - new Date(a.date);
+	});
 
-		return sortedArticles;
+	if (tag) {
+		sortedArticles = sortedArticles.filter((article) => article.tags.includes(tag));
 	}
 
-	return allArticles;
+	return sortedArticles;
 };
 
 export const fetchPhotoFeed = async () => {

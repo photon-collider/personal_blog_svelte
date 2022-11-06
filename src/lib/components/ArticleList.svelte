@@ -1,20 +1,17 @@
 <script>
 	export let articleList;
-	import { getReadableDate } from '$lib/utils';
-	import { loop_guard } from 'svelte/internal';
 	import ArticleListItem from './ArticleListItem.svelte';
 
 	let numArticles = articleList.length;
 </script>
 
-<ul class="articlelist">
-	{#each articleList as article, articleID}
+<div class="flex flex-col">
+	{#each articleList as article}
 		<ArticleListItem
-			path={article.path}
-			title={article.meta.title}
-			description={article.meta.description}
-			date={article.meta.date}
-			isLastArticle={articleID === numArticles - 1}
+			slug={article.slug}
+			title={article.title}
+			description={article.description}
+			date={article.date}
 		/>
 	{/each}
-</ul>
+</div>

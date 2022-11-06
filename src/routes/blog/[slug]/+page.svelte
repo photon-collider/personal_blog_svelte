@@ -1,19 +1,22 @@
 <script>
-	export let data;
 	import ArticleBodyText from '$lib/components/ArticleBodyText.svelte';
 	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import ArticleFooter from '../../../lib/components/ArticleFooter.svelte';
 
-	let title = data.articleInfo.title;
-	let description = data.articleInfo.description;
-	let content = data.articleContent;
-	let date = data.articleInfo.date;
-	let dateUpdated = data.articleInfo.date_updated;
+	export let data;
+	const { title, date, description, dateUpdated, tags } = data.meta;
 </script>
+
+<svelte:head>
+	<title>{title} | Bryan Anthonio</title>
+</svelte:head>
 
 <article>
 	<ArticleHeader {title} {description} {date} {dateUpdated} />
 
 	<ArticleBodyText>
-		<svelte:component this={content} />
+		{@html data.articleContent}
 	</ArticleBodyText>
+
+	<ArticleFooter {tags} />
 </article>

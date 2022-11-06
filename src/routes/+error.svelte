@@ -4,7 +4,11 @@
 
 <section class="container-md">
 	<h2>{$page.status}</h2>
-	<p class="subhead">{$page.error.message}</p>
+	{console.log($page.error.message)}
+
+	{#if $page.error.message !== null}
+		<p class="subhead">{$page.error.message}</p>
+	{/if}
 
 	<p><strong>Sorry!</strong> Maybe try one of these links?</p>
 	<ul>

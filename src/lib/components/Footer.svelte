@@ -9,10 +9,10 @@
 	<nav class="container-md footer-item footer-nav">
 		<div class="footer-links">
 			<a href="/blog/" class="underline-effect nav-item">Blog</a>
-
 			<a href="/photos/" class="underline-effect nav-item">Photos</a>
+			<a href="/about/" class="underline-effect nav-item">About</a>
 
-			<a href="/feed/feed.xml" class="underline-effect nav-item">RSS</a>
+			<a href="/api/blog-rss.xml" class="underline-effect nav-item">RSS</a>
 		</div>
 	</nav>
 

@@ -1,4 +1,4 @@
-import { fetchMarkdownArticles } from '$lib/utils';
+import { fetchArticles } from '$lib/utils';
 
 const siteURL = 'https://bryananthonio.com';
 const siteTitle = 'Your site title here';
@@ -7,10 +7,9 @@ const siteDescription = 'Your site description here';
 export const prerender = true;
 
 export const GET = async () => {
-	const allArticles = await fetchMarkdownArticles();
-	const sortedArticles = allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+	const allArticles = await fetchArticles();
 
-	const body = render(sortedArticles);
+	const body = render(allArticles);
 	const options = {
 		headers: {
 			'Cache-Control': 'max-age=0, s-maxage=3600',
@@ -32,11 +31,11 @@ const render = (articles) =>
             ${articles
 							.map(
 								(article) => `<item>
-                    <guid isPermaLink="true">${siteURL}/blog/${article.path}</guid>
-                    <title>${article.meta.title}</title>
-                    <link>${siteURL}/blog/${article.path}</link>
-                    <description>${article.meta.title}</description>
-                    <pubDate>${new Date(article.meta.date).toUTCString()}</pubDate>
+                    <guid isPermaLink="true">${siteURL}/blog/${article.slug}</guid>
+                    <title>${article.title}</title>
+                    <link>${siteURL}/blog/${article.slug}</link>
+                    <description>${article.title}</description>
+                    <pubDate>${new Date(article.date).toUTCString()}</pubDate>
                     </item>`
 							)
 							.join('')}

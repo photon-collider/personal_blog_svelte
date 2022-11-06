@@ -18,8 +18,9 @@
 	export let altText = '';
 	export let caption;
 
-	//set to false if this is a portrait or vertical image
-	export let isLandscape = true;
+	if (!altText) {
+		altText = caption;
+	}
 
 	const duration = 200;
 </script>
@@ -33,10 +34,12 @@
 		loading="lazy"
 	/>
 
-	<div class="photo-caption">
-		{caption}
-		<slot name="caption" />
-	</div>
+	{#if caption}
+		<div class="photo-caption">
+			{caption}
+			<slot name="caption" />
+		</div>
+	{/if}
 </div>
 
 <style>

@@ -35,7 +35,7 @@
 		loading="lazy"
 	/>
 
-	<div class="photo-caption">
+	<div class="photo-caption photogallery-caption">
 		{caption}
 		<slot name="caption" />
 	</div>

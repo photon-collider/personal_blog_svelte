@@ -3,7 +3,8 @@
 	import FrontPageSection from '$lib/components/FrontPageSection.svelte';
 	import ArticleList from '$lib/components/ArticleList.svelte';
 	import PhotoGrid from '$lib/components/PhotoGrid.svelte';
-	let numArticlesToShow = 3;
+	import { numArticlesToShow } from '$lib/config';
+	import HeroBanner from '$lib/components/HeroBanner.svelte';
 
 	let w = 0;
 	let numPhotosToShow = 6;
@@ -17,34 +18,18 @@
 
 <svelte:window bind:outerWidth />
 
-<div class="front-page-items">
-	<!--
-	<section class="latest-articles container-md">
-		<h2 class="mb-6">Recent Blog</h2>
-		<ArticleList articleList={recentArticles} />
+<svelte:head>
+	<title>Bryan Anthonio</title>
+</svelte:head>
 
-		<div>
-			<a class="nav-button" href="/blog/">See More</a>
-		</div>
-	</section>
-	-->
+<HeroBanner />
 
-	<FrontPageSection hrefViewAll="/blog/" title="Blog Posts">
+<section class="front-page-items">
+	<FrontPageSection hrefViewAll="/blog/" title="Recent Blog Posts">
 		<ArticleList articleList={recentArticles} />
 	</FrontPageSection>
 
-	<!--
-	<section class="recent-photos container-md">
-		<h2 class="mb-8">My Photography</h2>
-
-		<div class="mt-8">
-			<a class="nav-button" href="/photos/">See More</a>
-		</div>
-	</section>
-
-	-->
-
-	<FrontPageSection hrefViewAll="/photos/" title="Photography">
+	<FrontPageSection hrefViewAll="/photos/" title="Latest Photography">
 		<PhotoGrid photoGridItems={recentPhotos} />
 	</FrontPageSection>
-</div>
+</section>

@@ -10,7 +10,6 @@
 			imgName={item.imgName}
 			imgCaption={item.caption}
 			imgHref={'/photos/' + item.slug}
-			imgIdx={idx}
 		/>
 	{/each}
 </div>

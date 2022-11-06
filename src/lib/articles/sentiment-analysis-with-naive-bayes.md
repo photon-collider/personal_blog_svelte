@@ -7,10 +7,15 @@ imagebucket: 'article_images/p8_naive_bayes'
 header_image: 'copyright-bryan-anthonio_com-curiosity'
 ---
 
-<svelte:head>
+<script>
+  import ArticlePhoto from '$lib/components/ArticlePhoto.svelte'
+</script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
-</svelte:head>
+<ArticlePhoto
+imageBucket="article_images/p8_naive_bayes"
+imageName="curiosity"
+caption="Curiosity"
+/>
 
 [Naive Bayes classifiers](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) are used in various natural language processing tasks. These include [sentiment analysis](https://arxiv.org/abs/1610.09982), [spam filtering](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering), and other types of document classifications. In this post, I will present Bayes' theorem, the building block of naive Bayes classifiers, describe how naive Bayes classifiers work, and show how to implement these algorithms.
 

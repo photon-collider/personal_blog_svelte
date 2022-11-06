@@ -1,5 +1,5 @@
 ---
-tags: personal
+tags: ['personal']
 title: Making the Most of My Solitude
 date: 2020-11-20
 description: Reflecting on my life under quarantine and the steps I took to find equanimity.

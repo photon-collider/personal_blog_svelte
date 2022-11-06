@@ -6,7 +6,7 @@
 	export let dateUpdated;
 </script>
 
-<header class="container-md article-header">
+<div class="container-md article-header">
 	<h1>{title}</h1>
 	<p class="article-description">
 		{description}
@@ -16,4 +16,4 @@
 	{#if dateUpdated}
 		<p class="article-date"><b>Updated</b> {getReadableDate(dateUpdated)}</p>
 	{/if}
-</header>
+</div>

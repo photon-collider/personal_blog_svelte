@@ -3,8 +3,6 @@ import adapter from '@sveltejs/adapter-static';
 import sveltePreprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 import autoprefixer from 'autoprefixer';
-import rehypeKatexSvelte from 'rehype-katex-svelte';
-import remarkMath from 'remark-math';
 
 import { mdsvex_config } from './mdsvex.config.js';
 
@@ -22,15 +20,10 @@ const config = {
 				plugins: [autoprefixer]
 			}
 		}),
-		/*
-		mdsvex({
-			remarkPlugins: [remarkMath],
-			rehypePlugins: [rehypeKatexSvelte],
-			extensions: ['.md']
-		})
-		*/
 		mdsvex(mdsvex_config)
-	]
+	],
+
+	entries: ['*', 'blog/*', 'blog/tag/*', '/photos/*', '/api/articles.json', '/api/photos.json']
 };
 
 export default config;

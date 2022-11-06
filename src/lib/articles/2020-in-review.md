@@ -1,6 +1,6 @@
 ---
 title: '2020: My Year in Review'
-tags: new-year
+tags: ['new-year']
 description: Reviewing my personal highlights from 2020 and my plans for 2021.
 date: 2021-01-16
 imagebucket:

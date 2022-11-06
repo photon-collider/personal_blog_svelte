@@ -1,5 +1,5 @@
 ---
-tags: site-update
+tags: ['site-update']
 title: Hello, World!
 date: 2020-10-31
 description: Here's a few words on launching this blog.

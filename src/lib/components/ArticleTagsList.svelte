@@ -5,9 +5,9 @@
 <div class="tags-container">
 	<span class="tag-label">TAGS:</span>
 
-	<ul class="tags">
+	<div class="tags">
 		{#each tags as tag}
-			<li><a class="tag" href="/blog/tag/{tag}">{tag}</a></li>
+			<div class="tag-container"><a class="tag" href="/blog/tag/{tag}">{tag}</a></div>
 		{/each}
-	</ul>
+	</div>
 </div>

@@ -183,11 +183,17 @@ img {
 }
 
 .tags {
-	@apply flex flex-row ;
+	@apply flex flex-row flex-wrap;
+}
+
+
+.tag-container {
+	@apply mb-3;
 }
 
 .tag {
 	@apply ml-3 px-2 py-1 text-gray-600/80 bg-gray-100 inline rounded;
+
 }
 
 .navbar {

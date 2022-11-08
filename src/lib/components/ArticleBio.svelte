@@ -8,6 +8,12 @@
 	</div>
 
 	<div class="bio-image-container">
-		<img class="bio-pic" src="/images/bio_pic.jpg" alt="Portrait of Bryan Anthonio" />
+		<img
+			class="bio-pic"
+			src="/images/bio_pic.jpg"
+			alt="Portrait of Bryan Anthonio"
+			width="150"
+			height="150"
+		/>
 	</div>
 </div>

@@ -5,6 +5,7 @@ date: 2021-07-24
 tags: ['machine-learning', 'nlp', 'statistics']
 imagebucket: 'article_images/p8_naive_bayes'
 header_image: 'copyright-bryan-anthonio_com-curiosity'
+renderEqs: true
 ---
 
 <script>

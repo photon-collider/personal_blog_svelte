@@ -80,8 +80,6 @@ img {
 	@apply py-4;
 }
 
-
-
 .container-md {
 	@apply max-w-3xl container mx-auto px-4 md:px-6 xl:px-0; 
 }
@@ -94,7 +92,7 @@ img {
 }
 
 .article-date {
-	@apply text-gray-600/80;
+	@apply text-gray-600/90;
 }
 
 .article-body {
@@ -102,7 +100,7 @@ img {
 }
 
 .article-body a {
-	@apply text-blue-600/80 hover:text-blue-700 font-bold underline;
+	@apply text-blue-600 hover:text-blue-800 font-bold underline;
 }
 
 .article-body h2 {
@@ -192,7 +190,7 @@ img {
 }
 
 .tag {
-	@apply ml-3 px-2 py-1 text-gray-600/80 bg-gray-100 inline rounded;
+	@apply ml-3 px-2 py-1 text-gray-600 bg-gray-100 inline rounded;
 
 }
 
@@ -203,7 +201,7 @@ img {
 
 .nav-item {
 	@apply text-base md:text-lg;
-	@apply text-gray-800/50;
+	@apply text-gray-800/70;
 	
 }
 
@@ -238,7 +236,7 @@ img {
 }
 
 .articlelist-item-date {
-	@apply text-gray-600/80;
+	@apply text-gray-600/90;
 	@apply text-xs md:text-sm;
 }
 
@@ -353,10 +351,10 @@ code.language-text {
 
 #copyright {
 	@apply text-sm md:text-base;
-	@apply text-gray-600/80;
+	@apply text-gray-600;
 }
 
 #copyright a {
-	@apply text-blue-600/80;
+	@apply text-blue-600;
 }
 

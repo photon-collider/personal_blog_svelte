@@ -3,6 +3,7 @@ tags: ['machine-learning', 'nlp']
 title: Building a Simple Sentiment Classifier
 description: How to train a linear model to perform sentiment analysis.
 date: 2021-02-13
+renderEqs: true
 ---
 
 <script>

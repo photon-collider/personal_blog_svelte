@@ -16,12 +16,6 @@
 <svelte:head>
 	<meta data-key="description" name="description" content={siteDescription} />
 	<meta name="author" content="Bryan Anthonio" />
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css"
-		integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/"
-		crossorigin="anonymous"
-	/>
 </svelte:head>
 
 <div class="content">

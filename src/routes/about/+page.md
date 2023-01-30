@@ -5,7 +5,7 @@
 
     <h1>About Me</h1>
 
-    <div class="bio-pic-about-me">
+    <div class="flex flex-col items-center my-8">
     	<img
     		src="/images/bio_pic.jpg"
     		alt="Portrait of Bryan Anthonio"

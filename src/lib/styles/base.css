@@ -11,12 +11,14 @@ html {
 
 html,
 body {
-	/*
-	position: relative;
-	min-height:100vh;
-	*/
 	height: 100%;
 	@apply bg-slate-50/20;
+}
+
+#svelte {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 body {
@@ -30,12 +32,10 @@ body {
 }
 
 footer {
-	/* *position: absolute; */
 	width: 100%;
 	height: 200px;
 	flex-shrink: 0;
 	padding: 20px;
-	@apply flex flex-col justify-center;
 }
 
 
@@ -55,56 +55,9 @@ h3 {
 	@apply text-gray-600 mb-5;
 }
 
-
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-	max-width: 100%;
-}
-
-
 .container-md {
 	@apply max-w-3xl container mx-auto px-4 md:px-6 xl:px-0;
 }
-
-.article-footer {
-	@apply py-12;
-}
-
-.article-bio {
-	@apply border-y py-12;
-	@apply flex flex-col-reverse;
-	@apply md:flex-row;
-}
-
-.bio-image-container {
-	@apply flex justify-center;
-	@apply mb-8 md:mb-0;
-	width:100%;
-}
-
-.bio-text-container {
-	@apply flex items-center;
-}
-
-.bio-text {
-	@apply text-gray-600 text-base;
-	@apply inline align-baseline;
-	@apply mr-2 italic;
-}
-
-.bio-text a {
-	@apply text-blue-600
-}
-
-.bio-pic {
-	max-width:150px;
-	max-height:150px;
-	@apply rounded-full;
-}
-
 
 .equation {
 	@apply text-center mb-5;
@@ -117,76 +70,10 @@ img {
 code.language-text,
 pre.language-text {
 	@apply bg-gray-100 !important;
-	color:#1b1d25 !important;
+	color: #1b1d25 !important;
 }
 
 code.language-text {
-	border:none !important;
-	box-shadow:none !important;
-}
-
-
-
-.photo-caption {
-	@apply text-gray-700/80 pt-2 text-sm md:text-base font-light;
-	@apply px-0 italic;
-}
-
-
-
-
-.photopage {
-	@apply flex flex-row justify-center;
-}
-
-.photopage-date {
-	@apply mb-6 text-center;
-}
-
-.photopage-nav {
-	@apply w-1/12 mx-auto my-6;
-	@apply flex flex-row justify-center items-center;
-}
-
-.photopage-nav-divider {
-	@apply mx-2;
-}
-
-.photogallery-caption {
-	@apply px-5 md:px-0;
-}
-
-.photogallery-nav {
-	@apply text-gray-600/80 font-medium;
-}
-
-.bio-pic-about-me {
-	@apply flex flex-col items-center my-8;
-}
-
-.hero-banner {
-	@apply flex flex-col md:flex-row-reverse;
-	@apply my-16;
-}
-
-.hero-text {
-	@apply text-gray-600 text-lg md:text-xl;
-	@apply flex flex-col justify-center;
-}
-
-.hero-bio-pic {
-	@apply hover:scale-[1.1] hover:shadow-xl;
-	@apply mb-6 md:mb-0;
-	@apply transition duration-150 ease-out hover:ease-in;
-	@apply justify-center;
-
-}
-
-#copyright {
-	@apply text-sm md:text-base;
-	@apply text-gray-800;
-}
-
-#copyright a {
-	@apply text-blue-800;
+	border: none !important;
+	box-shadow: none !important;
 }

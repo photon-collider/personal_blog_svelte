@@ -15,6 +15,7 @@
 				src="{imgHostRootURL}/{imgBucket}/{imgName}{imgNamePostfix}.{imgFormat}"
 				alt={imgCaption}
 				loading="lazy"
+				class="rounded"
 			/>
 		</a>
 	</div>
@@ -24,6 +25,15 @@
 			src="{imgHostRootURL}/{imgBucket}/{imgName}{imgNamePostfix}.{imgFormat}"
 			alt={imgCaption}
 			loading="lazy"
+			class="rounded"
 		/>
 	</div>
 {/if}
+
+<style lang="postcss">
+	.photogrid-item {
+		@apply hover:shadow-xl;
+		@apply hover:scale-[1.05];
+		@apply transition duration-150 ease-out hover:ease-in;
+	}
+</style>

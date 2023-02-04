@@ -4,7 +4,7 @@
 	export let tags;
 </script>
 
-<aside class="container-md article-footer">
+<aside class="container-md py-12">
 	<ArticleBio />
 	<ArticleTagsList {tags} />
 </aside>

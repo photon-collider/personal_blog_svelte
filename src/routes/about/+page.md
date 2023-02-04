@@ -1,18 +1,16 @@
+<script>
+    import BioPic from '$lib/components/BioPic.svelte'
+</script>
+
+
 <svelte:head>
 
 <title>About | Bryan Anthonio</title>
 </svelte:head>
 
     <h1>About Me</h1>
+    <BioPic wrapperClass="flex justify-center my-8 w-full"/>
 
-    <div class="bio-pic-about-me">
-    	<img
-    		src="/images/bio_pic.jpg"
-    		alt="Portrait of Bryan Anthonio"
-    		class="bio-pic"
-    		loading="lazy"
-    	/>
-    </div>
 
     Hi! I'm Bryan Anthonio. I started this blog to develop the habit of writing more regularly. This, for me, provides a means of sharing my personal interests and chronicling my past experiences. I am also using this website as a way to learn a bit more about web development as I am aiming to add more features to my website in the future.
 

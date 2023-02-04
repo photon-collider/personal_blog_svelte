@@ -6,21 +6,20 @@
 	import { getReadableDate } from '$lib/utils';
 </script>
 
-<!-- 
-<li class="articlelist-item {!isLastArticle ? 'articlelist-item-divider' : ''}">
-
--->
-<div class="articlelist-item">
-	<time class="articlelist-item-date">
+<div class="flex flex-col pb-8">
+	<time class="text-gray-600/90 text-xs md:text-sm">
 		{getReadableDate(date)}
 	</time>
 
-	<a class="articlelist-item-link" href="/blog/{slug}">
+	<a
+		class="text-gray-600/90 my-0.5 hover:underline inline-block text-xl md:text-2xl font-bold"
+		href="/blog/{slug}"
+	>
 		{title}
 	</a>
 
 	{#if description}
-		<p class="articlelist-item-description">
+		<p class="text-sm md:text-base text-gray-600  my-0 font-normal">
 			{description}
 		</p>
 	{/if}

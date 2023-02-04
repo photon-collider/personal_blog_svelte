@@ -26,51 +26,39 @@
 	const duration = 200;
 </script>
 
-<div class="photo-container">
-	<img
-		srcset="{largeImageURL}  1425w,  {mediumImageURL} 1125w, {smallImageURL} 750w"
-		alt={altText}
-		src={smallImageURL}
-		sizes="(max-width: 48rem) 100vw, 72rem"
-		loading="lazy"
-	/>
+<div class="container mx-auto py-8 max-w-max">
+	<figure>
+		<img
+			srcset="{largeImageURL}  1425w,  {mediumImageURL} 1125w, {smallImageURL} 750w"
+			alt={altText}
+			src={smallImageURL}
+			sizes="(max-width: 48rem) 100vw, 72rem"
+			loading="lazy"
+			class="shadow-lg"
+		/>
 
-	<div class="photo-caption photogallery-caption">
-		{caption}
-		<slot name="caption" />
-	</div>
+		<figcaption class="text-gray-700/80 pt-2 text-sm md:text-base font-light italic px-5 md:px-0">
+			{caption}
+			<slot name="caption" />
+		</figcaption>
+	</figure>
 
-	<div class="photopage-nav">
+	<div class="w-1/12 mx-auto my-6 flex flex-row justify-center items-center">
 		<div>
 			{#if idx !== 0}
-				<a class="photogallery-nav" href={prevImgURL}>prev</a>
+				<a class="text-gray-600/80 font-medium" href={prevImgURL}>prev</a>
 			{/if}
 		</div>
 
 		{#if idx !== 0 && idx !== endIdx}
-			<div class="photopage-nav-divider">/</div>
+			<div class="mx-2">/</div>
 		{/if}
 
 		{#if idx !== endIdx}
 			<div>
-				<a class="photogallery-nav" href={nextImgURL}>next</a>
+				<a class="text-gray-600/80 font-medium" href={nextImgURL}>next</a>
 			</div>
 		{/if}
 	</div>
 </div>
 
-<style>
-	.photo-container {
-		@apply container mx-auto py-8;
-		max-width: max-content;
-	}
-
-	.photo-container > img {
-		@apply shadow-lg;
-	}
-
-	.photopage-container {
-		@apply container mx-auto py-8;
-		max-width: max-content;
-	}
-</style>

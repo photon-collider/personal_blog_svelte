@@ -25,7 +25,7 @@
 	const duration = 200;
 </script>
 
-<div class="photo-container">
+<figure class="container mx-auto py-8 max-w-max">
 	<img
 		srcset="{largeImageURL}  1425w,  {mediumImageURL} 1125w, {smallImageURL} 750w"
 		alt={altText}
@@ -35,25 +35,18 @@
 	/>
 
 	{#if caption}
-		<div class="photo-caption">
+		<figcaption class="text-gray-700/80 pt-2 text-sm md:text-base font-light px-0 italic">
 			{caption}
 			<slot name="caption" />
-		</div>
+		</figcaption>
 	{/if}
-</div>
+</figure>
 
 <style>
-	.photo-container {
-		@apply container mx-auto py-8;
-		max-width: max-content;
-	}
-
-	.photo-container > img {
-		@apply shadow-lg;
-	}
-
-	.photopage-container {
-		@apply container mx-auto py-8;
-		max-width: max-content;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-width: 100%;
 	}
 </style>

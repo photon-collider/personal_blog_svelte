@@ -1,12 +1,14 @@
 <script>
 	export let href;
-	import { page } from '$app/stores';
-
-	$: isActive = $page.url.pathname.startsWith(href);
+	export let active;
+	export let leftMargin = true;
 </script>
 
-<li>
-	<a class="nav-item {isActive ? 'nav-item-active' : ''}" {href}>
-		<slot />
-	</a>
-</li>
+<a
+	class="text-base md:text-lg text-gray-800 my-4 
+		{active && 'underline underline-offset-8 decoration-gray-400'} 
+		{leftMargin ? 'ml-3 md:ml-5' : 'mr-3 md:mr-5'} "
+	{href}
+>
+	<slot />
+</a>

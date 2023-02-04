@@ -1,24 +1,26 @@
 <script>
+	import { navFooterItems } from '$lib/config';
+	import NavItemGroup from './NavItemGroup.svelte';
 	import { DateTime } from 'luxon';
 	let currentYear = DateTime.now().year;
 
 	import { onDestroy } from 'svelte';
 </script>
 
-<footer class="bg-gray-100">
-	<nav class="container-md footer-item footer-nav">
-		<div class="footer-links">
-			<a href="/blog/" class="underline-effect nav-item">Blog</a>
-			<a href="/photos/" class="underline-effect nav-item">Photos</a>
-			<a href="/about/" class="underline-effect nav-item">About</a>
-
-			<a href="/api/blog-rss.xml" class="underline-effect nav-item">RSS</a>
-		</div>
+<footer class="bg-gray-100 flex flex-col justify-center">
+	<nav class="container-md py-4">
+		<NavItemGroup items={navFooterItems} leftMargin={false} />
 	</nav>
 
-	<div class="footer-item container-md" id="copyright">
+	<div class="container-md py-4 text-sm md:text-base text-gray-800" id="copyright">
 		© 2020-{currentYear}, Bryan Anthonio. All rights reserved. Built using
 		<a href="https://kit.svelte.dev/">SvelteKit</a>. Hosted on
 		<a href="https://www.netlify.com">Netlify</a>.
 	</div>
 </footer>
+
+<style lang="postcss">
+	#copyright a {
+		@apply text-blue-800;
+	}
+</style>

@@ -6,14 +6,14 @@
 	export let dateUpdated;
 </script>
 
-<div class="container-md article-header">
+<div class="container-md mb-8">
 	<h1>{title}</h1>
-	<p class="article-description">
+	<p class="text-xl md:text-2xl text-gray-500 my-4 font-semibold">
 		{description}
 	</p>
 
-	<p class="article-date"><b>Published</b> {getReadableDate(date)}</p>
+	<p class="text-gray-600/90"><b>Published</b> {getReadableDate(date)}</p>
 	{#if dateUpdated}
-		<p class="article-date"><b>Updated</b> {getReadableDate(dateUpdated)}</p>
+		<p class="text-gray-600/90"><b>Updated</b> {getReadableDate(dateUpdated)}</p>
 	{/if}
 </div>

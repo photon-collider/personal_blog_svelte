@@ -1,14 +1,16 @@
 <script>
 	export let tags;
+	export let titleTop = false;
 </script>
 
-<div class="mt-10 flex flex-row">
-	<span class="font-bold text-gray-600">TAGS:</span>
+<div class="mt-8 flex {titleTop ? 'flex-col' :'flex-row'}">
+	<span class="font-bold text-gray-600 {titleTop ? "mb-4" : "mr-3"} text-base">TAGS{titleTop ? "" : ":"}</span>
 	<div class="flex flex-row flex-wrap">
 		{#each tags as tag}
 			<div class="mb-3">
-				<a class="ml-3 px-2 py-1 text-gray-600 bg-gray-100 inline rounded" href="/blog/tag/{tag}"
-					>{tag}</a
+				<a
+					class="mr-3 px-2 py-1 text-gray-600 text-sm bg-gray-100 inline rounded hover:border-slate-900 hover:border-solid border"
+					href="/blog/tag/{tag}">{tag}</a
 				>
 			</div>
 		{/each}

@@ -10,9 +10,14 @@
 	<title>Blog | Bryan Anthonio</title>
 </svelte:head>
 
-<section class="latest-articles container-md">
+<section class="container-md">
 	<h1 class="mb-6">Blog Posts</h1>
-	<ArticleTagsList tags={articleTags} />
 
-	<ArticleList articleList={articles} />
+	<div class="flex flex-col">
+		<ArticleList articleList={articles} />
+		<div class="mb-8">
+			<ArticleTagsList tags={articleTags} titleTop={true} />
+		</div>
+	</div>
+
 </section>

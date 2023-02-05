@@ -1,12 +1,8 @@
-<section class="container-md">
+<section class="container-md text-gray-600 pb-12 article-text-dark-mode">
 	<slot />
 </section>
 
 <style lang="postcss">
-	section {
-		@apply text-gray-600 pb-12;
-	}
-
 	section :global(a) {
 		@apply text-blue-600 hover:text-blue-800 font-bold underline;
 	}

@@ -12,7 +12,6 @@ html {
 html,
 body {
 	height: 100%;
-	@apply bg-slate-50/20;
 }
 
 #svelte {
@@ -24,6 +23,10 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
+}
+
+body * {
+	@apply transition duration-200;
 }
 
 .content {
@@ -41,18 +44,18 @@ footer {
 
 h1 {
 	@apply text-3xl md:text-5xl font-bold;
-	@apply text-gray-800 mb-5;
+	@apply text-gray-800 mb-5 dark:text-gray-200;
 	line-height: 1.1;
 }
 
 h2 {
 	@apply text-2xl md:text-3xl font-bold;
-	@apply text-gray-700 mb-5;
+	@apply text-gray-700 dark:text-gray-300 mb-5;
 }
 
 h3 {
 	@apply text-xl md:text-2xl font-bold;
-	@apply text-gray-600 mb-5;
+	@apply text-gray-600 dark:text-gray-400 mb-5;
 }
 
 .container-md {
@@ -76,4 +79,16 @@ pre.language-text {
 code.language-text {
 	border: none !important;
 	box-shadow: none !important;
+}
+
+.article-text-dark-mode ul {
+	@apply dark:text-gray-400;
+}
+
+.article-text-dark-mode p {
+	@apply dark:text-gray-400;
+}
+
+.article-text-dark-mode a {
+	@apply dark:text-blue-400 hover:dark:text-blue-400/80;
 }

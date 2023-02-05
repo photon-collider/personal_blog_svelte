@@ -18,6 +18,7 @@
 		const preloadedRoutes = navHeaderItems.map((item) => item.href);
 		preloadCode(...preloadedRoutes);
 	});
+
 </script>
 
 <svelte:head>
@@ -25,13 +26,14 @@
 	<meta name="author" content="Bryan Anthonio" />
 </svelte:head>
 
-<div class="content">
-	<Header />
-	{#key data.path}
-		<main in:fade={transitionIn} out:fade={transitionOut} tabindex="-1">
-			<slot />
-		</main>
-	{/key}
+<div>
+	<div class="content bg-stone-50 dark:bg-stone-900">
+		<Header />
+		{#key data.path}
+			<main in:fade={transitionIn} out:fade={transitionOut} tabindex="-1">
+				<slot />
+			</main>
+		{/key}
+	</div>
+	<Footer />
 </div>
-
-<Footer />

@@ -37,7 +37,7 @@
 			class="shadow-lg"
 		/>
 
-		<figcaption class="text-gray-700/80 pt-2 text-sm md:text-base font-light italic px-5 md:px-0">
+		<figcaption class="text-gray-700/80 dark:text-gray-300 pt-2 text-sm md:text-base font-light italic px-5 md:px-0">
 			{caption}
 			<slot name="caption" />
 		</figcaption>
@@ -46,7 +46,7 @@
 	<div class="w-1/12 mx-auto my-6 flex flex-row justify-center items-center">
 		<div>
 			{#if idx !== 0}
-				<a class="text-gray-600/80 font-medium" href={prevImgURL}>prev</a>
+				<a class="text-gray-600/80 dark:text-gray-400/80 font-medium" href={prevImgURL}>prev</a>
 			{/if}
 		</div>
 
@@ -56,7 +56,7 @@
 
 		{#if idx !== endIdx}
 			<div>
-				<a class="text-gray-600/80 font-medium" href={nextImgURL}>next</a>
+				<a class="text-gray-600/80 dark:text-gray-400/80 font-medium" href={nextImgURL}>next</a>
 			</div>
 		{/if}
 	</div>

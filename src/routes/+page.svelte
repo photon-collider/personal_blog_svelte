@@ -23,7 +23,7 @@
 </svelte:head>
 
 <HeroBanner />
-<section class="front-page-items">
+<section>
 	<FrontPageSection hrefViewAll="/blog/" title="Recent Blog Posts">
 		<ArticleList articleList={recentArticles} />
 	</FrontPageSection>

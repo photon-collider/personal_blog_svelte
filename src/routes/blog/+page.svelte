@@ -19,5 +19,4 @@
 			<ArticleTagsList tags={articleTags} titleTop={true} />
 		</div>
 	</div>
-
 </section>

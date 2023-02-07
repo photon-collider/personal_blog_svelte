@@ -1,7 +1,7 @@
 <script>
 	import NavItem from './NavItem.svelte';
 	export let items;
-	export let leftMargin = true;
+	export let leftMargin = false;
 </script>
 
 <ul class="flex flex-row">

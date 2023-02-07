@@ -2,7 +2,6 @@
     import BioPic from '$lib/components/BioPic.svelte'
 </script>
 
-
 <svelte:head>
 
 <title>About | Bryan Anthonio</title>

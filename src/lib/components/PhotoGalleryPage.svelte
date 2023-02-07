@@ -26,7 +26,7 @@
 	const duration = 200;
 </script>
 
-<div class="container mx-auto py-8 max-w-max">
+<div class="container mx-auto max-w-max py-8">
 	<figure>
 		<img
 			srcset="{largeImageURL}  1425w,  {mediumImageURL} 1125w, {smallImageURL} 750w"
@@ -37,16 +37,18 @@
 			class="shadow-lg"
 		/>
 
-		<figcaption class="text-gray-700/80 dark:text-gray-300 pt-2 text-sm md:text-base font-light italic px-5 md:px-0">
+		<figcaption
+			class="px-5 pt-2 text-sm font-light italic text-gray-700/80 dark:text-gray-300 md:px-0 md:text-base"
+		>
 			{caption}
 			<slot name="caption" />
 		</figcaption>
 	</figure>
 
-	<div class="w-1/12 mx-auto my-6 flex flex-row justify-center items-center">
+	<div class="mx-auto my-6 flex w-1/12 flex-row items-center justify-center">
 		<div>
 			{#if idx !== 0}
-				<a class="text-gray-600/80 dark:text-gray-400/80 font-medium" href={prevImgURL}>prev</a>
+				<a class="font-medium text-gray-600/80 dark:text-gray-400/80" href={prevImgURL}>prev</a>
 			{/if}
 		</div>
 
@@ -56,9 +58,8 @@
 
 		{#if idx !== endIdx}
 			<div>
-				<a class="text-gray-600/80 dark:text-gray-400/80 font-medium" href={nextImgURL}>next</a>
+				<a class="font-medium text-gray-600/80 dark:text-gray-400/80" href={nextImgURL}>next</a>
 			</div>
 		{/if}
 	</div>
 </div>
-

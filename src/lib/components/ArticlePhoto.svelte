@@ -25,7 +25,7 @@
 	const duration = 200;
 </script>
 
-<figure class="container mx-auto py-8 max-w-max">
+<figure class="container mx-auto max-w-max py-8">
 	<img
 		srcset="{largeImageURL}  1425w,  {mediumImageURL} 1125w, {smallImageURL} 750w"
 		alt={altText}
@@ -35,7 +35,7 @@
 	/>
 
 	{#if caption}
-		<figcaption class="text-gray-700/80 pt-2 text-sm md:text-base font-light px-0 italic">
+		<figcaption class="px-0 pt-2 text-sm font-light italic text-gray-700/80 md:text-base">
 			{caption}
 			<slot name="caption" />
 		</figcaption>

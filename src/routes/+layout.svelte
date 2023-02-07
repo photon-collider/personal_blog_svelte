@@ -18,7 +18,6 @@
 		const preloadedRoutes = navHeaderItems.map((item) => item.href);
 		preloadCode(...preloadedRoutes);
 	});
-
 </script>
 
 <svelte:head>

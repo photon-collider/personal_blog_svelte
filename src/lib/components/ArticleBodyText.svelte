@@ -1,10 +1,13 @@
-<section class="container-md text-gray-600 pb-12 article-text-dark-mode">
+<!--
+<section class="container-md article-text-dark-mode pb-12 text-gray-600">
+-->
+<section class="container-md pb-12 prose prose-stone dark:prose-invert">
 	<slot />
 </section>
 
 <style lang="postcss">
 	section :global(a) {
-		@apply text-blue-600 hover:text-blue-800 font-bold underline;
+		@apply font-bold text-blue-600 underline hover:text-blue-800;
 	}
 
 	section :global(h2) {
@@ -16,8 +19,8 @@
 	}
 
 	section :global(p) {
-		@apply font-normal text-base;
-		@apply leading-8 mb-5;
+		@apply text-base font-normal;
+		@apply mb-5 leading-8;
 	}
 
 	section :global(ol) {

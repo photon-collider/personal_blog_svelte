@@ -20,6 +20,6 @@
 	/>
 </svelte:head>
 
-<div class="equation">
+<div class="mb-5 text-center">
 	{@html katexString}
 </div>

@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section class="container-md">
-	<h1 class="mb-6">Blog Posts</h1>
+	<h1>Blog Posts</h1>
 
 	<div class="flex flex-col">
 		<ArticleList articleList={articles} />

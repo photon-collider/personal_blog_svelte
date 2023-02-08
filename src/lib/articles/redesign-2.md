@@ -74,8 +74,8 @@ Here are some screenshots of the new design I’ve implemented alongside those o
 
 These are some features that are in my roadmap for a future site update:
 
-- displaying a list of all tags on my blog page
-- implement a button to make it possible to switch to dark mode
+- ~~displaying a list of all tags on my blog page~~
+- ~~implement a button to make it possible to switch to dark mode~~
 - RSS feed for my photo gallery
 - add tags to photos contained within the [photo gallery](/photos)
 - restyling equations and code blocks in blog posts to make these look more visually appealing

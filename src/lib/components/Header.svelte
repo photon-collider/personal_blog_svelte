@@ -4,12 +4,11 @@
 	import { each } from 'svelte/internal';
 	import { navHeaderItems } from '$lib/config';
 	import NavItemGroup from './NavItemGroup.svelte';
-
 	$: atHome = $page.url.pathname === '/';
 
 	$: headerLinks = navHeaderItems.map((item) => ({
 		...item,
-		active: $page.url.pathname === item.href
+		active: item.title == 'Home' ? atHome : $page.url.pathname.startsWith(item.href)
 	}));
 </script>
 
@@ -20,9 +19,15 @@
 		</nav>
 		<button
 			on:click={() => {
-				window.document.body.classList.toggle('dark');
+				const isDark = document.documentElement.classList.contains('dark')
+				
+				isDark 
+				? document.documentElement.classList.remove('dark')
+				: document.documentElement.classList.add('dark') 
+
+				window.localStorage.setItem('theme', isDark ? "light" : "dark");
 			}}
-			class="ml-3 inline-block rounded-full border-slate-700  p-1 dark:border-slate-300"
+			class="ml-3 inline-block rounded-full border-stone-700  p-1 dark:border-stone-300"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

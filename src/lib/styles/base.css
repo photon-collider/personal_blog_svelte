@@ -19,6 +19,12 @@ body {
 	flex-direction: column;
 }
 
+.page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -42,37 +48,38 @@ footer {
 
 h1 {
 	@apply text-3xl font-bold md:text-5xl;
-	@apply mb-5 text-gray-800 dark:text-gray-200;
+	@apply text-stone-900 dark:text-stone-50 mb-6 text-3xl font-bold md:text-5xl;
+	@apply mb-5;
 	line-height: 1.1;
 }
 
 h2 {
+	@apply mb-5 text-stone-900 dark:text-stone-50 ;
 	@apply text-2xl font-bold md:text-3xl;
-	@apply mb-5 prose prose-zinc dark:prose-invert;
 }
 
 h3 {
-	@apply text-xl font-bold md:text-2xl;
-	@apply mb-5 prose prose-zinc dark:prose-invert;
+	@apply text-stone-900 dark:text-stone-50;
+	@apply text-xl font-bold md:text-2xl mb-5;
 }
 
 .container-md {
 	@apply container mx-auto max-w-3xl px-4 md:px-6 xl:px-0;
 }
 
-.equation {
-	@apply mb-5 text-center;
-	@apply dark:text-gray-400;
-}
-
 .math {
 	@apply text-base;
 }
 
+.article-text-dark-mode a {
+	@apply dark:hover:bg-stone-100 dark:hover:text-stone-800
+}
+
 code.language-text,
 pre.language-text {
-	@apply bg-gray-100 !important;
+	@apply bg-stone-100 dark:bg-stone-200 !important;
 	color: #1b1d25 !important;
+	@apply text-stone-800;
 }
 
 code.language-text {
@@ -80,14 +87,4 @@ code.language-text {
 	box-shadow: none !important;
 }
 
-.article-text-dark-mode ul {
-	@apply dark:text-gray-400;
-}
 
-.article-text-dark-mode p {
-	@apply dark:text-gray-400;
-}
-
-.article-text-dark-mode a {
-	@apply dark:text-blue-400 hover:dark:text-blue-400/80;
-}

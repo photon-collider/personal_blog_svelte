@@ -1,13 +1,10 @@
-<!--
-<section class="container-md article-text-dark-mode pb-12 text-gray-600">
--->
-<section class="container-md pb-12 prose prose-stone dark:prose-invert">
+<section class="container-md pb-12 text-stone-800 dark:text-stone-100 article-text-dark-mode">
 	<slot />
 </section>
 
 <style lang="postcss">
 	section :global(a) {
-		@apply font-bold text-blue-600 underline hover:text-blue-800;
+		@apply font-bold  hover:bg-stone-800 hover:text-stone-50 hover:no-underline underline decoration-1 transition duration-100 ease-in-out;
 	}
 
 	section :global(h2) {
@@ -37,5 +34,9 @@
 
 	section :global(li) {
 		@apply mb-2;
+	}
+
+	section :global(.equation){
+		@apply mb-5 text-center;
 	}
 </style>

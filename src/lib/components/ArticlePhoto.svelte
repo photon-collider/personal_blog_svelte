@@ -1,5 +1,4 @@
 <script>
-	import { fade } from 'svelte/transition';
 	import { imgHostRootURL } from '$lib/config';
 	//sub folder within stored images
 	export let imageBucket;
@@ -22,7 +21,6 @@
 		altText = caption;
 	}
 
-	const duration = 200;
 </script>
 
 <figure class="container mx-auto max-w-max py-8">
@@ -35,7 +33,7 @@
 	/>
 
 	{#if caption}
-		<figcaption class="px-0 pt-2 text-sm font-light italic text-gray-700/80 md:text-base">
+		<figcaption class="px-0 pt-2 text-sm font-light italic text-stone-800 dark:text-stone-100 md:text-base">
 			{caption}
 			<slot name="caption" />
 		</figcaption>

@@ -3,7 +3,7 @@
 	export let photoGridItems;
 </script>
 
-<div class="grid grid-cols-3 gap-2 md:gap-5 md:grid-cols-4 mb-8">
+<div class="mb-8 grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-5">
 	{#each photoGridItems as item, idx}
 		<PhotoGridItem
 			imgBucket={item.imgBucket}
@@ -13,4 +13,3 @@
 		/>
 	{/each}
 </div>
-

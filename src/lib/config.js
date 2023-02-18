@@ -7,6 +7,7 @@ export const siteDescription =
 export const siteURL = 'bryananthonio.com';
 
 export const navHeaderItems = [
+	{ href: '/', title: 'Home' },
 	{ href: '/blog', title: 'Blog' },
 	{ href: '/photos', title: 'Photos' },
 	{ href: '/about', title: 'About' }
@@ -17,4 +18,4 @@ export const navFooterItems = [
 	{ href: '/photos', title: 'Photos' },
 	{ href: '/about', title: 'About' },
 	{ href: '/api/blog-rss.xml', title: 'RSS' }
-]
+];

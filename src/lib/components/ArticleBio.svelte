@@ -2,13 +2,14 @@
 	import BioPic from './BioPic.svelte';
 </script>
 
-<div class="border-y py-12 flex flex-col-reverse md:flex-row">
+<div class="flex flex-col-reverse border-y border-stone-300 dark:border-stone-700 py-12 md:flex-row">
 	<div class="flex items-center">
-		<p class="text-gray-600 text-base inline align-baseline mr-2 italic">
+		<p class="mr-2 inline align-baseline text-base text-stone-800 dark:text-stone-200">
 			Hello and thanks for visiting my page! I'm Bryan Anthonio. This is my personal website where I
-			share my <a class="text-blue-600" href="/photos">photography</a>, and <a class="text-blue-600" href="/blog">write</a> about what I've learned
-			about technology, coding, and life.
+			share my <a class="underline font-bold" href="/photos">photography</a>, and
+			<a class="font-bold underline" href="/blog">write</a> about what I've learned about technology, coding,
+			and life.
 		</p>
 	</div>
-	<BioPic/>
+	<BioPic />
 </div>

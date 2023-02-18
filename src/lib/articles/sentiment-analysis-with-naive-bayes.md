@@ -138,7 +138,7 @@ dataset = pd.DataFrame(
 
 The table below represents this dataset:
 
-<pre class="language-text">
+<pre class="language-terminal">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: left;">
@@ -235,7 +235,7 @@ freq_table = get_freq_table(dataset)
 freq_table
 ```
 
-<pre class="language-text">
+<pre class="language-terminal">
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">

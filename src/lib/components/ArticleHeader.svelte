@@ -6,14 +6,17 @@
 	export let dateUpdated;
 </script>
 
-<div class="container-md mb-8">
+<div class="container-md mb-8 prose prose-stone dark:prose-invert prose-lg">
 	<h1>{title}</h1>
-	<p class="text-xl md:text-2xl text-gray-500 my-4 font-semibold">
+	<p class="my-2 py-0 text-xl font-semibold md:text-2xl">
 		{description}
 	</p>
 
-	<p class="text-gray-600/90"><b>Published</b> {getReadableDate(date)}</p>
+	<p class="prose-base mt-0 pt-0"><b>Published</b> {getReadableDate(date)}</p>
 	{#if dateUpdated}
-		<p class="text-gray-600/90"><b>Updated</b> {getReadableDate(dateUpdated)}</p>
+		<p>
+			<b>Updated</b>
+			{getReadableDate(dateUpdated)}
+		</p>
 	{/if}
 </div>

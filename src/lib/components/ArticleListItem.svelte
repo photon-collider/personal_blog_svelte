@@ -7,19 +7,19 @@
 </script>
 
 <div class="flex flex-col pb-8">
-	<time class="text-gray-600/90 text-xs md:text-sm">
+	<time class="text-xs text-stone-800/80 dark:text-stone-200/80 md:text-sm">
 		{getReadableDate(date)}
 	</time>
 
 	<a
-		class="text-gray-600/90 my-0.5 hover:underline inline-block text-xl md:text-2xl font-bold"
+		class="my-0.5 inline-block text-xl font-bold text-stone-800 dark:text-stone-100 hover:underline  md:text-2xl"
 		href="/blog/{slug}"
 	>
 		{title}
 	</a>
 
 	{#if description}
-		<p class="text-sm md:text-base text-gray-600  my-0 font-normal">
+		<p class="my-0 text-sm font-normal prose prose-stone dark:prose-invert md:text-base">
 			{description}
 		</p>
 	{/if}

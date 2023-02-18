@@ -5,13 +5,21 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<script>
+		window.localStorage.theme === 'dark' ||
+			(!('theme' in window.localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			? document.documentElement.classList.add('dark')
+			: document.documentElement.classList.remove('dark')
+
+		console.log(window.localStorage.getItem('theme'))
+
+	</script>
 	%sveltekit.head%
 </head>
 
-<body>
-	<div id="svelte">
-		%sveltekit.body%
-	</div>
+<body class="">
+	<div id="svelte">%sveltekit.body%</div>
 </body>
 
 </html>

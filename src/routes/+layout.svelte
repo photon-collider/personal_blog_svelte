@@ -25,7 +25,7 @@
 	<meta name="author" content="Bryan Anthonio" />
 </svelte:head>
 
-<div class="content">
+<div class="content bg-stone-50 dark:bg-stone-800">
 	<Header />
 	{#key data.path}
 		<main in:fade={transitionIn} out:fade={transitionOut} tabindex="-1">
@@ -33,5 +33,4 @@
 		</main>
 	{/key}
 </div>
-
-<Footer />
+<Footer/>

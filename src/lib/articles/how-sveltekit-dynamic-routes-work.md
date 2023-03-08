@@ -1,8 +1,8 @@
 ---
 title: How Slug-Based Dynamic Routing Works in Sveltekit
-tags: ['sveltekit']
-description: Reviewing my personal highlights from 2020 and my plans for 2021.
-date: 2023-02-25
+tags: ['svelte', 'sveltekit']
+description: How to set up your SvelteKit project to handle routing for dynamic routes of varying complexity.
+date: 2023-03-07
 ---
 
 
@@ -10,9 +10,7 @@ When I started learning SvelteKit I was confused by how this framework handles d
 
 ## Prerequisites
 
-In this post, I'll assume you know the basics of [Svelte](https://svelte.dev/). Otherwise, the [official tutorial](https://svelte.dev/tutorial/basics) is a good place to learn the fundamentals. 
-
-Regarding SvelteKit, I'll assume you understand how loading data works using `+page.js` files [as described here](https://kit.svelte.dev/docs/load). However, I will go over these concepts very briefly. Other things like SvelteKit's [`layout.svelte`](https://kit.svelte.dev/docs/load#layout-data) components won't be necessary for this tutorial. 
+In this post, I'll assume you know the basics of [Svelte](https://svelte.dev/). Otherwise, the [official tutorial](https://svelte.dev/tutorial/basics) is a good place to learn the fundamentals. Regarding SvelteKit, I'll assume you understand how loading data works using `+page.js` files [as described here](https://kit.svelte.dev/docs/load). However, I will go over these concepts very briefly.
 
 ## Sveltekit  Routing Basics
 
@@ -48,7 +46,7 @@ src/
 		└── +page.svelte
 ```
 
-The `page.js` file will contain a `load` function that you can use to fetch a list of blog posts. This function passes its output to the `data` prop inside the corresponding `+page.svelte` component. Here's an example of how this works:
+The `page.js` file will contain a load function that you can use to fetch a list of blog posts. This function passes its output to the `data` prop inside the corresponding `+page.svelte` component. Here's an example of how this works:
 
 ```javascript
 // assuming you have a fetchPosts function defined in lib/utils.js
@@ -75,7 +73,7 @@ export async function load(){
 </ul>
 ```
 
-As an aside, if your `load` function should run on the server side rather than on the client side, you should rename `+page.js`  to  `+page.server.js`. The [official SvelteKit documentation](https://kit.svelte.dev/docs/load) provides more info on this.
+As an aside, if your load function should run on the server side rather than on the client side, you should rename `+page.js`  to  `+page.server.js`. The [official SvelteKit documentation](https://kit.svelte.dev/docs/load) provides more info on this.
 
 ## Simple Dynamic Routes
 
@@ -102,7 +100,7 @@ Here, `[slug]` will be a parameter used to handle the logic needed for each rout
 }
 ```
 
-You can access this property in the `load` function to fetch the appropriate blog post based on the `slug` and pass it to the corresponding `+page.svelte` this way:
+You can access this property in the load function to fetch the appropriate blog post based on the `slug` and pass it to the corresponding `+page.svelte` this way:
 
 ```javascript
 // [slug]/+page.js
@@ -129,7 +127,7 @@ src/
 						└── +page.svelte
 ```
 
-Accessing the route `/blog/2023/01/01/hello-world`, the `load` function defined in `[post]/+page.js` directory will have access to the params objects with these properties:
+Accessing the route `/blog/2023/01/01/hello-world`, the load function defined in `[post]/+page.js` directory will have access to the params objects with these properties:
 
 ```json
 {
@@ -195,7 +193,7 @@ src/
 			└── +page.svelte
 ```
 
-When accessing the route `/blog/2023/01/01/hello-world`, the `params` object in the `load` function defined `[..postSlug]/page.js` will look like
+When accessing the route `/blog/2023/01/01/hello-world`, the `params` object in the load function defined `[..postSlug]/page.js` will look like
 
 ```json
 {
@@ -203,7 +201,7 @@ When accessing the route `/blog/2023/01/01/hello-world`, the `params` object in 
 }
 ```
 
-From here, you could extract the year, month, day, and post slugs in the `load` function like so:
+From here, you could extract the year, month, day, and post slugs in the load function like so:
 
 ``` javascript
 export async load({params}){

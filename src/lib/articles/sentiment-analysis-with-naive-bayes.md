@@ -386,7 +386,7 @@ When using Laplacian smoothing, the probability $$P(w \ | \ s)$$ is revised to b
 \displaystyle P(w \;|\; \textrm{s}) = \frac{\mathrm{freq}(w,\; \mathrm{s}) + 1}{N_\mathrm{s} + V} \quad \textrm{s} \in \{ \textrm{pos}, \;\textrm{neg} \}.
 ```
 
-In this expression, $$V$$ represents the number of unique words that occur in the training set. Now, if $$\mathrm{freq}(w, \ s) = 0$$, then $$ P(w \ | \ s) = 1/(N_s + V)$$ instead of 0. Let's now define a new probability function <code class="language-text">prob_lps</code> to implement this:
+In this expression, $$V$$ represents the number of unique words that occur in the training set. Now, if $$\mathrm{freq}(w, \ s) = 0$$, then $$P(w \ | \ s) = 1/(N_s + V)$$ instead of 0. Let's now define a new probability function <code class="language-text">prob_lps</code> to implement this:
 
 ```python
 def prob_lps(word, freq_table, sentiment):

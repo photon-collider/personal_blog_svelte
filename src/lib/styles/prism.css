@@ -32,17 +32,19 @@
 	 margin: 0.35em 0;
 	 margin-bottom: 2rem;
 	 overflow: auto;
-	 border-radius: 0.5em;
-	 box-shadow: 0 0 1px rgba(0,0,0,.1),0 0 1px rgba(0,0,0,.06),0 2px 2px rgba(0,0,0,.06),0 4px 4px rgba(0,0,0,.06),0 8px 8px rgba(0,0,0,.06),0 16px 16px rgba(0,0,0,.06);
+	 @apply rounded;
+	 @apply border-stone-900 dark:border-stone-700;
+	 border-width: 1px;
 }
- 
+
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
 	 background: #312d2c;
  }
  
  /* Inline code */
- :not(pre) > code[class*="language-"] {
+ :not(pre) > code[class*="language-"],
+ :not(pre) > code {
 	 padding: 2px 5px;
 	 margin: 0 4px;
 	 border-radius: 0.3em;

@@ -75,13 +75,16 @@ h3 {
 	@apply dark:hover:bg-stone-100 dark:hover:text-stone-800
 }
 
+:not(pre) > code,
 code.language-text,
 pre.language-text {
-	@apply bg-stone-100 dark:bg-stone-200 !important;
+	@apply bg-stone-200 dark:bg-stone-900 !important;
 	color: #1b1d25 !important;
-	@apply text-stone-800;
+	@apply text-stone-800 dark:text-stone-200 !important;
+
 }
 
+:not(pre) > code,
 code.language-text {
 	border: none !important;
 	box-shadow: none !important;

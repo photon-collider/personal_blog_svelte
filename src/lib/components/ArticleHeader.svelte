@@ -8,7 +8,7 @@
 
 <div class="container-md mb-8 prose prose-stone dark:prose-invert prose-lg">
 	<h1>{title}</h1>
-	<p class="my-2 py-0 text-xl font-semibold md:text-2xl">
+	<p class="my-2 py-0 text-xl font-bold md:text-2xl">
 		{description}
 	</p>
 

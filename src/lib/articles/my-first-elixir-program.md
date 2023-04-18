@@ -6,19 +6,19 @@ description: Sharing the process of writing my first Elixir program, which focus
 ---
 
 
-I recently started learning [Elixir](https://elixir-lang.org) to learn backend development and to take on the challenge of learning a new programming language. Elixir's excellent scalability and fault-tolerant capabilities,ideal for handling concurrent tasks like image processing, drew me to learn it. I was also excited that Elixir is a functional programming language. 
+I recently started learning [Elixir](https://elixir-lang.org) to learn backend development and to take on the challenge of learning a new programming language. Elixir's excellent scalability and fault-tolerant capabilities, ideal for handling concurrent tasks like image processing, drew me to learn it. I was also excited that Elixir is a functional programming language. 
 
 The last time I worked with a functional programming language was when, as an undergraduate student at Cornell, I took the [CS 3110](https://cornellcswiki.gitlab.io/classes/CS3110.html) course on functional programming using [OCaml](https://ocaml.org/). During that period, I realized that utilizing concepts such as pattern matching and the pipe operator enhanced the readability of my code. Hence, I was looking forward to revisiting these concepts once more.
 
-In this post, I will share my experience of putting together my first Elixir program. The objective for this program is provide a pipeline for preprocessing photographs I've taken that I share in the photography section of my website.  To provide some context, the photo files in question are 24-megapixel JPEG files that need to be resized to be displayed optimally on the web. I'll also need to create [webp](https://developers.google.com/speed/webp) equivalents as these tend to be more lightweight than their jpeg counterparts.
+In this post, I will share my experience of putting together my first Elixir program. The objective for this program is to provide a pipeline for preprocessing photographs I've taken to share in the photography section of my website.  To provide some context, the photo files in question are 24-megapixel JPEG files that need to be resized to be displayed optimally on the web. I'll also need to create [webp](https://developers.google.com/speed/webp) equivalents as these tend to be more lightweight than their jpeg counterparts.
 
 As I go over my code, I will assume you are a beginner to programming in Elixir but have experience with other programming languages such as JavaScript or Python.
 
 ## Setting Up Elixir
 
-You can install the Elixir on macOS by entering `brew install elixir` in the terminal. For instructions on installing Elixir on other platforms you'll have to visit [the official website here](https://elixir-lang.org/install.html#distributions).  
+You can install the Elixir on macOS using [homebrew](https://brew.sh) by entering `brew install elixir` in the terminal. For instructions on installing Elixir on other platforms you'll have to visit [the official website here](https://elixir-lang.org/install.html#distributions).  
 
-With Elixir installed you should be able to run Elixir's interactive shell in the terminal by running the `iex` command in a terminal environment.
+With Elixir installed you should be able to run Elixir's interactive shell in the terminal by running the `iex` command in a command-line terminal.
 
 Elixir uses the build tool `mix` to handle tasks such as generating new projects with some boilerplate, apply code formatting, and handle package management for project dependencies.
 
@@ -80,7 +80,7 @@ end
 
 Functions and other clauses are also wrapped using `do` and `end` keywords. This syntax differs from the curly braces used in languages such as JavaScript or the whitespaces used by Python. 
 
-As I've alluded to before, I've missed having access to the piping operator, given as `|>` in Elixir, in other imperative languages that I use regularly, such as Python. Piping makes it easier to compose computations without needing to create additional variables. Doing the equivalent in a language like Python would look something like
+As I've alluded to before, I've missed having access to the piping operator, given as `|>` in Elixir, in other imperative languages that I use regularly, such as Python. Piping makes it easier to compose a sequence of computations in an easy-to-read manner. Doing the equivalent in a language like Python would look something like
 
 ```python 
 def load_image(image_path):
@@ -93,9 +93,9 @@ While this isn't too bad to read. When defining more complex functions this type
 
 ### Function Naming Conventions, Pattern Matching, and no `return`  Keyword
 
-One thing I've found interesting about Elixir is its conventions for naming functions. In the `load_image` definition I've used the `open!` and `minimize_metadata!` functions from the `image` library. These functions load the image from the provided file path and remove unneeded metadata from the image's EXIF data, respectively. In the event that an error occurs when performing these operations, an exception is raised that can be handled using the `try`, `catch`, and `rescue`  operators. These work similarly to their equivelants in other languages such as Python's `try` and `except` operators. 
+One thing I've found interesting about Elixir is its conventions for naming functions. In the `load_image` definition I've used the `open!` and `minimize_metadata!` functions from the `Image` library. These functions load the image from the provided file path and remove unneeded metadata from the image's EXIF data, respectively. In the event that an error occurs when performing these operations, an exception is raised that can be handled using the `try`, `catch`, and `rescue`  operators. These work similarly to their equivelants in other languages such as Python's `try` and `except` operators. 
 
-The alternative is to use the `open` and `minimize_metadata` functions (named without an exclamation point). These functions will return a tuple regardless of whether they encounter and error or not. For instance, the `open` function will return the tuple `{:ok, image}` if no error occurs or  the tuple `{:error, message}` when one does occur. This provides an opportunity to pattern match on the outputs for error handling. 
+The alternative is to use the `open` and `minimize_metadata` functions (named without an exclamation point). These functions will return a tuple regardless of whether they encounter an error or not. For instance, the `open` function will return the tuple `{:ok, image}` if no error occurs or  the tuple `{:error, message}` when one does occur. This provides an opportunity to pattern match on the outputs for error handling. 
 
 It's important to point out that the outputs `:ok` and `:error`, defined using a semicolon at the start of their definition, are known as [atoms](https://hexdocs.pm/elixir/1.12/Atom.html). These are one of the primitive types supported by Elixir. They are distinct because they are constants whose value is the same as their name. They are very useful for implementing pattern matching structures in Elixir.
 
@@ -145,7 +145,7 @@ function, which takes an anonymous function that uses the `Path.join` function t
 
 Next, we need to define the `&is_image?/1` function. 
 
-Before we get to that you may wonder what the ampersand  and the `/1` label means. In Elixir, the `/1` refers to the function's arity which otherwise represents the number of arguments the function accepts. The ampersand symbol `&` in `&is_image` represents the [capture operator](https://hexdocs.pm/elixir/1.12/Function.html#module-the-capture-operator) in Elixir. Here, it passes a function into the second argument of `Enum.filter/2`. As an alternative you could also insert the `is_image?` function by wrapping it using the `fn param ->` and `end`  syntax like so:  
+Before we get to that you may wonder what the ampersand  and the `/1` label means. In Elixir, the `/1` refers to the function's arity which otherwise represents the number of arguments the function accepts. The ampersand symbol `&` in `&is_image` represents the [capture operator](https://hexdocs.pm/elixir/1.12/Function.html#module-the-capture-operator) in Elixir. Here, it passes the function `is_image?` into the second argument of `Enum.filter/2`. As an alternative you could also insert the `is_image?` function by wrapping it using the `fn param ->` and `end`  syntax like so:  
 
 ```elixir
   path_input_image_folder
@@ -169,9 +169,9 @@ def is_image?(filename) do
 end
 ```
 
-This function checks whether a file is an image using the  `@image_filetypes`  [module atribute](https://elixir-lang.org/getting-started/module-attributes.html). This module attribute holds a list of image file formats, specifically `.jpg` and `.jpeg`, which helps identify whether a given file is an image that needs processing. Module attributes are limited to the scope within the module they are defined in, allowing us to use `@image_filetypes` in any of the functions defined in the `ImageIO` module. Using module attributes prevents us from having to hardcode parameters in all places that they will be used. 
+This function checks whether a file is an image using the  `@image_filetypes`  [module attribute](https://elixir-lang.org/getting-started/module-attributes.html). This module attribute holds a list of image file formats, specifically `.jpg` and `.jpeg`, which helps identify whether a given file is an image that needs processing. Module attributes are limited to the scope within the module they are defined in, allowing us to use `@image_filetypes` in any of the functions defined in the `ImageIO` module. Using module attributes prevents us from having to hardcode parameters in all places that they will be used. 
 
-Finally, we'll define a function for generating the file name of the saved image, which takes three arguments including the image name, the image's filetype and a prefix for the image's name:
+Finally, we'll define a function for generating the file name of the saved image, which takes three arguments including the image name, the image's filetype, and a prefix for the image's name:
 
 ```elixir
 def get_output_filename(imagename, image_filetype, imagename_prefix) do
@@ -182,7 +182,7 @@ def get_output_filename(imagename, image_filetype, imagename_prefix) do
 end
 ```
 
-This function pattern matches on the variable `imagename_prefix` to determine its return value. When no value is provided for this argument, the first case handles such instances by generating a string using the string interpolation syntax given by `#{}` to insert the values of the variables `imagename` and `image_filetype` into the returned formatted string. In the catch all case given by `_ ->` the generated string incorporates all three input arguments.
+This function pattern matches the variable `imagename_prefix` to determine its return value. When no value is provided for this argument, the first case handles such instances by generating a string using the string interpolation syntax given by `#{}` to insert the values of the variables `imagename` and `image_filetype` into the returned formatted string. In the catch all case given by `_ ->` the generated string incorporates all three input arguments.
 
 
 ## Generating Resized Images
@@ -293,7 +293,7 @@ There's quite a bit to unpack here. But these are the key steps:
 3. For each of the sizes in the map, calculate a scale factor needed to resize the image to the desired size.
 4. Save the image to the output directory
 
- In step 2, the function `Image.aspect` is used. It returns one of the following atoms depending on the input image's aspect ratio:
+In step 2, the function `Image.aspect` is used. It returns one of the following atoms depending on the input image's aspect ratio:
 
 - `:landscape` for images with a landscape aspect ratio
 - `:portrait` for images with a portrait aspect ratio
@@ -351,10 +351,10 @@ In this blog post, we've explored how to create a simple Elixir script for resiz
 
 To recap, we've learned how to:
 
-1.  Load and save images using the `Image` library
-2.  Retrieve image file paths and filter them based on their file extensions
-3.  Generate resized images based on aspect ratios and predefined dimensions
-4.  Save the resized images to an output folder with an appropriate naming convention
+1. Load and save images using the `Image` library
+2. Retrieve image file paths and filter them based on their file extensions
+3. Generate resized images based on aspect ratios and predefined dimensions
+4. Save the resized images to an output folder with an appropriate naming convention
 
 With these skills in hand, you're well-equipped to tackle more complex image manipulation tasks in Elixir. Whether you're working on a website, a photo management tool, or a content delivery system, this script may serve as a helpful starting point. 
 

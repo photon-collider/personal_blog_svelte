@@ -1,6 +1,6 @@
 ---
-title: 'Embarking on My Elixir Journey: Crafting My First Program'
-date: 2023-04-17
+title: 'Embarking on My Journey to Learn Elixir: Crafting My First Program'
+date: 2023-04-18
 tags: ['elixir', 'image-processing']
 description: Sharing the process of writing my first Elixir program, which focuses on handling image processing tasks.
 ---
@@ -129,7 +129,6 @@ We'll define the function `get_image_paths` in the `Image_IO` module:
 
 ```elixir
 def get_image_paths(path_input_image_folder) do
-
   path_input_image_folder
     |> File.ls!()
     |> Enum.filter(&is_image?/1)
@@ -160,7 +159,6 @@ Before we get to that you may wonder what the ampersand  and the `/1` label mean
 The easiest way to check whether a given file is an image is to check it's file extension to see if it corresponds to an image file format. This is precisely what the `is_image?` function defined below does:
 
 ``` elixir
-
 @image_filetypes [".jpg", ".jpeg"]
 
 def is_image?(filename) do
@@ -206,11 +204,9 @@ Like before, any function definitions will go in the space between the `do` and 
 First, we need to define a function that takes a path to an input folder that contains images and another path to a directory where the resized images will be saved. If the output directory doesn't already exist, it will be generated. Moreover, the function should iterate over the image paths and the output image filetypes to be generated. Thie `process_images` functions defined below achieves this:
 
 ```elixir
-
 @imagename_prefix = ""
 
 def process_images(path_input_folder, path_output_folder) do
-
   lst_paths_image = ImageIO.get_image_paths(path_input_folder)
   output_image_filetypes = ["jpeg", "webp"]
 
@@ -222,8 +218,12 @@ def process_images(path_input_folder, path_output_folder) do
     imagename = get_imagename(path_image)
 
     ImageIO.load_image(path_image)
-    |> generate_resized_images(image_filetype, imagename, path_output_folder,
-    @imagename_prefix)
+    |> generate_resized_images(
+        image_filetype, 
+        imagename, 
+        path_output_folder,
+        @imagename_prefix
+    )
   end
 end
 ```

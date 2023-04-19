@@ -52,7 +52,7 @@ end
 
 After that you'll have to run the following command in the terminal to install this dependency:
 
-```shell
+```bash
 mix deps.get
 ```
 
@@ -337,17 +337,19 @@ This is all that is needed for this script!
 
 ## Running the Script
 
-Enter the interactive shell by running `iex -S mix` in terminal. 
+To run the script, first enter the interactive Elixir shell by executing `iex -S mix` in your terminal.
+
+You can then run the `process_images` function by providing the path to the input image directory and the path to the output image directory as arguments:
 
 ```elixir
-ImageProc.process_images(<path-to-input-image-directory>, <path-to-output-image-directory>)
+iex> ImageProc.process_images(<path-to-input-image-directory>, <path-to-output-image-directory>)
 ```
 
-
+This command will initiate the image processing workflow, resizing all images in the input directory and saving the resized versions to the specified output directory.
 
 ### Conclusion
 
-In this blog post, we've explored how to create a simple Elixir script for resizing images using the `Image` library. We've covered the basics of image I/O, file manipulation, and aspect ratio-based resizing to generate different sizes of images. This script can be easily adapted and expanded upon to meet your specific needs for image processing tasks.
+In this blog post, we've explored how to create a simple Elixir script for resizing images using the `Image` library. We've covered the basics of image I/O, file manipulation, and aspect ratio-based resizing to generate different sizes of images. This script can be easily adapted and expanded upon to meet any other specific needs for image processing tasks.
 
 To recap, we've learned how to:
 
@@ -356,11 +358,15 @@ To recap, we've learned how to:
 3. Generate resized images based on aspect ratios and predefined dimensions
 4. Save the resized images to an output folder with an appropriate naming convention
 
-With these skills in hand, you're well-equipped to tackle more complex image manipulation tasks in Elixir. Whether you're working on a website, a photo management tool, or a content delivery system, this script may serve as a helpful starting point. 
+Whether you're working on a website, a photo management tool, or a content delivery system, this script may serve as a helpful starting point. 
 
 
 ## Next Steps
 
-The image processing pipeline described above generates resized images and stores them locally on your computer. But what if you wanted to directly upload them to a cloud service like Amazon S3? 
+The image processing pipeline described above generates resized images and stores them locally on your computer. But what if you wanted to directly upload them to a cloud service like Amazon S3? To achieve this, we need to incorporate functionality that uses an S3 client to upload the resized images to a storage bucket. 
 
-To acheive this, we need to incorporate functionality that uses an S3 client to upload the resized images to a storage bucket. In the long run, it would be beneficial to develop a user-friendly frontend, enabling users to drag and drop images for resizing, upload them to an S3 bucket, and manage S3 bucket contents. Our ultimate goal is to construct this interface using the [Phoenix](https://www.phoenixframework.org/) framework. By implementing these improvements, we can optimize our image processing workflow, making it more efficient and user-friendly.
+In addition, our script doesn’t take advantage of [Elixir’s concurrency features](https://elixir-lang.org/getting-started/processes.html). In future improvements to the script, we could explore using these features, such as [Tasks](https://hexdocs.pm/elixir/Task.html), to process and resize multiple images simultaneously. These improvements can significantly speed up the image resizing process, especially when working with a large number of images.
+
+Finally, it would be beneficial to develop a user-friendly frontend, enabling users to drag and drop images for resizing, upload them to an S3 bucket, and manage S3 bucket contents. Our ultimate goal is to construct this interface using the [Phoenix](https://www.phoenixframework.org/) framework. 
+
+By implementing these improvements, we can optimize our image processing workflow, making it more efficient and user-friendly.

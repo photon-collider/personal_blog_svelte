@@ -3,7 +3,6 @@ title: 'Redesign: Version 2.0'
 date: 2022-11-06
 tags: ['site-update']
 description: Documenting my first ever redesign of my personal website
-header_image: 'p4_rethinking_instagram'
 ---
 
 <script>

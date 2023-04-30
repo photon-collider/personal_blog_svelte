@@ -1,7 +1,7 @@
 ---
 title: 'Embarking on My Journey to Learn Elixir: Crafting My First Program'
-date: 2023-04-18
-tags: ['elixir', 'image-processing']
+date: 2023-04-30
+tags: ['elixir']
 description: Sharing the process of writing my first Elixir program, which focuses on handling image processing tasks.
 ---
 
@@ -10,9 +10,10 @@ I recently started learning [Elixir](https://elixir-lang.org) to learn backend d
 
 The last time I worked with a functional programming language was when, as an undergraduate student at Cornell, I took the [CS 3110](https://cornellcswiki.gitlab.io/classes/CS3110.html) course on functional programming using [OCaml](https://ocaml.org/). During that period, I realized that utilizing concepts such as pattern matching and the pipe operator enhanced the readability of my code. Hence, I was looking forward to revisiting these concepts once more.
 
-In this post, I will share my experience of putting together my first Elixir program. The objective for this program is to provide a pipeline for preprocessing photographs I've taken to share in the photography section of my website.  To provide some context, the photo files in question are 24-megapixel JPEG files that need to be resized to be displayed optimally on the web. I'll also need to create [webp](https://developers.google.com/speed/webp) equivalents as these tend to be more lightweight than their jpeg counterparts.
+In this post, I will share my experience of putting together my first Elixir program. The objective for this program is to provide a pipeline for preprocessing photographs I've taken to share in the photography section of my website.  To provide some context, the photo files in question are 24-megapixel JPEG files that need to be resized to be displayed optimally on the web by using [responsive features](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#how_do_you_create_responsive_images) of the `img` tag in HTML. I'll also need to create [webp](https://developers.google.com/speed/webp) equivalents as these tend to be more lightweight than their jpeg counterparts.
 
-As I go over my code, I will assume you are a beginner to programming in Elixir but have experience with other programming languages such as JavaScript or Python.
+
+You can find the code for this project [in this Github repository](https://github.com/photon-collider/imag_proc). As I go over my code, I will assume you are a beginner to programming in Elixir but have experience with other programming languages such as JavaScript or Python.
 
 ## Setting Up Elixir
 
@@ -177,7 +178,7 @@ Finally, we'll define a function for generating the file name of the saved image
 def get_output_filename(imagename, image_filetype, imagename_prefix) do
   case imagename_prefix do
     nil -> "#{imagename}.#{image_filetype}"
-    _ -> "#{imagename_prefix}__#{imagename}.#{image_filetype}"
+    _ -> "#{imagename_prefix}_#{imagename}.#{image_filetype}"
   end
 end
 ```
@@ -205,16 +206,16 @@ First, we need to define a function that takes a path to an input folder that co
 
 ```elixir
 @imagename_prefix = ""
+@output_image_filetypes ["jpeg", "webp"]
 
 def process_images(path_input_folder, path_output_folder) do
   lst_paths_image = ImageIO.get_image_paths(path_input_folder)
-  output_image_filetypes = ["jpeg", "webp"]
 
   if not File.exists?(path_output_folder) do
-    File.mkdir(path_output_folder)
+    File.mkdir_p(path_output_folder)
   end
 
-  for path_image <- lst_paths_image, image_filetype <- output_image_filetypes do
+  for path_image <- lst_paths_image, image_filetype <- @output_image_filetypes do
     imagename = get_imagename(path_image)
 
     ImageIO.load_image(path_image)

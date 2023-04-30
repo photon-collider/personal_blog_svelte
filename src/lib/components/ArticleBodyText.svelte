@@ -23,13 +23,13 @@
 	section :global(ol) {
 		list-style: decimal;
 		@apply mb-5 px-8;
-		@apply text-base md:text-lg;
+		@apply text-base font-normal;
 	}
 
 	section :global(ul) {
 		list-style: circle;
 		@apply mb-5 px-8;
-		@apply text-base;
+		@apply text-base font-normal;
 	}
 
 	section :global(li) {

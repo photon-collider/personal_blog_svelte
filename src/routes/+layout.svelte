@@ -28,7 +28,7 @@
 <div class="content bg-stone-50 dark:bg-stone-800">
 	<Header />
 	{#key data.path}
-		<main in:fade={transitionIn} out:fade={transitionOut} tabindex="-1">
+		<main in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
 			<slot />
 		</main>
 	{/key}

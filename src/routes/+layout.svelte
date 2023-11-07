@@ -6,6 +6,7 @@
 	import { siteDescription } from '$lib/config';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import PageContainer from '$lib/components/PageContainer.svelte';
 	import { onMount } from 'svelte';
 	import { navHeaderItems } from '$lib/config';
 
@@ -25,12 +26,22 @@
 	<meta name="author" content="Bryan Anthonio" />
 </svelte:head>
 
-<div class="content bg-stone-50 dark:bg-stone-800">
-	<Header />
-	{#key data.path}
-		<main in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
-			<slot />
-		</main>
-	{/key}
+<div class="content">
+	<PageContainer>
+		<Header />
+		{#key data.path}
+			<main in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
+				<slot />
+			</main>
+		{/key}
+	</PageContainer>
 </div>
-<Footer/>
+
+<Footer />
+
+<style>
+	.content {
+		flex: 1 0 auto;
+		padding: 20px;
+	}
+</style>

@@ -2,6 +2,7 @@
 	import { navFooterItems } from '$lib/config';
 	import NavItemGroup from './NavItemGroup.svelte';
 	import { DateTime } from 'luxon';
+	import PageContainer from './PageContainer.svelte';
 	let currentYear = DateTime.now().year;
 </script>
 
@@ -15,10 +16,10 @@
 		id="copyright"
 	>
 		© 2020-{currentYear}, Bryan Anthonio. All rights reserved. Built using
-		<a class="text-stone-800 dark:text-stone-200 underline font-bold" href="https://kit.svelte.dev/"
+		<a class="font-bold text-stone-800 underline dark:text-stone-200" href="https://kit.svelte.dev/"
 			>SvelteKit</a
 		>. Hosted on
-		<a class="text-stone-800 dark:text-stone-200 underline font-bold" href="https://www.netlify.com"
+		<a class="font-bold text-stone-800 underline dark:text-stone-200" href="https://www.netlify.com"
 			>Netlify</a
 		>.
 	</div>

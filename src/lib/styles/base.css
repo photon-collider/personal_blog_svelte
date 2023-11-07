@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+	--primary-color: hsl(40, 91%, 50%);
+	--primary-link-color: hsl(220, 100%, 50%);
+	--darkest-color: hsl(0, 0%, 10%);
+	--dark-color: hsl(0, 0%, 30%);
+	--medium-color: hsl(0, 0%, 59%);
+	--light-color: hsl(0, 0%, 90%);
+	--lightest-color: hsl(0, 0%, 98%);
+	--white-color: hsl(0,0%, 100%);
+
+	--font-size-step-1: 1rem;
+	--font-size-step-2: 1.5rem;
+	--font-size-step-3: 2.25rem;
+	--font-size-step-4: 3.375rem;
+
+	--line-height-body-text: 1.75;
+	--max-width-writing: 36rem;
+
+	--spacing-xs: 4px;
+	--spacing-sm: 8px;
+	--spacing-md: 16px;
+	--spacing-lg: 32px;
+	--spacing-xl: 64px;
+
+	--spacing-xs-rem: 0.25rem;
+    --spacing-sm-rem: 0.5rem;
+    --spacing-md-rem: 1rem;
+    --spacing-lg-rem: 2rem;
+    --spacing-xl-rem: 4rem;
+
+	--min-width-tablet: 550;
+	--min-width-laptop: 1100;
+	--min-width-desktop: 1500;
+
+	--min-width-tablet-rem: calc(var(--min-width-tablet)/16 * 1rem);
+	--min-width-laptop-rem: calc(var(--min-width-laptop)/16 * 1rem);
+	--min-width-desktop-rem: calc(var(--min-width-desktop)/16 * 1rem);
+}
+
 html {
 	overflow-y: scroll;
 	@apply antialiased;

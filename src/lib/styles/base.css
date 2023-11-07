@@ -149,10 +149,6 @@ body * {
 	@apply transition duration-100;
 }
 
-.content {
-	flex: 1 0 auto;
-	padding: 20px;
-}
 
 footer {
 	width: 100%;

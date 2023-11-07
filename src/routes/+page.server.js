@@ -5,10 +5,7 @@ export async function load({ fetch }) {
 		const articlesRes = await fetch('/api/articles.json');
 		const articles = await articlesRes.json();
 
-		const responsePhotos = await fetch('/api/photos.json');
-		const photoFeed = responsePhotos.json();
-
-		return { articles, photoFeed };
+		return { articles };
 	} catch (err) {
 		throw error(500, err);
 	}

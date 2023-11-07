@@ -1,7 +1,6 @@
 import { DateTime } from 'luxon';
 import katex from 'katex';
 import slugify from 'slugify';
-import photoFeed from '$lib/data/photofeed';
 
 // TODO: add try-catch in case no posts match a given tag
 // An {#if posts.length} block with an {:else} should do the trick
@@ -32,9 +31,6 @@ export const fetchArticles = async (tag = '') => {
 	return sortedArticles;
 };
 
-export const fetchPhotoFeed = async () => {
-	return photoFeed.map((d) => ({ ...d, slug: slugify(d.title) }));
-};
 
 export const getReadableDate = (date) => {
 	if (typeof date === 'string') {

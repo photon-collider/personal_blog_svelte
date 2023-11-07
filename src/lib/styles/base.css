@@ -157,34 +157,6 @@ footer {
 	padding: 20px;
 }
 
-h1 {
-	@apply text-3xl font-bold md:text-5xl;
-	@apply text-stone-900 dark:text-stone-50 mb-6 text-3xl font-bold md:text-5xl;
-	@apply mb-5;
-	line-height: 1.1;
-}
-
-h2 {
-	@apply mb-5 text-stone-900 dark:text-stone-50 ;
-	@apply text-2xl font-bold md:text-3xl;
-}
-
-h3 {
-	@apply text-stone-900 dark:text-stone-50;
-	@apply text-xl font-bold md:text-2xl mb-5;
-}
-
-.container-md {
-	@apply container mx-auto max-w-3xl px-4 md:px-6 xl:px-0;
-}
-
-.math {
-	@apply text-base;
-}
-
-.article-text-dark-mode a {
-	@apply dark:hover:bg-stone-100 dark:hover:text-stone-800
-}
 
 :not(pre) > code,
 code.language-text,

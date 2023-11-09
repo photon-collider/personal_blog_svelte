@@ -1,6 +1,7 @@
 <script>
 	import { imgHostRootURL } from '$lib/config';
 
+	import Figure from './Images/Figure.svelte';
 	export let imageBucket;
 	export let imageName;
 
@@ -15,18 +16,6 @@
 	}
 </script>
 
-<figure class="container mx-auto py-8">
-	<img alt={altText} src={imageURL} class="mx-auto max-h-[560px]" />
-
-	{#if caption}
-		<figcaption
-			class="px-0 pt-2 text-center text-sm font-light italic text-stone-800 dark:text-stone-100 md:text-base"
-		>
-			{caption}
-			<slot name="caption" />
-		</figcaption>
-	{/if}
-</figure>
-
-<style>
-</style>
+<Figure {caption}>
+	<img alt={altText} src={imageURL} class="mx-auto block max-h-[640px]" />
+</Figure>

@@ -28,17 +28,21 @@
 	--line-height-body-text: 1.75;
 	--max-width-writing: 36rem;
 
-	--spacing-xs: 4px;
-	--spacing-sm: 8px;
-	--spacing-md: 16px;
-	--spacing-lg: 32px;
-	--spacing-xl: 64px;
+	--spacing-1: 4px;
+	--spacing-2: 8px;
+	--spacing-3: 16px;
+	--spacing-4: 32px;
+	--spacing-5: 48px;
+	--spacing-6: 64px;
+	--spacing-7: 80px;
 
-	--spacing-xs-rem: 0.25rem;
-    --spacing-sm-rem: 0.5rem;
-    --spacing-md-rem: 1rem;
-    --spacing-lg-rem: 2rem;
-    --spacing-xl-rem: 4rem;
+	--spacing-1-rem: 0.25rem;
+    --spacing-2-rem: 0.5rem;
+    --spacing-3-rem: 1rem;
+    --spacing-4-rem: 2rem;
+    --spacing-5-rem: 3rem;
+	--spacing-6-rem: 4rem;
+	--spacing-7-rem: 5rem;
 
 	--min-width-tablet: 550;
 	--min-width-laptop: 1100;

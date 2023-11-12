@@ -93,22 +93,24 @@ h6 {
 	overflow-wrap: break-word;
 }
 
-h1 {
+h1, .h1 {
 	font-size: var(--font-size-step-4);
-	letter-spacing: -1px;
+	letter-spacing: -0.02em;
 }
 
-h2 {
+h2, .h2 {
 	font-size: var(--font-size-step-3);
-	letter-spacing: -1px;
-	margin-top: var(--spacing-xl-rem);
+	letter-spacing: -0.02em;
+	margin-top: var(--spacing-4-rem);
 	margin-bottom: 0.75rem;
 }
-h3 {
+
+h3, .h3 {
 	font-size: var(--font-size-step-2);
 	margin-top: 1em;
 	margin-bottom: 0.3em;
 }
+
 
 
 .writing p {

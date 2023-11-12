@@ -54,6 +54,19 @@
 	--min-width-desktop-rem: calc(var(--min-width-desktop)/16 * 1rem);
 }
 
+.dark {
+	--hue: 10;
+	--darkest-color: hsl(var(--hue), 0%, 90%);
+	--dark-color: hsl(0, 0%, 70%);
+	--medium-color: hsl(0, 0%, 40%);
+	--light-color: hsl(0, 0%, 20%);
+	--lightest-color: hsl(0, 0%, 10%);
+	--tag-color: hsl(0, 0%, 5%);
+	--white-color: hsl(0,0%, 15%);
+	--primary-link-color: hsl(220, 100%, 70%);
+}
+
+
 h1, .h1,
 h2, .h2,
 h3, .h3,

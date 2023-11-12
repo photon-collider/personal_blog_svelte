@@ -132,9 +132,18 @@ h3 {
 	list-style-type: disc;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
-	padding: 0 var(--spacing-lg);
+	padding: 0 var(--spacing-4);
 	font-size: var(--font-size-step-1);
 	line-height: var(--line-height-body-text);
+	letter-spacing: var(--letter-spacing-body-text);
+}
+
+.writing ol {
+	list-style-type: decimal;
+}
+
+.writing ul li::marker, .writing ol li::marker {
+	color: var(--medium-color)
 }
 
 .writing p + ol,
@@ -187,10 +196,9 @@ footer {
 :not(pre) > code,
 code.language-text,
 pre.language-text {
-	@apply bg-stone-200 dark:bg-stone-900 !important;
-	color: #1b1d25 !important;
-	@apply text-stone-800 dark:text-stone-200 !important;
-
+	padding: 2px 4px;
+	background-color: var(--light-color) !important;
+	color: var(--darkest-color) !important;
 }
 
 :not(pre) > code,

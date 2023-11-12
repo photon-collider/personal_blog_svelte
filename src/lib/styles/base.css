@@ -12,10 +12,18 @@
 	--lightest-color: hsl(0, 0%, 98%);
 	--white-color: hsl(0,0%, 100%);
 
-	--font-size-step-1: 1rem;
-	--font-size-step-2: 1.5rem;
-	--font-size-step-3: 2.25rem;
-	--font-size-step-4: 3.375rem;
+
+	--type-scale: 1.313;
+	--base-font-size: 1rem;
+
+	--font-size-step-0: calc(var(--font-size-step-1) / var(--type-scale));;
+	--font-size-step-1: var(--base-font-size);
+	--font-size-step-2: calc(var(--font-size-step-1) * var(--type-scale));
+	--font-size-step-3: calc(var(--font-size-step-2) * var(--type-scale));
+	--font-size-step-4: calc(var(--font-size-step-3) * var(--type-scale));
+	--font-size-step-5: calc(var(--font-size-step-4) * var(--type-scale));
+	--font-size-step-6: calc(var(--font-size-step-5) * var(--type-scale));
+
 
 	--line-height-body-text: 1.75;
 	--max-width-writing: 36rem;

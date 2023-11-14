@@ -12,7 +12,7 @@
 	}));
 </script>
 
-<header>
+<header class="mb-7">
 	<div class="page-container container-md my-8 flex flex-row items-center justify-between">
 		<nav>
 			<NavItemGroup items={headerLinks} />

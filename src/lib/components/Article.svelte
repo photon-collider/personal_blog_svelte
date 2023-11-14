@@ -1,7 +1,9 @@
 <script>
 	import ArticleHeader from './Article/ArticleHeader.svelte';
 	import ArticleBodyText from './Article/ArticleBodyText.svelte';
-	import ArticleFooter from './Article/ArticleFooter.svelte';
+	import ArticleBio from './Article/ArticleBio.svelte';
+	import ArticleTagsList from './ArticleTagsList.svelte';
+	import Grid2ColContainer from './Grid2ColContainer.svelte';
 	export let data;
 	const { title, date, description, dateUpdated, tags, renderEqs } = data.meta;
 </script>
@@ -25,9 +27,18 @@
 <article>
 	<ArticleHeader {title} {description} {date} {dateUpdated} />
 
-	<ArticleBodyText>
-		{@html data.articleContent}
-	</ArticleBodyText>
+	<Grid2ColContainer classesToAdd="gap-3">
+		<ArticleBodyText>
+			{@html data.articleContent}
+		</ArticleBodyText>
+		<aside class="mx-auto flex max-w-[var(--max-width-writing)] flex-col gap-4 lg:mx-0">
+			<div class="bg-white p-4 shadow-sm">
+				<ArticleBio />
+			</div>
 
-	<ArticleFooter {tags} />
+			<div class="bg-white p-4 shadow-sm">
+				<ArticleTagsList {tags} titleTop={true} />
+			</div>
+		</aside>
+	</Grid2ColContainer>
 </article>

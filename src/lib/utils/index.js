@@ -31,6 +31,22 @@ export const fetchArticles = async (tag = '') => {
 	return sortedArticles;
 };
 
+export function groupArticlesByYear(sortedArticles) {
+
+	const groupedByYear = sortedArticles.reduce((acc, article) => {
+		let year = new Date(article.date).getFullYear();
+
+		if (!acc[year]) {
+			acc[year] = [];
+		}
+
+		acc[year].push(article);
+
+		return acc;
+	}, {});
+
+	return groupedByYear
+}
 
 export const getReadableDate = (date) => {
 	if (typeof date === 'string') {
@@ -39,6 +55,15 @@ export const getReadableDate = (date) => {
 
 	return DateTime.fromJSDate(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL);
 };
+
+export const getShortDate = (date) => {
+	if (typeof date === 'string') {
+		return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toLocaleString({ month: 'short', day: '2-digit' });
+	}
+
+	return DateTime.fromJSDate(date, { zone: 'utc' }).toLocaleString({ month: 'short', day: '2-digit' });
+};
+
 
 export const getHTMLDateString = (dateObj) => {
 	return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');

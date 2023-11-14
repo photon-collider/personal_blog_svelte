@@ -30,9 +30,9 @@
 	<PageContainer>
 		<Header />
 		{#key data.path}
-			<main in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
+			<div in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
 				<slot />
-			</main>
+			</div>
 		{/key}
 	</PageContainer>
 </div>

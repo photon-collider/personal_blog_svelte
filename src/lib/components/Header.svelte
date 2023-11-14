@@ -10,6 +10,16 @@
 		...item,
 		active: item.title == 'Home' ? atHome : $page.url.pathname.startsWith(item.href)
 	}));
+
+	function handleDarkModeToggle() {
+		const isDark = document.documentElement.classList.contains('dark');
+
+		isDark
+			? document.documentElement.classList.remove('dark')
+			: document.documentElement.classList.add('dark');
+
+		window.localStorage.setItem('theme', isDark ? 'light' : 'dark');
+	}
 </script>
 
 <header class="mb-7">
@@ -17,6 +27,7 @@
 		<nav>
 			<NavItemGroup items={headerLinks} />
 		</nav>
+		<button on:click={handleDarkModeToggle} class="ml-3 inline-block rounded-full">
 			<div class="w-[1.5rem]">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

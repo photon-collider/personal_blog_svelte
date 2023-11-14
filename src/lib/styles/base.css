@@ -50,7 +50,7 @@
 	--min-width-laptop: 1100;
 	--min-width-desktop: 1500;
 
-	--min-width-tablet-rem: calc(var(--min-width-tablet)/16 * 1rem);
+	--min-width-tablet-rem: 34.375 rem;
 	--min-width-laptop-rem: calc(var(--min-width-laptop)/16 * 1rem);
 	--min-width-desktop-rem: calc(var(--min-width-desktop)/16 * 1rem);
 }
@@ -67,6 +67,12 @@
 	--primary-link-color: hsl(220, 100%, 70%);
 }
 
+@media (min-width: 34rem ) {
+	:root {
+		--base-font-size: 1.125rem;
+	}
+	
+}
 
 h1, .h1,
 h2, .h2,
@@ -117,9 +123,10 @@ h3, .h3 {
 .writing p {
 	color: var(--darkest-color);
 	font-size: var(--font-size-step-1);
-	margin-bottom: 1.5rem;
+	margin-bottom: var(--spacing-3-rem);
 	display: block;
 	line-height: var(--line-height-body-text);
+	letter-spacing: var(--letter-spacing-body-text)
 }
 
 .writing p a {
@@ -221,5 +228,3 @@ code.language-text {
 	border: none !important;
 	box-shadow: none !important;
 }
-
-

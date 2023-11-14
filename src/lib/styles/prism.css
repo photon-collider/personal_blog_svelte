@@ -15,7 +15,7 @@
 	 word-break: normal;
 	 word-wrap: normal;
 	 line-height: 2rem;
-	 font-size: 0.9rem;
+	 font-size: calc(0.9 * var(--font-size-step-1));
 	 -moz-tab-size: 4;
 	 -o-tab-size: 4;
 	 tab-size: 4;
@@ -34,7 +34,6 @@
 	 overflow: auto;
 	 @apply rounded;
 	 @apply border-stone-900 dark:border-stone-700;
-	 border-width: 1px;
 }
 
  :not(pre) > code[class*="language-"],
@@ -45,11 +44,9 @@
  /* Inline code */
  :not(pre) > code[class*="language-"],
  :not(pre) > code {
-	 padding: 2px 5px;
 	 margin: 0 4px;
 	 border-radius: 0.3em;
 	 white-space: normal;
-	 border: 1px solid rgba(0,0,0,.05) !important; 
  }
  
  .token.comment,

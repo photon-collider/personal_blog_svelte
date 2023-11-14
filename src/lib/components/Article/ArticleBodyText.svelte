@@ -1,12 +1,9 @@
-<div class="writing">
+<div class="writing mx-auto lg:m-0">
 	<slot />
 </div>
 
 <style lang="postcss">
 	div {
-		margin-left: auto;
-		margin-right: auto;
 		max-width: var(--max-width-writing);
-		overflow-x: visible;
 	}
 </style>

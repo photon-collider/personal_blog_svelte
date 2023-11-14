@@ -1,12 +1,10 @@
 <script>
-	import ArticleList from '$lib/components/ArticleList.svelte';
+	import BlogPostsView from '$lib/components/BlogPostsView.svelte';
 	export let data;
-	const tag = data.tag;
-	const articles = data.articles;
+	const { articlesGroupedYear, articleTagData, tag } = data;
 </script>
 
-<section class="container-md">
+<div>
 	<h1>Posts tagged: {tag}</h1>
-
-	<ArticleList articleList={articles} />
-</section>
+	<BlogPostsView {articlesGroupedYear} {articleTagData} />
+</div>

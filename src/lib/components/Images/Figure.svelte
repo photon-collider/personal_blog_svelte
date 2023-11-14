@@ -2,7 +2,7 @@
 	export let caption;
 </script>
 
-<figure>
+<figure class="my-5">
 	<slot />
 
 	{#if caption}

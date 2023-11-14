@@ -1,7 +1,6 @@
 <script>
 	export let href;
 	export let active;
-	export let leftMargin = true;
 </script>
 
 <a class="text-darkest" {href}>

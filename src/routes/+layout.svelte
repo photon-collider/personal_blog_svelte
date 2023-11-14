@@ -26,7 +26,7 @@
 	<meta name="author" content="Bryan Anthonio" />
 </svelte:head>
 
-<div class="content">
+<div class="content p-3 sm:p-4 lg:p-4">
 	<PageContainer>
 		<Header />
 		{#key data.path}
@@ -42,6 +42,5 @@
 <style>
 	.content {
 		flex: 1 0 auto;
-		padding: 20px;
 	}
 </style>

@@ -9,7 +9,7 @@
 	const articleYears = Object.keys(articlesGroupedYear).reverse();
 </script>
 
-<Grid2ColContainer classesToAdd="gap-7">
+<Grid2ColContainer classesToAdd="lg:gap-7">
 	<main>
 		{#each articleYears as year}
 			<div class="mb-7">
@@ -19,14 +19,8 @@
 		{/each}
 	</main>
 	<aside>
-		<div class="sidebar rounded border border-light p-3 shadow-sm">
+		<div class="rounded border border-light p-3 shadow-sm lg:mt-[var(--spacing-6-rem)]">
 			<ArticleTagsList tags={articleTags} titleTop={true} />
 		</div>
 	</aside>
 </Grid2ColContainer>
-
-<style>
-	.sidebar {
-		margin-top: var(--spacing-6-rem);
-	}
-</style>

@@ -11,10 +11,13 @@ module.exports = {
 			'size-2': 'var(--font-size-step-2)',
 			'size-3': 'var(--font-size-step-3)',
 			'size-4': 'var(--font-size-step-4)',
-
+			'size-5': 'var(--font-size-step-5)',
+			'size-6': 'var(--font-size-step-6)',
 
 		},
 		spacing: {
+			'n2': 'var(--spacing-n2)',
+			'n1': 'var(--spacing-n1)',
 			'0': '0px',
 			'1': 'var(--spacing-1)',
 			'2': 'var(--spacing-2)',
@@ -30,6 +33,7 @@ module.exports = {
 			},
 			colors: {
 				primary: "var(--primary-color)",
+				primaryActive: "var(--primary-text-color)",
 				link: "var(--primary-link-color)",
 				darkest: "var(--darkest-color)",
 				dark: "var(--dark-color)",

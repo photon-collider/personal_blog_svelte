@@ -148,6 +148,17 @@ h3, .h3 {
 	letter-spacing: var(--letter-spacing-body-text);
 }
 
+.writing ul {
+	position: relative;
+}
+
+.writing ul li::before {
+	content: "▹";
+	position: absolute;
+	left: 8px;
+	color: var(--medium-color)
+}
+
 .writing ol {
 	list-style-type: decimal;
 }

@@ -1,7 +1,19 @@
+<script>
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
+</script>
+
 <svelte:head>
 	<title>Projects | Bryan Anthonio</title>
 </svelte:head>
 
-<section class="container-md">
-	<h1>Projects</h1>
-</section>
+<main>
+	<h1 class="mb-5">Projects</h1>
+
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+		<ProjectCard
+			title="bryananthonio.com"
+			githubLink="https://github.com/photon-collider/personal_blog_svelte"
+			articleLink="blog/redesign-2">The source code for my personal website.</ProjectCard
+		>
+	</div>
+</main>

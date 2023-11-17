@@ -20,12 +20,12 @@
 	}
 </script>
 
-<header class="mb-7">
-	<div class="page-container container-md my-8 flex flex-row items-center justify-between">
+<header>
+	<div class="my-8 flex flex-row items-center justify-between">
 		<nav>
 			<NavItemGroup items={headerLinks} />
 		</nav>
-		<button on:click={handleDarkModeToggle} class="ml-3 inline-block rounded-full">
+		<button on:click={handleDarkModeToggle} class="ml-3 inline-block">
 			<div class="w-[1.5rem]">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

@@ -20,8 +20,3 @@
 </svelte:head>
 
 <HeroBanner />
-<section>
-	<FrontPageSection hrefViewAll="/blog/" title="Recent Blog Posts">
-		<ArticleList articleList={recentArticles} />
-	</FrontPageSection>
-</section>

@@ -7,16 +7,29 @@
 <title>About | Bryan Anthonio</title>
 </svelte:head>
 
-    <h1>About Me</h1>
-    <BioPic wrapperClass="flex justify-center my-8 w-full"/>
 
 
-    Hi! I'm Bryan Anthonio. I started this blog to develop the habit of writing more regularly. This, for me, provides a means of sharing my personal interests and chronicling my past experiences. I am also using this website as a way to learn a bit more about web development as I am aiming to add more features to my website in the future.
+## What I'm Doing Now
 
-    Outside of work, my personal interests include photography, technology, computer programming,
-    and writing. I do also enjoy reading articles about philosophy and technology as well as
-    watching documentaries, particularly those about history. I look to forward to writing more
-    about these topics in future blog posts.
+I'm a front-end engineer with a keen interest in crafting beautiful user-friendly digital experiences. 
 
-    If you would like to send some feedback or just say hello, feel free to reach out to me via
-    email at **hello** at **bryananthonio.com**.
+My journey into software development started many years ago when I stumbled upon a C programming book on my dad's shelf during my high school years. Back then, I was fascinated that I could tell a computer what to do just by writing code.
+
+Today, I specialize in creating web applications with Svelte and React. I've created my personal website to share provide a portfolio and playground for my latest work. As for my future goals, I'm broadening my expertise to full-stack web development using technologies such as Elixir to learn how to build scalable systems and learning more about visual design to craft better user interfaces.
+
+## My Previous Chapter: Grad School
+
+Before entering tech, I spent a few years as a graduate student. At Rice University, I earned my Master of Science in Applied Physics, focusing on studying the optical properties single-walled carbon nanotubes using ultrafast spectroscopy. My original ambition was to finish a PhD and enter academia. But, I later recognized that academia wasn't the best path for me in the long-term.
+
+## Hobbies That Shape Me
+Outside of programming and web development I enjoy:
+- **Photography:** My favorite genres include landscape and street photography. 📷
+- **Writing:** Penning thoughts in my diary or blogging, writing sharpens my clarity and focus. ✍🏾
+- **Sci-fi media:** *The Expanse* is my favorite TV series. 🚀
+- **Traveling:** It's on my bucket list to visit Iceland, Japan, and the Maldives. 🌍
+- **Video games:** I love the *Spider-man* series on PS5. 🎮
+
+## Contact
+If you would like to send some feedback or just say hello, feel free to reach out to me via
+email at **hello** at **bryananthonio.com**.
+

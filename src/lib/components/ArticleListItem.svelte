@@ -7,7 +7,7 @@
 </script>
 
 <a href="/blog/{slug}">
-	<div class="group flex flex-row gap-2 py-1 hover:bg-primary md:mx-n2 md:px-2">
+	<div class="group flex flex-row gap-2 rounded-sm py-1 hover:bg-primary md:mx-n2 md:px-2">
 		<div class="block text-size-1 tracking-[-0.015em] text-darkest group-hover:text-primaryActive">
 			{title}
 		</div>

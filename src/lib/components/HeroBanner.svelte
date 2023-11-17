@@ -6,11 +6,13 @@
 	<div>
 		<p class="text-size-1 font-bold text-darkest sm:text-size-2">Hi, my name is</p>
 		<h1 class="indent-[-0.05em] text-size-4 sm:text-size-5 lg:text-size-6">Bryan Anthonio. 👋🏾</h1>
+
 		<p
-			class="mb-6 indent-[-0.1em] font-mono text-size-4 tracking-tighter text-dark sm:text-size-5 lg:text-size-6"
+			class="mb-6 indent-[-0.1em] font-mono text-size-3 tracking-tighter text-dark sm:text-size-4 lg:text-size-5"
 		>
 			I'm a software developer.
 		</p>
+
 		<p class="mb-4 text-size-3 text-dark">Welcome to my digital garden. 🌱</p>
 
 		<nav>

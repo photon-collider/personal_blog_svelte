@@ -28,7 +28,7 @@
 		<p>
 			<b class="text-dark">Tags:</b>
 			{#each tags as tag}
-				<Tag {tag} />
+				<Tag {tag} classesToAdd="mr-1" />
 			{/each}
 		</p>
 	{/if}

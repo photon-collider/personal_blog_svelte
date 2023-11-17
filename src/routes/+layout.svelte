@@ -26,9 +26,14 @@
 	<meta name="author" content="Bryan Anthonio" />
 </svelte:head>
 
-<div class="content p-3 sm:p-4 lg:p-4">
-	<PageContainer>
-		<Header />
+<div class="content px-3 sm:px-5 xl:px-0">
+	<div class="border-b border-light">
+		<PageContainer>
+			<Header />
+		</PageContainer>
+	</div>
+
+	<PageContainer classesToAdd={'my-7'}>
 		{#key data.path}
 			<div in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
 				<slot />
@@ -36,8 +41,9 @@
 		{/key}
 	</PageContainer>
 </div>
-
-<Footer />
+<div class="px-3 sm:px-5 xl:px-0">
+	<Footer />
+</div>
 
 <style>
 	.content {

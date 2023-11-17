@@ -25,20 +25,12 @@
 </svelte:head>
 
 <article>
-	<ArticleHeader {title} {description} {date} {dateUpdated} />
+	<ArticleHeader {title} {description} {date} {dateUpdated} {tags} />
 
 	<Grid2ColContainer classesToAdd="gap-3">
 		<ArticleBodyText>
 			{@html data.articleContent}
 		</ArticleBodyText>
-		<aside class="mx-auto flex max-w-[var(--max-width-writing)] flex-col gap-4 lg:mx-0">
-			<div class="bg-white p-4 shadow-sm">
-				<ArticleBio />
-			</div>
-
-			<div class="bg-white p-4 shadow-sm">
-				<ArticleTagsList {tags} titleTop={true} />
-			</div>
-		</aside>
+		<aside class="mx-auto flex max-w-[var(--max-width-writing)] flex-col gap-4 lg:mx-0" />
 	</Grid2ColContainer>
 </article>

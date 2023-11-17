@@ -179,7 +179,7 @@ h3, .h3 {
 }
 
 .katex {
-	color: var(--dark-color);
+	color: var(--darkest-color);
 	font-size: var(--font-size-step-1);
 }
 

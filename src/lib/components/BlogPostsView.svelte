@@ -12,8 +12,8 @@
 <Grid2ColContainer classesToAdd="gap-7">
 	<main>
 		{#each articleYears as year}
-			<div>
-				<h2 class="border-b border-light">{year}</h2>
+			<div class="mb-7">
+				<h2 class="mb-3">{year}</h2>
 				<ArticleList articleList={articlesGroupedYear[year]} />
 			</div>
 		{/each}

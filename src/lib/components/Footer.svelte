@@ -6,9 +6,9 @@
 	let currentYear = DateTime.now().year;
 </script>
 
-<footer class="mt-7 border-t border-light bg-lightest text-darkest">
-	<PageContainer>
-		<nav class="mt-4">
+<footer class="border-t border-light bg-lightest text-darkest">
+	<PageContainer classesToAdd="mt-4">
+		<nav>
 			<NavItemGroup items={navFooterItems} leftMargin={false} />
 		</nav>
 
@@ -19,3 +19,11 @@
 		</div>
 	</PageContainer>
 </footer>
+
+<style>
+	footer {
+		width: 100%;
+		height: 200px;
+		flex-shrink: 0;
+	}
+</style>

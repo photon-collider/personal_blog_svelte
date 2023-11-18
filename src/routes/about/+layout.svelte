@@ -28,9 +28,3 @@
 		<slot />
 	</ArticleBodyText>
 </main>
-
-<style>
-	figcaption {
-		letter-spacing: var(--letter-spacing-body-text);
-	}
-</style>

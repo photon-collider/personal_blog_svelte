@@ -175,7 +175,7 @@ h3, .h3 {
 
 .writing p + ol,
 .writing p + ul {
-	margin-top: calc(- var(--spacing-3-rem));
+	margin-top: calc(-var(--spacing-3-rem));
 }
 
 .katex {

@@ -1,7 +1,6 @@
 <script>
 	export let date;
 	export let title;
-	export let description;
 	export let slug;
 	import { getShortDate } from '$lib/utils';
 </script>

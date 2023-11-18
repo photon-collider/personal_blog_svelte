@@ -5,6 +5,6 @@
 </script>
 
 <div>
-	<h1>Posts tagged: {tag}</h1>
+	<h1>Posts tagged: <span class="font-mono">{tag}</span></h1>
 	<BlogPostsView {articlesGroupedYear} {articleTagData} />
 </div>

@@ -2,9 +2,8 @@
 	import { page } from '$app/stores';
 </script>
 
-<section class="container-md">
-	<h2>{$page.status}</h2>
-	{console.log($page.error.message)}
+<div>
+	<h1>{$page.status}</h1>
 
 	{#if $page.error.message !== null}
 		<p class="subhead">{$page.error.message}</p>
@@ -14,4 +13,4 @@
 	<ul>
 		<li><a href="/">Home</a></li>
 	</ul>
-</section>
+</div>

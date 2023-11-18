@@ -1,7 +1,3 @@
-<script>
-	import Play from './Icons/Play.svelte';
-</script>
-
 <div class="hero-banner-bg">
 	<div>
 		<p class="text-size-1 font-bold text-darkest sm:text-size-2">Hi, my name is</p>

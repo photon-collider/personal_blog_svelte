@@ -9,7 +9,7 @@
 <main>
 	<h1 class="mb-5">Projects</h1>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 		<ProjectCard
 			title="bryananthonio.com"
 			githubLink="https://github.com/photon-collider/personal_blog_svelte"

@@ -76,7 +76,7 @@ These are some features that are in my roadmap for a future site update:
 - ~~displaying a list of all tags on my blog page~~
 - ~~implement a button to make it possible to switch to dark mode~~
 - RSS feed for my photo gallery
-- add tags to photos contained within the [photo gallery](/photos)
+- add tags to photos contained within the photo gallery
 - restyling equations and code blocks in blog posts to make these look more visually appealing
 - adding a table of contents section for longer articles
 - implement a better way to include photosets into my photo gallery

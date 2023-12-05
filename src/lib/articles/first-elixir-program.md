@@ -1,5 +1,5 @@
 ---
-title: 'Embarking on My Journey to Learn Elixir: Crafting My First Program'
+title: 'Writing My Elixir First Program'
 date: 2023-04-30
 tags: ['elixir']
 description: Sharing the process of writing my first Elixir program, which focuses on handling image processing tasks.

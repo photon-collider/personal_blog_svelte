@@ -5,7 +5,7 @@ test.describe('site pages', () => {
 
     test('home page should render', async ({ page }) => {
         await page.goto('/')
-        await expect(page.getByRole('heading', { name: 'Hi! I\'m Bryan 👋🏾', exact: true })).toBeVisible()
+        await expect(page.getByRole('heading', { name: 'Bryan Anthonio', exact: false })).toBeVisible()
     })
 
     test('blog post should appear', async ({ page }) => {
@@ -23,17 +23,4 @@ test.describe('site pages', () => {
         await expect(page.getByRole('heading', { name: 'Blog Posts' })).toBeVisible();
     })
 
-    test('photos page', async ({ page }) => {
-        await page.goto('/photos')
-        await expect(page.getByRole('heading', { name: 'Photos' })).toBeVisible();
-    })
-
-    test('photo gallery pages', async ({ page }) => {
-        await page.goto('/photos/fishing-egret')
-        await expect(page.getByRole('img', { name: 'Fishing in Shallow Waters.', exact: true })).toBeVisible();
-
-        await expect(page.getByRole('link', { name: 'next' })).toBeVisible();
-        await page.getByRole('link', { name: 'next' }).click();
-        await expect(page.getByRole('link', { name: 'prev' })).toBeVisible();
-    })
 })

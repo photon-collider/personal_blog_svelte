@@ -5,7 +5,7 @@
 	let numArticles = articleList.length;
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-1">
 	{#each articleList as article}
 		<ArticleListItem
 			slug={article.slug}

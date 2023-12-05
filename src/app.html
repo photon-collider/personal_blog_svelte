@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<script>
@@ -11,8 +12,6 @@
 			(!('theme' in window.localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
 			? document.documentElement.classList.add('dark')
 			: document.documentElement.classList.remove('dark')
-
-		console.log(window.localStorage.getItem('theme'))
 
 	</script>
 	%sveltekit.head%

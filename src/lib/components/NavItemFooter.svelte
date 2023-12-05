@@ -3,14 +3,7 @@
 </script>
 
 <li>
-	<a class="nav-item" {href}>
+	<a class="text-darkest" {href}>
 		<slot />
 	</a>
 </li>
-
-<style lang="postcss">
-	.nav-item {
-		@apply text-base md:text-lg;
-		@apply text-gray-800/70;
-	}
-</style>

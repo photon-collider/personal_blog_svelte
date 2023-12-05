@@ -25,7 +25,7 @@ const config = {
 		vitePreprocess(),
 	],
 
-	entries: ['*', 'blog/*', 'blog/tag/*', '/photos/*', '/api/articles.json', '/api/photos.json']
+	entries: ['*', 'blog/*', 'blog/tag/*', '/api/articles.json']
 };
 
 export default config;

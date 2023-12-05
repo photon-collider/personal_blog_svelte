@@ -1,26 +1,20 @@
 <script>
 	export let date;
 	export let title;
-	export let description;
 	export let slug;
-	import { getReadableDate } from '$lib/utils';
+	import { getShortDate } from '$lib/utils';
 </script>
 
-<div class="flex flex-col pb-8">
-	<time class="text-xs text-stone-800/80 dark:text-stone-200/80 md:text-sm">
-		{getReadableDate(date)}
-	</time>
+<a href="/blog/{slug}">
+	<div class="group flex flex-row gap-2 rounded-sm py-1 hover:bg-primary md:mx-n2 md:px-2">
+		<div class="block text-size-1 tracking-[-0.015em] text-darkest group-hover:text-primaryActive">
+			{title}
+		</div>
 
-	<a
-		class="my-0.5 inline-block text-xl font-bold text-stone-800 dark:text-stone-100 hover:underline  md:text-2xl"
-		href="/blog/{slug}"
-	>
-		{title}
-	</a>
-
-	{#if description}
-		<p class="my-0 text-sm font-normal prose prose-stone dark:prose-invert md:text-base">
-			{description}
-		</p>
-	{/if}
-</div>
+		<time
+			class="ml-auto block self-center whitespace-nowrap font-mono text-size-0 text-dark group-hover:text-primaryActive"
+		>
+			{getShortDate(date)}
+		</time>
+	</div>
+</a>

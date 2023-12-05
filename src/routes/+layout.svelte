@@ -24,6 +24,7 @@
 <svelte:head>
 	<meta data-key="description" name="description" content={siteDescription} />
 	<meta name="author" content="Bryan Anthonio" />
+	<script defer data-domain="bryananthonio.com" src="https://plausible.io/js/script.js"></script>
 </svelte:head>
 
 <div class="content px-3 sm:px-5 xl:px-0">

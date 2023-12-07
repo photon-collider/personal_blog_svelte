@@ -1,8 +1,6 @@
 <script>
 	import ArticleHeader from './Article/ArticleHeader.svelte';
 	import ArticleBodyText from './Article/ArticleBodyText.svelte';
-	import ArticleBio from './Article/ArticleBio.svelte';
-	import ArticleTagsList from './ArticleTagsList.svelte';
 	import Grid2ColContainer from './Grid2ColContainer.svelte';
 	export let data;
 	const { title, date, description, dateUpdated, tags, renderEqs } = data.meta;
@@ -13,6 +11,10 @@
 
 	<meta property="og:title" content={title} />
 	<meta property="og:type" content="article" />
+	<meta data-key="description" name="description" content={description} />
+	<meta name="twitter:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta name="twitter:description" content={description} />
 
 	{#if renderEqs}
 		<link

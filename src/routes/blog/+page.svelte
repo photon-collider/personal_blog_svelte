@@ -6,6 +6,12 @@
 
 <svelte:head>
 	<title>Blog | Bryan Anthonio</title>
+	<meta
+		data-key="description"
+		name="description"
+		content="Writings on technology, photography, web development learnings, and musings on life and
+career."
+	/>
 </svelte:head>
 
 <div>

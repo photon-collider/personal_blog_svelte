@@ -3,7 +3,11 @@
 </script>
 
 <svelte:head>
-
+	<meta
+		data-key="description"
+		name="description"
+		content="Brief details about my life, interests, and career."
+	/>
 <title>About | Bryan Anthonio</title>
 </svelte:head>
 

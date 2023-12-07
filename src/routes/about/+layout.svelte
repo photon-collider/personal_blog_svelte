@@ -1,7 +1,5 @@
 <script>
 	import ArticleBodyText from '$lib/components/Article/ArticleBodyText.svelte';
-	import BioPic from '$lib/components/BioPic.svelte';
-	import Grid2ColContainer from '$lib/components/Grid2ColContainer.svelte';
 </script>
 
 <h1 class="mb-5">About Me</h1>

@@ -4,6 +4,11 @@
 
 <svelte:head>
 	<title>Projects | Bryan Anthonio</title>
+	<meta
+		data-key="description"
+		name="description"
+		content="A collection of my web development side projects."
+	/>
 </svelte:head>
 
 <main>

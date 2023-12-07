@@ -3,7 +3,6 @@
 	import { fade } from 'svelte/transition';
 	import '$lib/styles/base.css';
 	import '$lib/styles/prism.css';
-	import { siteDescription } from '$lib/config';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import PageContainer from '$lib/components/PageContainer.svelte';
@@ -22,7 +21,6 @@
 </script>
 
 <svelte:head>
-	<meta data-key="description" name="description" content={siteDescription} />
 	<meta name="author" content="Bryan Anthonio" />
 	<script defer data-domain="bryananthonio.com" src="https://plausible.io/js/script.js"></script>
 </svelte:head>

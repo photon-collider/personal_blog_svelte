@@ -3,8 +3,8 @@ export const imgHostRootURL = 'https://banthonio.nyc3.digitaloceanspaces.com';
 
 export const numArticlesToShow = 4;
 export const siteDescription =
-	'A blog by Bryan Anthonio covering topics such as photography, data science, technology, and life.';
-export const siteURL = 'bryananthonio.com';
+	'Web developer, photographer, and blogger. Welcome to my digital garden!';
+export const siteURL = 'https://bryananthonio.com';
 
 export const navHeaderItems = [
 	{ href: '/', title: 'Home' },

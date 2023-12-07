@@ -1,22 +1,14 @@
 <script>
-	export let data;
-	import FrontPageSection from '$lib/components/FrontPageSection.svelte';
-	import ArticleList from '$lib/components/ArticleList.svelte';
-	import { numArticlesToShow } from '$lib/config';
 	import HeroBanner from '$lib/components/HeroBanner.svelte';
-
-	let w = 0;
-
-	$: outerWidth = 0;
-	$: numPhotosToShow = outerWidth > 768 ? 8 : 6;
-
-	let recentArticles = data.articles.slice(0, numArticlesToShow);
 </script>
-
-<svelte:window bind:outerWidth />
 
 <svelte:head>
 	<title>Bryan Anthonio</title>
+	<meta
+		data-key="description"
+		name="description"
+		content="Web developer, photographer, and blogger. Welcome to my digital garden!"
+	/>
 </svelte:head>
 
 <HeroBanner />

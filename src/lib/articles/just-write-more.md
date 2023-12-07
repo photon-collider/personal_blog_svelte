@@ -9,7 +9,7 @@ What’s the best way to improve your writing? Just write more often. This advic
 
 I’ve been too ambitious whenever I write a new post for my blog. I constantly aim for each post to be written well, perfectly structured, and full of original ideas. As a result, I write less often because of the unnecessary pressure I put on myself. I’m now aiming to publish more regularly and worry less about writing perfect blog posts.
 
-This experience reminds me of my struggles when I first started photography. In those days, my photos didn’t impress me. This is because I didn’t yet understand techniques for composing images and hadn’t identified a genre of photography to focus on. I felt aimless. 
+This experience reminds me of my struggles when [I first started photography.](/blog/my-first-steps-in-photography) In those days, my photos didn’t impress me. This is because I didn’t yet understand techniques for composing images and hadn’t identified a genre of photography to focus on. I felt aimless. 
 
 Finding clarity required effort. I took lots of pictures and experimented with different styles of photography. Soon, I realized my love for landscape photography and developed my photographic eye. I’m going to take a similar approach to writing. 
 

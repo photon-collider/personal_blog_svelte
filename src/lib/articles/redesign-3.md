@@ -42,7 +42,7 @@ I removed the photos page. When I first created this website, I intended for it 
 
 I have grander visions for showcasing my photography online. These include crafting photo essays and galleries. In the future, I may create a new website for this or add a redesigned photography page to this website. 
 
-I haven’t yet determined which path to take yet. Until then, I’m dedicating this website to share my writings and my side projects. 
+I haven’t yet determined which path to take. Until then, I’m dedicating this website to share my writings and my side projects. 
 
 ### Added Projects Page
 

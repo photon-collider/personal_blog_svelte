@@ -18,7 +18,7 @@
 		<ProjectCard
 			title="bryananthonio.com"
 			githubLink="https://github.com/photon-collider/personal_blog_svelte"
-			articleLink="blog/redesign-2">The source code for my personal website.</ProjectCard
+			articleLink="blog/redesign-3">The source code for my personal website.</ProjectCard
 		>
 	</div>
 </main>

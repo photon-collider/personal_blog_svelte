@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>{title} | Bryan Anthonio</title>
+	<title>{title}</title>
 
 	<meta property="og:title" content={title} />
 	<meta property="og:type" content="article" />

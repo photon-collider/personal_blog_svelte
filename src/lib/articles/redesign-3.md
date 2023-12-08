@@ -89,4 +89,4 @@ I’m also a huge fan of [Maggie Appleton’s website](https://maggieappleton.co
 
 ## Conclusion
 
-I had a lot of fun putting together this redesign. Indeed, this work marked a significant evolution in my design skills to the test and my vision for my website. I'm only just getting started in my design journey and I look forward to seeing what comes next.
+I had a lot of fun putting together this redesign. Indeed, this work marked a significant evolution in my design skills and my vision for my website. I'm only just getting started in my design journey and look forward to seeing what comes next.

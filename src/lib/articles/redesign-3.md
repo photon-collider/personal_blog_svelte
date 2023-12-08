@@ -20,7 +20,7 @@ description: Documenting the latest update for my website design, which includes
 
 In this update, I devised a design system composed of a color palette, spacings, and font sizes. Here are the highlights:
 
-- **My design uses Inter font for headings and body text.** Previously, I relied on using the default sans-serif fonts provided by the browser. I made this change to provide a more consistent experience across users.
+- **My design uses Inter font for headings and body text.** Previously, I used the default sans-serif fonts provided by the browser. I made this change to provide a more consistent experience across users.
 - **I implemented a typographic scale.** For this, I picked a scale ratio of 1.313 to create 7 font sizes.
 
 - **I devised a color palette for headers and body text, buttons, and various UI elements.** These include:
@@ -46,7 +46,7 @@ I haven’t yet determined which path to take. Until then, I’m dedicating this
 
 ### Added Projects Page
 
-To that effect, I added a new projects page to showcase my side projects. There’s not much content on this page right now. But that will change in the future.
+To that effect, I added a new page to showcase my side projects. There’s not much content on this page right now. But that will change in the future.
 
 ## Page Layouts
 

@@ -15,6 +15,7 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={description} />
 	<meta name="twitter:description" content={description} />
+	<link rel="canonical" href={data.canonicalURL} />
 
 	{#if renderEqs}
 		<link

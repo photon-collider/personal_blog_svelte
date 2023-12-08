@@ -46,7 +46,7 @@ I haven’t yet determined which path to take. Until then, I’m dedicating this
 
 ### Added Projects Page
 
-To that effect, I added a new projects page to showcase my web development side projects. There’s not much content on this page right now. But that will change in the future.
+To that effect, I added a new projects page to showcase my side projects. There’s not much content on this page right now. But that will change in the future.
 
 ## Page Layouts
 

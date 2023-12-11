@@ -1,6 +1,5 @@
 import math from 'remark-math';
 import rehypeKatexSvelte from 'rehype-katex-svelte';
-import rehype_katex from 'rehype-katex';
 import katex from 'katex';
 import { visit } from 'unist-util-visit';
 

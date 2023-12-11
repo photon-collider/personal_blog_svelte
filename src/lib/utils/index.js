@@ -1,6 +1,5 @@
 import { DateTime } from 'luxon';
 import katex from 'katex';
-import slugify from 'slugify';
 
 // TODO: add try-catch in case no posts match a given tag
 // An {#if posts.length} block with an {:else} should do the trick

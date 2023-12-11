@@ -1,4 +1,4 @@
-<div class="writing mx-auto lg:m-0">
+<div class="writing mx-auto w-full lg:m-0">
 	<slot />
 </div>
 

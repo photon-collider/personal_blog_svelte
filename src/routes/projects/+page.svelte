@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects | Bryan Anthonio</title>
+	<title>Bryan Anthonio | Projects</title>
 	<meta
 		data-key="description"
 		name="description"

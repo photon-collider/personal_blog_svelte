@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog | Bryan Anthonio</title>
+	<title>Bryan Anthonio | Blog</title>
 	<meta
 		data-key="description"
 		name="description"

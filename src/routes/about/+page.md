@@ -8,7 +8,7 @@
 		name="description"
 		content="Brief details about my life, interests, and career."
 	/>
-<title>About | Bryan Anthonio</title>
+<title>Bryan Anthonio | About</title>
 </svelte:head>
 
 

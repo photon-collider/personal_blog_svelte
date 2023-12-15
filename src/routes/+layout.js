@@ -9,6 +9,6 @@ export const load = async ({ url }) => {
 			path: url.pathname
 		};
 	} catch (err) {
-		throw error(500, err);
+		error(500, err);
 	}
 };

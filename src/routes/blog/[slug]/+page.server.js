@@ -5,8 +5,8 @@ import { siteURL } from '$lib/config.js';
 export async function load({ params }) {
 	try {
 		const article = await import(`../../../lib/articles/${params.slug}.md`);
+		const canonicalURL = `${siteURL}/blog/${params.slug}`
 
-		const canonicalURL = path.join(siteURL, 'blog', params.slug)
 		return {
 			meta: { ...article.metadata, slug: params.slug },
 			articleContent: article.default.render().html,

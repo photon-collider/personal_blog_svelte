@@ -7,6 +7,6 @@ export async function load({ fetch }) {
 
 		return { articles };
 	} catch (err) {
-		throw error(500, err);
+		error(500, err);
 	}
 }

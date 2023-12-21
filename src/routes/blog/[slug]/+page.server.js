@@ -1,5 +1,4 @@
 import { error } from '@sveltejs/kit';
-import path from 'path';
 import { siteURL } from '$lib/config.js';
 
 export async function load({ params }) {
@@ -13,6 +12,6 @@ export async function load({ params }) {
 			canonicalURL
 		};
 	} catch (err) {
-		throw error(404, 'Page Not Found!');
+		error(404, 'Page Not Found!');
 	}
 }

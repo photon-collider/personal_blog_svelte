@@ -1,7 +1,7 @@
 ---
 title: '2023: My Year in Review'
 tags: ['new-year']
-description: Reviewing my highlights from 2023 and plans for 2023.
+description: Reviewing my highlights from 2023 and plans for 2024.
 date: 2024-01-16
 imagebucket:
 ---

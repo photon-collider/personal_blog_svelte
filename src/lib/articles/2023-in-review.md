@@ -91,7 +91,7 @@ These were my [goals for 2023](/blog/2022-in-review#goals-for-2023):
 - **Write 12 blog posts:** I wrote 10 blog posts in 2023. Interestingly enough, I published 4 of these in December alone. The impetus for this came after I read *Lean Startup*, which gave me a new perspective regarding my creative work. I realized that it's better to ship more often rather than endlessly trying to reach perfection. 
 - **Read 12 books:** I’m happy to say that I achieved this goal! 
 - **Finish an algorithms course:** I started learning algorithms last year but fell off track. I may resume learning algorithms later this year now that I’m a software developer.
-- **Learn more about systems design:** I wanted to learn how to create scalable systems, which is one reason I started learning [Elixir](https://elixir-lang.org). I’ve explored the basics of systems design. But, it’s not yet clear to me right now how deep I’ll explore this topic in the coming year.
+- **Learn more about systems design:** I wanted to learn how to create scalable systems, which is one reason I [started learning Elixir](/blog/first-elixir-program). I’ve explored the basics of systems design. But, it’s not yet clear to me right now how deep I’ll explore this topic in the coming year.
 - **Read books on software development:** I put together a list of software engineering books to read. However, I never got around to reading them, as my priorities had shifted. 
 
 ### Goals for Next Year

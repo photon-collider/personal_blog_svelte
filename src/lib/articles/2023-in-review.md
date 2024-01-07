@@ -34,7 +34,7 @@ Here are previous yearly reviews that I’ve written:
 
 
 #### Software Development & Engineering
-- [*Programming Phoenix LiveView*](https://www.goodreads.com/book/show/57281043-programming-phoenix-liveview) by Bruce A. Tate and Sophie DeBenedetto. I’ve found this book to be the most helpful introduction to Phoenix and LiveView. It clarified so much of my confusion regarding Phoenix and gave me confidence to [build a simple project](/blog/creating-simple-rest-api-phoenix-elixir). The book is in beta and contains a few typos at the time of this writing. 
+- [*Programming Phoenix LiveView*](https://www.goodreads.com/book/show/57281043-programming-phoenix-liveview) by Bruce A. Tate and Sophie DeBenedetto. I’ve found this book to be the most helpful introduction to Phoenix and LiveView. It clarified so much of my confusion regarding Phoenix and gave me confidence to [build a simple project](/blog/creating-simple-rest-api-elixir-phoenix). The book is in beta and contains a few typos at the time of this writing. 
 - [*Algorithms to Live By*](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by) by Brian Christian and Tom Griffiths. I loved this book. It was a remarkable exploration of how to apply computer science concepts to everyday life.
 - [*Practical UI*](https://www.goodreads.com/book/show/75519891-practical-ui) by Adam Dannaway. This was a practical primer on good user interface (UI) design practices for non-experts. It sparked my interest in visual design.
 - [*The Missing README*](https://www.goodreads.com/book/show/57271519-the-missing-readme) by Chris Riccomini and Dmitry Ryaboy. This book contained lots of practical tips on getting into software engineering. However, I didn’t get many new insights that I hadn’t previously learned from other sources. 
@@ -54,7 +54,7 @@ I’m proud I devised a task management workflow that I’ve stuck with for a lo
 
 I achieved this by adopting these tools:
 - [Obsidian](https://obsidian.md): I’ve used Obsidian to manage my notes and orchestrate my periodic reviews, which occur weekly, monthly, and yearly.
-- [Things 3](https://culturedcode.com/things/): I previously experimented with Things 3 but finally got into the groove of using it. I wrote about this in a [recent blog post](/blog/getting-things-done-things-3).
+- [Things 3](https://culturedcode.com/things/): I previously experimented with Things 3 but finally got into the groove of using it. I wrote about this in a [recent blog post](/blog/getting-things-done-with-things-3).
 - [iA Writer](https://ia.net/writer): I started using iA Writer more for writing blog posts because of its minimalist interface and other built-in features, like its focus modes, that mesh well with my writing process.
 
 ### We Adopted a Puppy

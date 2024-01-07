@@ -17,7 +17,7 @@ Here are previous yearly reviews that I’ve written:
 
 ### 3 Key Lessons Learned
 
-**Avoid letting perfection hinder progress.** I’ve discovered that my perfectionism, despite its good intentions, hinders my growth. For example, I cited this as [one reason](/blog/just-write-more) why I wasn’t publishing more blog posts. 
+**Avoid letting perfectionism hinder progress.** I’ve discovered that my perfectionism, despite its good intentions, hinders my growth. For example, I cited this as [one reason](/blog/just-write-more) why I wasn’t publishing more blog posts. 
 
 **Don’t be overambitious with side projects.** I noticed that I’m too ambitious with my side projects, aiming to impress others. As a result, I prioritize longer-term projects that I eventually abandon once I start feeling overwhelmed. Finishing up smaller projects in a shorter period can also be rewarding. These can help me learn fundamental skills that will serve me well for more ambitious efforts.
 

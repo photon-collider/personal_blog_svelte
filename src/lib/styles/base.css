@@ -27,7 +27,7 @@
 	--font-size-step-6: calc(var(--font-size-step-5) * var(--type-scale));
 
 
-	--line-height-body-text: 1.7;
+	--line-height-body-text: 1.5;
 	--letter-spacing-body-text: -0.014em;
 	--max-width-writing: 65ch;
 

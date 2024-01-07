@@ -27,7 +27,7 @@
 	--font-size-step-6: calc(var(--font-size-step-5) * var(--type-scale));
 
 
-	--line-height-body-text: 1.7;
+	--line-height-body-text: 1.5;
 	--letter-spacing-body-text: -0.014em;
 	--max-width-writing: 65ch;
 
@@ -141,10 +141,11 @@ h4, .h4 {
 	letter-spacing: var(--letter-spacing-body-text)
 }
 
-.writing p a {
+.writing p a, .writing ol a, .writing ul a{
 	color: var(--primary-link-color);
 	text-decoration: underline;
-	text-decoration-thickness: 2px;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
 }
 
 .writing ul,

@@ -1,5 +1,7 @@
 import math from 'remark-math';
 import rehypeKatexSvelte from 'rehype-katex-svelte';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
 import katex from 'katex';
 import { visit } from 'unist-util-visit';
 
@@ -34,6 +36,6 @@ const katex_blocks = () => (tree) => {
 
 export const mdsvex_config = {
 	remarkPlugins: [math, katex_blocks],
-	rehypePlugins: [correct_hast_tree, rehypeKatexSvelte],
+	rehypePlugins: [correct_hast_tree, rehypeKatexSvelte, rehypeSlug],
 	extensions: ['.md']
 };

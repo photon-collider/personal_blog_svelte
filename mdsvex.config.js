@@ -36,6 +36,6 @@ const katex_blocks = () => (tree) => {
 
 export const mdsvex_config = {
 	remarkPlugins: [math, katex_blocks],
-	rehypePlugins: [correct_hast_tree, rehypeKatexSvelte, rehypeSlug, rehypeAutolinkHeadings],
+	rehypePlugins: [correct_hast_tree, rehypeKatexSvelte, rehypeSlug],
 	extensions: ['.md']
 };

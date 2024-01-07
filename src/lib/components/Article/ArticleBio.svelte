@@ -12,7 +12,7 @@
 		</p>
 		<p>
 			Got any thoughts or comments? Send me a note at <a
-				class="underline"
+				class="underline decoration-1 underline-offset-1"
 				href="mailto:hey@bryananthonio.com">hey@bryananthonio.com</a
 			>.
 		</p>

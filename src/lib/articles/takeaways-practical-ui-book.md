@@ -13,7 +13,7 @@ date: 2024-01-19
 
 How do UI designers create sleek and elegant web designs? This question puzzled me each time I redesigned my personal website.  
 
-However, my understanding of web design fundamentals improved after reading the book [*Practical UI* by Adham Dannaway](https://www.practical-ui.com). The book offered many useful tips on color, typography, layouts, and buttons. In this post, I’ll share key insights from the book that helped me my latest website design. 
+However, my understanding of web design fundamentals improved after reading the book [*Practical UI* by Adham Dannaway](https://www.practical-ui.com). The book offered many useful tips on color, typography, layouts, and buttons. In this post, I’ll share key insights from the book that aided my [latest website redesign](/blog/redesign-3). 
 
 ## Color
 
@@ -67,4 +67,4 @@ However, my understanding of web design fundamentals improved after reading the 
 
 ## Conclusion
 
-In summary, *Practical UI* introduced me to fundamentals of visual design that helped me redesign my website. This experience also sparked my deeper curiosity of UI design. I’m eager to learn how to create even more user-friendly and aesthetically pleasing websites.
+In summary, *Practical UI* introduced me to fundamentals of visual design that helped me redesign my website. This experience also sparked my deeper curiosity of UI design. I'm excited to elevate my design skills to create websites that are even more visually stunning.

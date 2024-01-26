@@ -1,5 +1,6 @@
 <script>
     import BioPic from '$lib/components/BioPic.svelte'
+	import {contactEmail} from '$lib/config'
 </script>
 
 <svelte:head>
@@ -15,7 +16,7 @@
 
 ## What I'm Doing Now
 
-I'm a front-end engineer with a keen interest in crafting beautiful user-friendly digital experiences. 
+I'm a front-end engineer with a keen interest in crafting beautiful user-friendly digital experiences.
 
 My journey into software development started many years ago when I stumbled upon a C programming book on my dad's shelf during my high school years. Back then, I was fascinated that I could tell a computer what to do just by writing code.
 
@@ -35,5 +36,4 @@ Outside of programming and web development I enjoy:
 
 ## Contact
 If you would like to send some feedback or just say hello, feel free to reach out to me via
-email at **hello** at **bryananthonio.com**.
-
+email at <a href="mailto:{contactEmail}"> {contactEmail}</a>.

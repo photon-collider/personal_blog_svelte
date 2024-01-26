@@ -1,5 +1,6 @@
 <script>
 	import BioPic from '../BioPic.svelte';
+	import { contactEmail } from '$lib/config';
 </script>
 
 <div
@@ -13,7 +14,7 @@
 		<p>
 			Got any thoughts or comments? Send me a note at <a
 				class="underline decoration-1 underline-offset-1"
-				href="mailto:hey@bryananthonio.com">hey@bryananthonio.com</a
+				href="mailto:{contactEmail}">{contactEmail}</a
 			>.
 		</p>
 	</div>

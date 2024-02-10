@@ -9,7 +9,7 @@ imagebucket:
 
 What do you think of when you hear the word “ambiguity”? Some people regard it as an adversary to conquer. For others, the concept might evoke feelings of being trapped in a maze. I used to have such feelings. 
 
-But after reading the book *Navigating Ambiguity* by Andrea Small and Kelly Schmutte, I’ve since understood that ambiguity isn’t to be feared. Indeed, it fuels creativity.
+But after reading the book [*Navigating Ambiguity*](https://dschool.stanford.edu/book-collections/navigating-ambiguity) by Andrea Small and Kelly Schmutte, I’ve since understood that ambiguity isn’t to be feared. Indeed, it fuels creativity.
 
 Ambiguity arises when the end goal for a project isn’t defined with extreme precision. This provides room to experiment with multiple approaches. For instance, in writing, you might rewrite a sentence or paragraph several ways until it feels just right. 
 

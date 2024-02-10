@@ -2,7 +2,7 @@
 title: 'Ambiguity Fuels Creativity'
 tags: ['writing', 'design', 'personal']
 description: Exploring how ambiguity serves as a catalyst for innovation in creative endeavors.
-date: 2024-02-04
+date: 2024-02-09
 imagebucket:
 ---
 
@@ -23,6 +23,6 @@ I’ve also found creative exploration necessary in doing web design. This has p
 
 With that being said, too much ambiguity hinders progress. If the breadth of potential avenues is endlessly vast, it becomes cumbersome to identify which ones to explore. 
 
-These instances require a clearer vision, which necessitates setting narrower constraints. Doing so empowers ambiguity to serve as a bridge towards meaningful opportunities for innovation. 
+These instances require a clearer vision, which necessitates setting narrower constraints. Doing so empowers you to leverage ambiguity as a bridge towards meaningful opportunities for innovation. 
 
 Ambiguity is a crucial ingredient in all creative endeavors. Treat it as an asset rather than a deficit. Lean into it to add a personal touch to your work and discover innovative approaches you wouldn’t have thought possible. Constrain it when it hinders your progress. In doing so, you’ll transform the unknown into a canvas for your imagination. 

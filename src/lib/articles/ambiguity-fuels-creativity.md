@@ -2,9 +2,40 @@
 title: 'Ambiguity Fuels Creativity'
 tags: ['writing', 'design', 'personal']
 description: Exploring how ambiguity serves as a catalyst for innovation in creative endeavors.
-date: 2024-02-09
-imagebucket:
+date: 2024-02-23
+og_img_url: https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-600w.jpg
 ---
+
+<script>
+    import {imgHostRootURL} from '$lib/config'
+    import Figure from '$lib/components/Images/Figure.svelte'
+
+    let lgImgURL = `${imgHostRootURL}/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-1800w.jpg`
+    let mdImgURL = `${imgHostRootURL}/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-1200w.jpg`
+    let smImgURL = `${imgHostRootURL}/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-600w.jpg`
+    let altText = "An abstract image"
+    let caption = "Prompt: abstract minimalist illustration of ambiguity fueling creativity --ar 16:9 --v 6"
+</script>
+
+<svelte:head>
+    <meta content="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-600w.jpg" property="og:image">
+    <meta name="twitter:image" content="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-600w.jpg">
+</svelte:head>
+
+<div class="my-5">
+	<Figure {caption}>
+		<slot>
+			<img
+				srcset="{lgImgURL}  1800w,  {mdImgURL} 1200w, {smImgURL} 600w"
+				alt={altText}
+				src={smImgURL}
+				sizes="(max-width: 48rem) 100vw, 72rem"
+				loading="lazy"
+				class="mx-auto mb-2 block rounded"
+			/>
+		</slot>
+	</Figure>
+</div>
 
 
 What do you think of when you hear the word “ambiguity”? Some people regard it as an adversary to conquer. For others, the concept might evoke feelings of being trapped in a maze. I used to have such feelings. 

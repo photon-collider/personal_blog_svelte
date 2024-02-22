@@ -6,6 +6,7 @@ export const siteDescription =
   'Web developer, photographer, and blogger. Welcome to my digital garden!';
 export const siteURL = 'https://bryananthonio.com';
 export const contactEmail = 'hey@bryananthonio.com';
+export const twitterHandle = '@beanthonio'
 export const navHeaderItems = [
   { href: '/', title: 'Home' },
   { href: '/blog', title: 'Blog' },

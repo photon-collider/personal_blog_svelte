@@ -4,7 +4,8 @@
 	import Grid2ColContainer from './Grid2ColContainer.svelte';
 	import ArticleBio from './Article/ArticleBio.svelte';
 	export let data;
-	const { title, date, description, dateUpdated, tags, renderEqs } = data.meta;
+	const { title, date, description, dateUpdated, tags, renderEqs, og_img_url } = data.meta;
+	import { twitterHandle } from '$lib/config';
 </script>
 
 <svelte:head>
@@ -12,11 +13,21 @@
 
 	<meta property="og:title" content={title} />
 	<meta property="og:type" content="article" />
+
 	<meta data-key="description" name="description" content={description} />
-	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta name="twitter:description" content={description} />
 	<link rel="canonical" href={data.canonicalURL} />
+
+	<!-- Twitter metadata -->
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content={twitterHandle} />
+
+	{#if og_img_url}
+		<meta property="og:image" content={og_img_url} />
+		<meta name="twitter:image" content={og_img_url} />
+	{/if}
 
 	{#if renderEqs}
 		<link

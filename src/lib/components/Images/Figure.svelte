@@ -6,7 +6,7 @@
 	<slot />
 
 	{#if caption}
-		<figcaption class="text-center text-dark">
+		<figcaption class="text-dark">
 			{caption}
 		</figcaption>
 	{/if}

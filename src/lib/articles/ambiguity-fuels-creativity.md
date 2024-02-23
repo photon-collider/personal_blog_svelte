@@ -47,6 +47,8 @@ I previously struggled to embrace ambiguity because of my perfectionism. As a re
 
 For instance, when planning vacations, I no longer immediately pick one destination. I first brainstorm a list of potential destinations and eliminate a few of these after researching fun activities and the best times to travel to each place. Only then do I make a final selection.
 
+In writing software, I've found it helpful to consider multiple approaches to complex problems. Brainstorming different software architectures and examining their tradeoffs has enabled me to avoid overengineering solutions and find opportunities to simplify my code.
+
 I’ve also found creative exploration necessary in doing web design. This has pushed me to experiment with different fonts, layouts, and visual motifs to see what matches the brand I’m designing for. 
 
 With that being said, too much ambiguity hinders progress. If the breadth of potential avenues is endlessly vast, it becomes cumbersome to identify which ones to explore. 

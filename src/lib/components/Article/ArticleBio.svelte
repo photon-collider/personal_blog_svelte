@@ -11,15 +11,15 @@
 			Hello and thanks for stopping by! I'm Bryan Anthonio. On this blog, I explore technology,
 			programming, photography, and the valuable life lessons I've gathered.
 		</p>
-		<p class="writing">Got any thoughts or comments?</p>
+		<p class="writing">Got any thoughts or comments? Reach out via</p>
 		<ul>
 			<li>
-				Email me: <a class="underline decoration-1 underline-offset-1" href="mailto:{contactEmail}"
+				Email: <a class="underline decoration-1 underline-offset-1" href="mailto:{contactEmail}"
 					>{contactEmail}</a
 				>.
 			</li>
 			<li>
-				Reach out via Twitter: <a href="https://twitter.com/{twitterHandle}">{twitterHandle}</a>
+				Twitter: <a href="https://twitter.com/{twitterHandle}">{twitterHandle}</a>
 			</li>
 		</ul>
 	</div>

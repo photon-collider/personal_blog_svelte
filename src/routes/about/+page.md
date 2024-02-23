@@ -1,6 +1,6 @@
 <script>
     import BioPic from '$lib/components/BioPic.svelte'
-	import {contactEmail} from '$lib/config'
+	import {contactEmail, twitterHandle} from '$lib/config'
 </script>
 
 <svelte:head>
@@ -36,4 +36,7 @@ Outside of programming and web development I enjoy:
 
 ## Contact
 If you would like to send some feedback or just say hello, feel free to reach out to me via
-email at <a href="mailto:{contactEmail}"> {contactEmail}</a>.
+
+
+- Email: <a href="mailto:{contactEmail}"> {contactEmail}</a>.
+- Twitter: <a href="https://twitter.com/{twitterHandle}">{twitterHandle}</a>

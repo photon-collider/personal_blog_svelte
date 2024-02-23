@@ -17,10 +17,7 @@ og_img_url: https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/amb
     let caption = "Prompt: abstract minimalist illustration of ambiguity fueling creativity --ar 16:9 --v 6"
 </script>
 
-<svelte:head>
-    <meta content="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-600w.jpg" property="og:image">
-    <meta name="twitter:image" content="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/ambiguity-fuels-creativity/ambiguity-and-creativity-600w.jpg">
-</svelte:head>
+
 
 <div class="my-5">
 	<Figure {caption}>

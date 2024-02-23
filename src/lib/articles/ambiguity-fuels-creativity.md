@@ -44,9 +44,9 @@ Ambiguity arises when the end goal for a project isn’t defined with extreme pr
 
 This freedom lends a personal touch to creative work and uncovers surprising possibilities. Yet, I haven’t always found it easy to accept. 
 
-I previously struggled to embrace ambiguity because of my perfectionism. As a result, I would rush to the obvious solution to a challenge and perfect it, instead of permitting myself to discover other directions. Nowadays, I treat the open-ended aspects of my projects as opportunities to go beyond the obvious. 
-
 ## How I've Learned to Leverage Ambiguity
+
+I previously struggled to embrace ambiguity because of my perfectionism. As a result, I would rush to the obvious solution to a challenge and perfect it, instead of permitting myself to discover other directions. Nowadays, I treat the open-ended aspects of my projects as opportunities to go beyond the obvious. 
 
 For instance, when planning vacations, I no longer immediately pick one destination. I first brainstorm a list of potential destinations and eliminate a few of these after researching fun activities and the best times to travel to each place. Only then do I make a final selection.
 

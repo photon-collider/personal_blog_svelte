@@ -46,13 +46,15 @@ This freedom lends a personal touch to creative work and uncovers surprising pos
 
 ## How I've Learned to Leverage Ambiguity
 
-I previously struggled to embrace ambiguity because of my perfectionism. As a result, I would rush to the obvious solution to a challenge and perfect it, instead of permitting myself to discover other directions. Nowadays, I treat the open-ended aspects of my projects as opportunities to go beyond the obvious. 
+I previously struggled to embrace ambiguity because of my perfectionism. As a result, I would rush to the obvious solution to a challenge and perfect it, instead of permitting myself to discover other directions. 
 
-For instance, when planning vacations, I no longer immediately pick one destination. I first brainstorm a list of potential destinations and eliminate a few of these after researching fun activities and the best times to travel to each place. Only then do I make a final selection.
+Nowadays, I treat the open-ended aspects of my projects as opportunities to go beyond the obvious. 
 
-In writing software, I've found it helpful to consider multiple approaches to complex problems. Brainstorming different software architectures and examining their tradeoffs has enabled me to avoid overengineering solutions and find opportunities to simplify my code.
+For instance, when planning vacations, I no longer immediately pick one destination. I first make a list of potential destinations and eliminate a few of these after researching fun activities and the best times to travel to each place. Only then do I make a final selection.
 
-I’ve also found creative exploration necessary in doing web design. This has pushed me to experiment with different fonts, layouts, and visual motifs to see what matches the brand I’m designing for. 
+In writing software, I've found that brainstorming various software architectures and examining their tradeoffs has enabled me to avoid overengineering solutions and find opportunities to simplify my code.
+
+I’ve also found creative exploration necessary in doing web design. This has pushed me to experiment with different fonts, layouts, and visual motifs to see what matches the brand I’m designing for. Here, I've been able to discover interesting design ideas I wouldn't have previously thought of. 
 
 ## Handling Too Much Ambiguity
 
@@ -61,4 +63,8 @@ With that being said, too much ambiguity hinders progress. If the breadth of pot
 These instances require a clearer vision, which necessitates setting narrower constraints. Doing so empowers you to leverage ambiguity as a bridge towards meaningful opportunities for innovation. 
 
 ## Conclusion
-Ambiguity is a crucial ingredient in all creative endeavors. Treat it as an asset rather than a deficit. Lean into it to add a personal touch to your work and discover innovative approaches you wouldn’t have thought possible. Constrain it when it hinders your progress. In doing so, you’ll transform the unknown into a canvas for your imagination. 
+Ambiguity is a crucial ingredient in all creative endeavors. 
+
+Treat it as an asset rather than a deficit. Lean into it to add a personal touch to your work and discover innovative approaches you wouldn’t have thought possible. Constrain it when it hinders your progress. 
+
+In doing so, you’ll transform the unknown into a canvas for your imagination. 

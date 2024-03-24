@@ -2,9 +2,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts,md}'],
 	theme: {
-
 		fontSize: {
 			'size-0': 'var(--font-size-step-0)',
 			'size-1': 'var(--font-size-step-1)',
@@ -28,6 +27,9 @@ module.exports = {
 			'7': 'var(--spacing-7)',
 		},
 		extend: {
+			screens: {
+				xs: '480px',
+			},
 			fontFamily: {
 				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 			},

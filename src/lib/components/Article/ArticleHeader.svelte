@@ -14,9 +14,12 @@
 		{description}
 	</p>
 
-	<p class="publish-time mb-2">
-		<b class="">Published:</b> <time>{getReadableDate(date)}</time>
-	</p>
+	{#if date}
+		<p class="publish-time mb-2">
+			<b class="">Published:</b> <time>{getReadableDate(date)}</time>
+		</p>
+	{/if}
+
 	{#if dateUpdated}
 		<p class="mb-2">
 			<b>Updated</b>

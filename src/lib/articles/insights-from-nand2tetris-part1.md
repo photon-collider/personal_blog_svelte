@@ -21,7 +21,7 @@ Along the way, I built a 16-bit computer capable of performing integer arithmeti
 It was surprising to learn that all hardware in a computer can be built using only NAND gates. The first two projects made this clear. 
 
 <figure class="mx-auto my-5" style="max-width: 400px;">
-    <div class="bg-white p-4 border border-light rounded">
+    <div class="bg-white-nonresponsive p-4 border border-light rounded">
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/NAND%20Gate.png" class="block" alt="Diagram of a NAND gate and its truth table">
     </div>
     
@@ -45,7 +45,7 @@ The method known as the [Two’s Complement](https://en.wikipedia.org/wiki/Two%2
 The Two’s Complement represents positive numbers in their standard binary representations. Negative numbers are obtained by taking their positive equivalents, flipping all the bits, and adding 1. For instance, the number 2 in a 4-bit system is represented as `0010`, while -2 is represented as `1110`. The nice thing about this is that subtraction gets handled as a special case of addition. 
 
 <figure class="mx-auto w-fit my-5" style="max-width: 400px;">
-    <div class="bg-white p-4 border border-light rounded">
+    <div class="bg-white-nonresponsive p-4 border border-light rounded">
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Two's%20Complement.png" class="block" alt="Example table illustrating the Two's Complement">
     </div>
     
@@ -71,7 +71,7 @@ Hardware designers must ensure the clock cycle duration exceeds the maximum time
 
 
 <figure class="mx-auto w-fit  my-5" style="max-width: 480px;">
-    <div class="bg-white p-4 border border-light rounded">
+    <div class="bg-white-nonresponsive p-4 border border-light rounded">
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Clock%20Cycle.png" class="block" alt="Diagram of clock signal and delayed gate output signal in a digital circuit.">
     </div>
     
@@ -99,7 +99,7 @@ For instance, a monitor’s pixels get mapped onto a series of memory registers,
 Similarly, keyboards get mapped to a register that stores information regarding the most recently typed character. When a user types a key, the computer’s operating system reads the keyboard’s corresponding memory register, fetches the bitmap image associated with the typed character, and writes to the screen’s memory map to display the character.
 
 <figure class="mx-auto w-fit my-5 max-w-[280px] lg:max-w-[320px]">
-    <div class="bg-white p-4 border border-light rounded">
+    <div class="bg-white-nonresponsive p-4 border border-light rounded">
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Memory%20Maps.png" class="block" alt="Diagram of computer memory components: Keyboard input, Screen output, and RAM for temporary storage.">
     </div>
     
@@ -116,7 +116,7 @@ I now understand why it’s important to have drivers installed when connecting 
 Most modern computers are based on the [von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture), created by John von Neumann. This consists of a central processing unit (CPU) that interfaces with a memory device, processes data from input devices (such as keyboards), and generates outputs to output devices (such as screens). 
 
 <figure class="my-5">
-    <div class="bg-white p-4 border border-light rounded sm:mx-[-10%] lg:mx-[-20%]">
+    <div class="bg-white-nonresponsive p-4 border border-light rounded sm:mx-[-10%] lg:mx-[-20%]">
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Von%20Neumann%20Computer%20-%20Mobile.png" class="block max-w-[260px] mx-auto sm:hidden" alt="Diagram of the Von Neumann Computer Architecture.">
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Von%20Neumann%20Computer.png" class=" hidden sm:block" alt="Diagram of the Von Neumann Computer Architecture.">
     </div>

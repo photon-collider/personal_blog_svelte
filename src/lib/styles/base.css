@@ -13,6 +13,7 @@
     --lightest-color: hsl(0, 0%, 98%);
     --tag-color: hsl(0, 0%, 95%);
     --white-color: hsl(0, 0%, 100%);
+    --nonresponsive-white-color: hsl(0, 0%, 100%);
 
 
     --type-scale: 1.313;

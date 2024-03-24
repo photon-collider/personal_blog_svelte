@@ -1,5 +1,6 @@
 ---
 title: Stephen King’s Lesson on Embracing Failure
+category: 'personal'
 tags: ['writing']
 description: Discovering an essential lesson on creative work in Stephen King’s early encounters with rejection.
 date: 2024-01-26

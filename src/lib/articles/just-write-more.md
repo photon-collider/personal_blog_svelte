@@ -2,6 +2,7 @@
 title: 'Just Write More'
 date: 2023-12-03
 tags: ['personal', 'writing']
+category: 'personal'
 description: Exploring my struggles with perfectionism in my writing, and my commitment to overcome it through consistent practice.
 ---
 

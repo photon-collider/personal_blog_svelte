@@ -1,6 +1,7 @@
 ---
 title: A Beginner's Intro to Algorithm Analysis
 tags: ['algorithms', 'programming']
+category: 'tech'
 description: Exploring fundamentals of algorithm analysis by breaking down Big O notation, time complexity classes, and performance scenarios.
 date: 2023-07-01
 renderEqs: true

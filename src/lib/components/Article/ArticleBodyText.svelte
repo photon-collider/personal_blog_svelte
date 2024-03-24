@@ -1,9 +1,3 @@
-<div class="writing mx-auto w-full lg:m-0">
+<div class="writing mx-auto max-w-[var(--max-width-writing)]">
 	<slot />
 </div>
-
-<style lang="postcss">
-	div {
-		max-width: var(--max-width-writing);
-	}
-</style>

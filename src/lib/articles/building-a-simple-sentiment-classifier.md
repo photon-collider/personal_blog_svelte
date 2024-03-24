@@ -1,4 +1,5 @@
 ---
+category: 'tech'
 tags: ['machine-learning', 'nlp']
 title: Building a Simple Sentiment Classifier
 description: How to train a linear model to perform sentiment analysis.

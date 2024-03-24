@@ -1,5 +1,6 @@
 ---
 title: Simplifying My Website's CSS Using Tailwind
+category: 'tech'
 tags: ['web-development', 'programming']
 description: Discussing my transition from using a centralized CSS style sheet to adopting a component-based approach with Tailwind CSS.
 date: 2023-08-05

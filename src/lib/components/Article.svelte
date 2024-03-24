@@ -42,14 +42,8 @@
 <article>
 	<ArticleHeader {title} {description} {date} {dateUpdated} {tags} />
 
-	<Grid2ColContainer classesToAdd="gap-3">
-		<div>
-			<ArticleBodyText>
-				{@html data.articleContent}
-			</ArticleBodyText>
-			<ArticleBio />
-		</div>
-
-		<aside class="mx-auto flex max-w-[var(--max-width-writing)] flex-col gap-4 lg:mx-0" />
-	</Grid2ColContainer>
+	<ArticleBodyText>
+		{@html data.articleContent}
+	</ArticleBodyText>
+	<ArticleBio />
 </article>

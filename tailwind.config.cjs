@@ -43,6 +43,7 @@ module.exports = {
 				light: "var(--light-color)",
 				lightest: "var(--lightest-color)",
 				white: "var(--white-color)",
+				"white-nonresponsive": "var(--nonresponsive-white-color)"
 			}
 		}
 	},

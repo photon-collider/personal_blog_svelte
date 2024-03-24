@@ -3,6 +3,7 @@ title: Thinking About the Value of Writing
 tags: ['writing', 'personal']
 description: The value of writing and how it relates to learning in public
 date: 2022-11-13
+category: 'personal'
 ---
 
 How does writing give value to readers? I don't think I thought much about this question when I first learned how to write. However, I pondered this more seriously after watching a [lecture by Larry McEnerney](https://www.youtube.com/watch?v=aFwVf5a3pZM), the director of the writing program at the University of Chicago.

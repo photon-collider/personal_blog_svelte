@@ -5,6 +5,7 @@ tags: ['personal', 'social-media', 'site-update']
 description: Examining how I've used Instagram in the past and my newfound desire to start sharing my photography on my website.
 imagebucket: 'article_images/p4_rethinking_instagram'
 header_image: 'p4_rethinking_instagram'
+category: 'personal'
 ---
 
 <script>

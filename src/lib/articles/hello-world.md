@@ -1,5 +1,6 @@
 ---
 tags: ['site-update']
+category: 'personal'
 title: Hello, World!
 date: 2020-10-31
 description: Here's a few words on launching this blog.

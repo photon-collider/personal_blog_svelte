@@ -1,5 +1,6 @@
 ---
 title: 'Ambiguity Fuels Creativity'
+category: 'personal'
 tags: ['writing', 'design', 'personal']
 description: Exploring how ambiguity serves as a catalyst for innovation in creative endeavors.
 date: 2024-02-23

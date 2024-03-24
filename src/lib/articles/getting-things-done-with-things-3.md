@@ -1,6 +1,7 @@
 ---
 tags: ['productivity']
 title: Getting Things Done with Things 3
+category: 'personal'
 date: 2023-10-15
 description: Sharing my streamlined task management using Things 3, emphasizing setup, routines, and preferences.
 ---

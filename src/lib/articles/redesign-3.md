@@ -3,6 +3,7 @@ title: 'Redesign: Version 3.0'
 date: 2023-12-08
 tags: ['site-update']
 description: Documenting the latest update for my website design, which includes a new design system and a new focus on presenting my writing and my side projects.
+category: 'design'
 ---
 
 

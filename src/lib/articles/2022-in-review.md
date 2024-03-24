@@ -1,5 +1,6 @@
 ---
 title: '2022: My Year in Review'
+category: 'yearly-review'
 tags: ['new-year']
 description: Reviewing my personal highlights from 2022 and my plans for 2023.
 date: 2023-01-16

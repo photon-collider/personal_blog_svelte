@@ -1,5 +1,6 @@
 ---
 title: "My Top Takeaways from 'Practical UI'"
+category: 'design'
 tags: ['design']
 description: Recapping some practical tips from Adham Dannaway's book on web design.
 date: 2024-01-19

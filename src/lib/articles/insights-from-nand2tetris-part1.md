@@ -2,7 +2,7 @@
 title: 'What I Learned About Computers in Nand2Tetris Part 1'
 date: 2024-03-24
 tags: ['technology']
-category: 'technology'
+category: 'tech'
 description: Sharing key insights on how computers work, from logic gates and binary arithmetic to assembly languages.
 ---
 

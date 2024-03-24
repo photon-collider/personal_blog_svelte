@@ -3,6 +3,7 @@ tags: ['photography']
 title: My First Steps in Photography
 date: 2020-12-03
 description: How I got started in photography, including some of the challenges I faced and the lessons I learned.
+category: 'personal'
 ---
 
 <script>

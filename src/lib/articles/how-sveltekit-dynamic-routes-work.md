@@ -1,6 +1,7 @@
 ---
 title: How Slug-Based Dynamic Routing Works in Sveltekit
 tags: ['svelte', 'sveltekit']
+category: 'tech'
 description: How to set up your SvelteKit project to handle routing for dynamic routes of varying complexity.
 date: 2023-03-08
 ---

@@ -3,7 +3,7 @@ title: My First Visit to Chicago
 description: Sharing some photos from my trip to the Windy City.
 date: 2021-07-19
 tags: ['travel', 'photography']
-category: 'personal'
+category: 'photography'
 imagebucket: 'article_images/p7_first_visit_to_chicago'
 header_image: 'copyright-bryan-anthonio_com-chicago_skyline_1'
 skyline_image_2: 'copyright-bryan-anthonio_com-chicago_skyline_2'

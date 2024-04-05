@@ -31,7 +31,8 @@ module.exports = {
 				xs: '480px',
 			},
 			fontFamily: {
-				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+				sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
+				mono: ['IBM Plex Mono', ...defaultTheme.fontFamily.sans]
 			},
 			colors: {
 				primary: "var(--primary-color)",

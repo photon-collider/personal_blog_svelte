@@ -1,6 +1,6 @@
 ---
 title: Sentiment Analysis with Naive Bayes
-category: 'tech'
+category: 'aiml'
 description: How to implement sentiment analysis using a naive Bayes classifier.
 date: 2021-07-24
 tags: ['machine-learning', 'nlp', 'statistics']

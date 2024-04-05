@@ -1,6 +1,6 @@
 ---
 title: 'Writing My First Elixir Program'
-category: 'tech'
+category: 'swe'
 date: 2023-04-30
 tags: ['elixir']
 description: Sharing the process of writing my first Elixir program, which focuses on handling image processing tasks.

@@ -1,6 +1,6 @@
 ---
 title: Creating a Sitemap in SvelteKit
-category: 'tech'
+category: 'swe'
 tags: ['svelte', 'sveltekit']
 description: How to create a sitemap in SvelteKit for search engine optimization (SEO).
 date: 2023-12-11

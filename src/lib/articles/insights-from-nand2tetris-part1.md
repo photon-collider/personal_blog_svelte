@@ -2,7 +2,7 @@
 title: 'What I Learned About Computers in Nand2Tetris Part 1'
 date: 2024-03-24
 tags: ['technology']
-category: 'tech'
+category: 'swe'
 description: Sharing key insights on how computers work, from logic gates and binary arithmetic to assembly languages.
 ---
 
@@ -149,3 +149,4 @@ Furthermore, assembly languages are each tailored to a target hardware platform.
 Completing the exercises in Nand2Tetris Part 1 helped me understand the fundamental concepts of modern computers. These range from the basic logic gates that serve as building blocks all the way to the low-level assembly languages used to program the hardware. Now, computers are not as mysterious to me as they were when I first started the course.
 
 But, the only mystery left for me to resolve is how software, such as operating systems and compilers, fits in the bigger picture of computing. I look forward to learning more about these concepts in the second part of the course.
+

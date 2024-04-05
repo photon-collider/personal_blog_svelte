@@ -1,6 +1,6 @@
 ---
 title: 'Creating a Simple REST API Using Elixir and Phoenix'
-category: 'tech'
+category: 'swe'
 date: 2023-12-30
 tags: ['elixir', 'web-development']
 description: A step-by-step guide on creating a REST API with Phoenix, covering everything from database setup to endpoint implementation.

@@ -5,16 +5,20 @@
 	import { getShortDate } from '$lib/utils';
 </script>
 
-<a href="/blog/{slug}">
-	<div class="group flex flex-row gap-2 rounded-sm py-1 hover:bg-primary md:mx-n2 md:px-2">
-		<div class="block text-size-1 tracking-[-0.015em] text-darkest group-hover:text-primaryActive">
-			{title}
-		</div>
-
+<a
+	href="/blog/{slug}"
+	class="group block w-fit max-w-[720px] rounded-sm px-3 py-1 hover:bg-primary hover:text-dark"
+>
+	<div class="flex flex-row gap-[16px]">
 		<time
-			class="ml-auto block self-center whitespace-nowrap font-mono text-size-0 text-dark group-hover:text-primaryActive"
+			class="block self-center self-baseline whitespace-nowrap font-mono text-[0.875rem] uppercase text-dark opacity-70 group-hover:text-primaryActive group-hover:opacity-100"
 		>
 			{getShortDate(date)}
 		</time>
+		<div
+			class="block self-baseline text-[1.125rem] tracking-[-0.015em] text-darkest group-hover:text-primaryActive"
+		>
+			{title}
+		</div>
 	</div>
 </a>

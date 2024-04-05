@@ -47,6 +47,23 @@ export function groupArticlesByYear(sortedArticles) {
 	return groupedByYear
 }
 
+export function groupArticlesByCategory(sortedArticles) {
+
+	const groupedByCategory = sortedArticles.reduce((acc, article) => {
+		let category = article.category
+
+		if (!acc[category]) {
+			acc[category] = [];
+		}
+
+		acc[category].push(article);
+
+		return acc;
+	}, {});
+
+	return groupedByCategory
+}
+
 export const getReadableDate = (date) => {
 	if (typeof date === 'string') {
 		return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL);

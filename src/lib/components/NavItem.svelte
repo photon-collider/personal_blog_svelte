@@ -3,8 +3,11 @@
 	export let active;
 </script>
 
-<a class="tracking-[-0.014em] text-darkest" {href}>
-	<div class="py-3 {active && 'border-b-4 border-primary '} ">
-		<slot />
-	</div>
+<a
+	class="flex h-full flex-col justify-center border-b-4 text-[0.875rem] font-bold uppercase tracking-wider text-darkest {active
+		? 'border-primary opacity-100'
+		: 'border-lightest opacity-[65%]'}"
+	{href}
+>
+	<slot />
 </a>

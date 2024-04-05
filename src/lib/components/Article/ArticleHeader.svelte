@@ -8,9 +8,9 @@
 	import Tag from '../Tag.svelte';
 </script>
 
-<div class="article-header">
+<div class="article-header mx-auto max-w-[var(--max-width-writing)]">
 	<h1>{title}</h1>
-	<p class="subtitle">
+	<p class="subtitle text-size-1 font-semibold leading-[1.1] text-dark">
 		{description}
 	</p>
 
@@ -46,11 +46,7 @@
 	}
 
 	.subtitle {
-		color: var(--dark-color);
-		font-weight: bold;
-		font-size: var(--font-size-step-2);
 		padding-bottom: var(--spacing-3-rem);
-		max-width: 50ch;
 	}
 
 	.publish-time {

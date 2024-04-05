@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { navHeaderItems } from '$lib/config';
 	import NavItemGroup from './NavItemGroup.svelte';
+	import Logo from './Logo.svelte';
 	$: atHome = $page.url.pathname === '/';
 
 	$: headerLinks = navHeaderItems.map((item) => ({
@@ -20,19 +21,26 @@
 	}
 </script>
 
-<header>
-	<div class="my-8 flex flex-row items-center justify-between">
-		<nav>
+<header class="flex flex-row md:h-[100px]">
+	<a href="/" class="flex h-full flex-col justify-center pr-[105px]">
+		<Logo />
+	</a>
+
+	<div class="flex h-full w-full flex-row items-center justify-between">
+		<nav class="h-full">
 			<NavItemGroup items={headerLinks} />
 		</nav>
-		<button on:click={handleDarkModeToggle} class="ml-3 inline-block">
+		<button
+			on:click={handleDarkModeToggle}
+			class="ml-3 inline-block rounded-[10px] border border-medium p-[10px] shadow-md"
+		>
 			<div class="w-[1.5rem]">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke-width="1.5"
-					class="fill-darkest stroke-darkest"
+					class="fill-lightest stroke-darkest"
 				>
 					<path
 						stroke-linecap="round"

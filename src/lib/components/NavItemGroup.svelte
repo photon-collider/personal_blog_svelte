@@ -4,7 +4,7 @@
 	export let leftMargin = false;
 </script>
 
-<ul class="flex flex-row gap-3 sm:gap-4">
+<ul class="flex h-full flex-row gap-3 sm:gap-4">
 	{#each items as { href, title, active }}
 		<li>
 			<NavItem {href} {active} {leftMargin}>{title}</NavItem>

@@ -1,11 +1,10 @@
 <script>
 	export let articleList;
+	console.log({ articleList });
 	import ArticleListItem from './ArticleListItem.svelte';
-
-	let numArticles = articleList.length;
 </script>
 
-<div class="flex flex-col gap-1">
+<div class="ml-[-124px] flex flex-col gap-1">
 	{#each articleList as article}
 		<ArticleListItem
 			slug={article.slug}

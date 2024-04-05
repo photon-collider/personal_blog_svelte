@@ -26,13 +26,13 @@
 </svelte:head>
 
 <div class="content px-3 sm:px-5 xl:px-0">
-	<div class="border-b border-light">
+	<div class="border-b border-light shadow-sm">
 		<PageContainer>
 			<Header />
 		</PageContainer>
 	</div>
 
-	<PageContainer classesToAdd={'my-7'}>
+	<PageContainer classesToAdd={'my-[120px]'}>
 		{#key data.path}
 			<div in:fade|global={transitionIn} out:fade|global={transitionOut} tabindex="-1">
 				<slot />

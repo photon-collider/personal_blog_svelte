@@ -1,7 +1,8 @@
 <script>
 	import BlogPostsView from '../../lib/components/BlogPostsView.svelte';
 	export let data;
-	const { articleTagData, articlesGroupedYear } = data;
+	const { articlesGroupedCategory } = data;
+	console.log(articlesGroupedCategory);
 </script>
 
 <svelte:head>
@@ -14,11 +15,7 @@ career."
 	/>
 </svelte:head>
 
-<div>
+<div class="mx-auto max-w-[720px]">
 	<h1 class="mb-5">Blog Posts</h1>
-	<p class="text-size-2 text-dark">
-		Topics include technology, photography, web development learnings, and musings on life and
-		career
-	</p>
-	<BlogPostsView {articlesGroupedYear} {articleTagData} />
+	<BlogPostsView {articlesGroupedCategory} />
 </div>

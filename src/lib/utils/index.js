@@ -57,10 +57,10 @@ export const getReadableDate = (date) => {
 
 export const getShortDate = (date) => {
 	if (typeof date === 'string') {
-		return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toLocaleString({ month: 'short', day: '2-digit' });
+		return DateTime.fromJSDate(new Date(date), { zone: 'utc' }).toFormat('LLL dd yyyy');
 	}
 
-	return DateTime.fromJSDate(date, { zone: 'utc' }).toLocaleString({ month: 'short', day: '2-digit' });
+	return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat('LLL dd yyyy');
 };
 
 

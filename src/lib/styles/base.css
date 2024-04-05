@@ -31,7 +31,7 @@
 
     --line-height-body-text: 1.5;
     --letter-spacing-body-text: -0.014em;
-    --max-width-writing: 65ch;
+    --max-width-writing: 720px;
 
     --spacing-n1: -4px;
     --spacing-n2: -8px;
@@ -76,7 +76,7 @@
 
 @media (min-width: 34rem) {
     :root {
-        --base-font-size: 1.125rem;
+        --base-font-size: 1.375rem;
     }
 
 }
@@ -104,7 +104,7 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -121,7 +121,8 @@ h6 {
 h1,
 .h1 {
     font-size: var(--font-size-step-4);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
+    line-height: 100%;
 }
 
 h2,

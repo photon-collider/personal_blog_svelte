@@ -10,8 +10,8 @@
 
 <main>
 	{#each blogPostCategories as categoryObj}
-		<div class="mb-7">
-			<h2 class="mb-4 mt-[88px] border-light !text-size-1">
+		<div class="mt-[88px]">
+			<h2 class="mb-4 text-md">
 				{categoryObj['pretty_label']}
 			</h2>
 			<ArticleList articleList={articlesGroupedCategory[categoryObj['label']]} />

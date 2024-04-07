@@ -9,13 +9,15 @@ export const contactEmail = 'hey@bryananthonio.com';
 export const twitterHandle = '@beanthonio'
 export const navHeaderItems = [
   { href: '/about', title: 'About' },
-  { href: '/now', title: 'Now' },
+
   { href: '/blog', title: 'Blog' },
   { href: '/reading', title: 'Reading' },
+  { href: '/photography', title: 'Photography' },
 ];
 
 export const navFooterItems = [
   { href: '/blog', title: 'Blog' },
+  { href: '/now', title: 'Now' },
   { href: '/projects', title: 'Projects' },
   { href: '/about', title: 'About' },
   { href: '/api/blog-rss.xml', title: 'RSS' }

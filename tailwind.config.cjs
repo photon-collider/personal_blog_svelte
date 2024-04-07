@@ -5,14 +5,10 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts,md}'],
 	theme: {
 		fontSize: {
-			'size-0': 'var(--font-size-step-0)',
-			'size-1': 'var(--font-size-step-1)',
-			'size-2': 'var(--font-size-step-2)',
-			'size-3': 'var(--font-size-step-3)',
-			'size-4': 'var(--font-size-step-4)',
-			'size-5': 'var(--font-size-step-5)',
-			'size-6': 'var(--font-size-step-6)',
-
+			'base': 'var(--font-size-1)',
+			'md': 'var(--font-size-2)',
+			'lg': 'var(--font-size-3)',
+			'xl': 'var(--font-size-4)',
 		},
 		spacing: {
 			'n2': 'var(--spacing-n2)',

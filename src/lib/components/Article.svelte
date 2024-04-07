@@ -45,5 +45,4 @@
 	<ArticleBodyText>
 		{@html data.articleContent}
 	</ArticleBodyText>
-	<ArticleBio />
 </article>

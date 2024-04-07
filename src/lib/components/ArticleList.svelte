@@ -4,7 +4,7 @@
 	import ArticleListItem from './ArticleListItem.svelte';
 </script>
 
-<div class="ml-[-124px] flex flex-col gap-1">
+<div class="flex flex-col gap-2">
 	{#each articleList as article}
 		<ArticleListItem
 			slug={article.slug}

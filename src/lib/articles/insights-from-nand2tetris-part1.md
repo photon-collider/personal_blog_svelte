@@ -25,7 +25,7 @@ It was surprising to learn that all hardware in a computer can be built using on
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/NAND%20Gate.png" class="block" alt="Diagram of a NAND gate and its truth table">
     </div>
     
-    <figcaption class="text-size-0 mt-3 text-dark">
+    <figcaption class="text-base mt-3 text-dark">
     NAND gates are fundamental building blocks of computer hardware systems.
     </figcaption>
 </figure>
@@ -49,7 +49,7 @@ The Two’s Complement represents positive numbers in their standard binary repr
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Two's%20Complement.png" class="block" alt="Example table illustrating the Two's Complement">
     </div>
     
-    <figcaption class="text-size-0 mt-3 text-dark">
+    <figcaption class="text-base mt-3 text-dark">
     An example showing how the Two's Complement method is used to represent signed integers in a 3-bit system.
     </figcaption>
 </figure>
@@ -75,7 +75,7 @@ Hardware designers must ensure the clock cycle duration exceeds the maximum time
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Clock%20Cycle.png" class="block" alt="Diagram of clock signal and delayed gate output signal in a digital circuit.">
     </div>
     
-    <figcaption class="text-size-0 mt-3 text-dark">
+    <figcaption class="text-base mt-3 text-dark">
         A logic gate's output does not change instantaneously with the clock signal. The small delay between the start of clock cycle and the gate's final output change is a crucial factor in determining the maximum clock speed and overall performance of high-speed digital systems. 
     </figcaption>
 </figure>
@@ -103,7 +103,7 @@ Similarly, keyboards get mapped to a register that stores information regarding 
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Memory%20Maps.png" class="block" alt="Diagram of computer memory components: Keyboard input, Screen output, and RAM for temporary storage.">
     </div>
     
-    <figcaption class="text-size-0 mt-3 text-dark">
+    <figcaption class="text-base mt-3 text-dark">
     External I/O devices such as keyboards and monitors are mapped onto chunks of a computer's internal memory.
     </figcaption>
 </figure>
@@ -121,7 +121,7 @@ Most modern computers are based on the [von Neumann architecture](https://en.wik
         <img src="https://banthonio.nyc3.cdn.digitaloceanspaces.com/article_images/insights-from-nand2tetris-part1/Von%20Neumann%20Computer.png" class=" hidden sm:block" alt="Diagram of the Von Neumann Computer Architecture.">
     </div>
     
-    <figcaption class="text-size-0 mt-3 text-dark">
+    <figcaption class="text-base mt-3 text-dark">
     The Von Neumann architecture comprises a computer system that contains memory and a CPU. The computer receives data from some input device, such as a keyboard, and generates outputs on output devices, such as monitors.
     </figcaption>
 </figure>
@@ -149,4 +149,3 @@ Furthermore, assembly languages are each tailored to a target hardware platform.
 Completing the exercises in Nand2Tetris Part 1 helped me understand the fundamental concepts of modern computers. These range from the basic logic gates that serve as building blocks all the way to the low-level assembly languages used to program the hardware. Now, computers are not as mysterious to me as they were when I first started the course.
 
 But, the only mystery left for me to resolve is how software, such as operating systems and compilers, fits in the bigger picture of computing. I look forward to learning more about these concepts in the second part of the course.
-

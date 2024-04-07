@@ -21,8 +21,8 @@
 	}
 </script>
 
-<header class="flex flex-row md:h-[100px]">
-	<a href="/" class="flex h-full flex-col justify-center pr-[105px]">
+<header class="mx-auto flex max-w-[720px] flex-row md:h-[100px]">
+	<a href="/" class="mr-[56px] flex h-full flex-col justify-center">
 		<Logo />
 	</a>
 

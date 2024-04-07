@@ -4,9 +4,9 @@
 </script>
 
 <a
-	class="flex h-full flex-col justify-center border-b-4 text-[0.875rem] font-bold uppercase tracking-wider text-darkest {active
-		? 'border-primary opacity-100'
-		: 'border-lightest opacity-[65%]'}"
+	class="flex h-full flex-col justify-center border-b-4 text-[1rem] font-semibold uppercase tracking-wider text-darkest {active
+		? 'border-primary'
+		: 'border-lightest'}"
 	{href}
 >
 	<slot />

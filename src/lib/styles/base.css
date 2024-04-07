@@ -19,17 +19,12 @@
     --type-scale: 1.313;
     --base-font-size: 1rem;
 
-    --font-size-step-0: calc(var(--font-size-step-1) / var(--type-scale));
-    ;
-    --font-size-step-1: var(--base-font-size);
-    --font-size-step-2: calc(var(--font-size-step-1) * var(--type-scale));
-    --font-size-step-3: calc(var(--font-size-step-2) * var(--type-scale));
-    --font-size-step-4: calc(var(--font-size-step-3) * var(--type-scale));
-    --font-size-step-5: calc(var(--font-size-step-4) * var(--type-scale));
-    --font-size-step-6: calc(var(--font-size-step-5) * var(--type-scale));
+    --font-size-1: 16px;
+    --font-size-2: 20px;
+    --font-size-3: 28px;
+    --font-size-4: 48px;
 
-
-    --line-height-body-text: 1.5;
+    --line-height-body-text: 1.6;
     --letter-spacing-body-text: -0.014em;
     --max-width-writing: 720px;
 
@@ -77,6 +72,9 @@
 @media (min-width: 34rem) {
     :root {
         --base-font-size: 1.25rem;
+        --font-size-step-2: 1.5rem;
+        --font-size-step-3: 2rem;
+        --font-size-step-4: 3.5rem;
     }
 
 }
@@ -105,7 +103,7 @@ h3,
 h4,
 .h4 {
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 p,
@@ -120,25 +118,26 @@ h6 {
 
 h1,
 .h1 {
-    font-size: var(--font-size-step-4);
-    letter-spacing: -0.04em;
-    line-height: 100%;
+    font-size: 3rem;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 2rem;
 }
 
 h2,
 .h2 {
-    font-size: var(--font-size-step-3);
+    font-size: 1.75rem;
     letter-spacing: -0.02em;
-    margin-top: var(--spacing-5-rem);
-    margin-bottom: 0.75rem;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
 }
 
 
 h3,
 .h3 {
-    font-size: var(--font-size-step-2);
-    margin-top: 1em;
-    margin-bottom: 0.3em;
+    font-size: 1.25rem;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
 }
 
 h4,
@@ -151,7 +150,7 @@ h4,
 
 .writing p {
     color: var(--darkest-color);
-    font-size: var(--font-size-step-1);
+    font-size: var(--font-size-2);
     margin-bottom: var(--spacing-3-rem);
     display: block;
     line-height: var(--line-height-body-text);
@@ -174,7 +173,7 @@ h4,
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding: 0 var(--spacing-4);
-    font-size: var(--font-size-step-1);
+    font-size: var(--font-size-2);
     line-height: var(--line-height-body-text);
     letter-spacing: var(--letter-spacing-body-text);
 }
@@ -211,7 +210,7 @@ h4,
 
 .katex {
     color: var(--darkest-color);
-    font-size: var(--font-size-step-1);
+    font-size: var(--font-size-1);
 }
 
 .equation {
